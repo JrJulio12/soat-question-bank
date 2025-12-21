@@ -7,11 +7,13 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use InvalidArgumentException;
+use Znck\Eloquent\Traits\BelongsToThrough;
 
 class Bncc extends Model
 {
     /** @use HasFactory<\Database\Factories\BnccFactory> */
     use HasFactory;
+    use BelongsToThrough;
 
     /**
      * Boot the model.
@@ -107,7 +109,7 @@ class Bncc extends Model
      */
     public function area()
     {
-        return $this->competence?->area;
+        return $this->belongsToThrough(Area::class, Competence::class);
     }
 
     /**
@@ -115,6 +117,6 @@ class Bncc extends Model
      */
     public function unit()
     {
-        return $this->knowledge?->unit;
+        return $this->belongsToThrough(Unit::class, Knowledge::class);
     }
 }

@@ -219,8 +219,11 @@ class BnccTest extends TestCase
         ]);
 
         $bncc->refresh();
-        $this->assertNotNull($bncc->unit());
-        $this->assertEquals($unit->id, $bncc->unit()->id);
+
+        // Test property access (verifies HasOneThrough relationship works)
+        $this->assertNotNull($bncc->unit);
+        $this->assertEquals($unit->id, $bncc->unit->id);
+        $this->assertEquals($unit->name, $bncc->unit->name);
 
         // Test EM stage - area accessor
         $serie2 = Serie::create(['stage' => Stage::EM, 'name' => '6th Grade', 'order' => 6]);
@@ -238,7 +241,10 @@ class BnccTest extends TestCase
         ]);
 
         $bncc2->refresh();
-        $this->assertNotNull($bncc2->area());
-        $this->assertEquals($area2->id, $bncc2->area()->id);
+        
+        // Test property access (verifies HasOneThrough relationship works)
+        $this->assertNotNull($bncc2->area);
+        $this->assertEquals($area2->id, $bncc2->area->id);
+        $this->assertEquals($area2->name, $bncc2->area->name);
     }
 }
