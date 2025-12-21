@@ -18,7 +18,7 @@ return new class extends Migration
             $table->text('description');
             $table->foreignId('serie_id')->constrained()->onDelete('cascade');
             $table->foreignId('discipline_id')->constrained()->onDelete('cascade');
-            $table->foreignId('knowledge_id')->nullable()->constrained()->onDelete('cascade');
+            $table->foreignId('knowledge_id')->nullable()->constrained('knowledges')->onDelete('cascade');
             $table->timestamps();
 
             $table->index('serie_id');

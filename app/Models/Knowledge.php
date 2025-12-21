@@ -9,6 +9,8 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Knowledge extends Model
 {
+    protected $table = 'knowledges';
+    
     /** @use HasFactory<\Database\Factories\KnowledgeFactory> */
     use HasFactory;
 
