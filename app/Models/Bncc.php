@@ -7,11 +7,42 @@ use App\Enums\Stage;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use InvalidArgumentException;
 
 class Bncc extends Model
 {
     /** @use HasFactory<\Database\Factories\BnccFactory> */
     use HasFactory;
+
+    /**
+     * Boot the model.
+     */
+    protected static function boot(): void
+    {
+        parent::boot();
+
+        static::saving(function (Bncc $bncc) {
+            $stage = $bncc->stage;
+
+            if ($stage === Stage::EF) {
+                // EF stage requires knowledge_id and must not have competence_id
+                if ($bncc->knowledge_id === null) {
+                    throw new InvalidArgumentException('Bncc with stage EF must have a knowledge_id.');
+                }
+                if ($bncc->competence_id !== null) {
+                    throw new InvalidArgumentException('Bncc with stage EF must not have a competence_id.');
+                }
+            } elseif ($stage === Stage::EM) {
+                // EM stage requires competence_id and must not have knowledge_id
+                if ($bncc->competence_id === null) {
+                    throw new InvalidArgumentException('Bncc with stage EM must have a competence_id.');
+                }
+                if ($bncc->knowledge_id !== null) {
+                    throw new InvalidArgumentException('Bncc with stage EM must not have a knowledge_id.');
+                }
+            }
+        });
+    }
 
     /**
      * The attributes that are mass assignable.
@@ -70,5 +101,21 @@ class Bncc extends Model
     public function competence(): BelongsTo
     {
         return $this->belongsTo(Competence::class);
+    }
+
+    /**
+     * Get the area through competence (for EM stage).
+     */
+    public function area()
+    {
+        return $this->competence?->area;
+    }
+
+    /**
+     * Get the unit through knowledge (for EF stage).
+     */
+    public function unit()
+    {
+        return $this->knowledge?->unit;
     }
 }
