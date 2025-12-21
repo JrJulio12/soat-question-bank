@@ -2,9 +2,8 @@
 
 namespace App\Enums;
 
-enum QuestionStage: string
+enum Stage: string
 {
     case EF = 'EF';
     case EM = 'EM';
 }
-

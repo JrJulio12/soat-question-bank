@@ -3,15 +3,12 @@
 namespace App\Models;
 
 use App\Enums\Stage;
-use App\Enums\QuestionStatus;
-use App\Enums\QuestionType;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\HasMany;
 
-class Question extends Model
+class Discipline extends Model
 {
-    /** @use HasFactory<\Database\Factories\QuestionFactory> */
+    /** @use HasFactory<\Database\Factories\DisciplineFactory> */
     use HasFactory;
 
     /**
@@ -21,10 +18,7 @@ class Question extends Model
      */
     protected $fillable = [
         'stage',
-        'type',
-        'stem',
-        'answer_text',
-        'status',
+        'name',
     ];
 
     /**
@@ -36,17 +30,6 @@ class Question extends Model
     {
         return [
             'stage' => Stage::class,
-            'type' => QuestionType::class,
-            'status' => QuestionStatus::class,
         ];
     }
-
-    /**
-     * Get the options for the question.
-     */
-    public function options(): HasMany
-    {
-        return $this->hasMany(Option::class);
-    }
 }
-
