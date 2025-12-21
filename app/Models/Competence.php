@@ -2,14 +2,14 @@
 
 namespace App\Models;
 
-use App\Enums\Stage;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
-class Serie extends Model
+class Competence extends Model
 {
-    /** @use HasFactory<\Database\Factories\SerieFactory> */
+    /** @use HasFactory<\Database\Factories\CompetenceFactory> */
     use HasFactory;
 
     /**
@@ -18,26 +18,21 @@ class Serie extends Model
      * @var list<string>
      */
     protected $fillable = [
-        'stage',
-        'name',
-        'order',
+        'area_id',
+        'code',
+        'description',
     ];
 
     /**
-     * Get the attributes that should be cast.
-     *
-     * @return array<string, string>
+     * Get the area that owns the competence.
      */
-    protected function casts(): array
+    public function area(): BelongsTo
     {
-        return [
-            'stage' => Stage::class,
-            'order' => 'integer',
-        ];
+        return $this->belongsTo(Area::class);
     }
 
     /**
-     * Get the bnccs for the serie.
+     * Get the bnccs for the competence.
      */
     public function bnccs(): HasMany
     {

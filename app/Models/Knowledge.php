@@ -2,14 +2,14 @@
 
 namespace App\Models;
 
-use App\Enums\Stage;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
-class Serie extends Model
+class Knowledge extends Model
 {
-    /** @use HasFactory<\Database\Factories\SerieFactory> */
+    /** @use HasFactory<\Database\Factories\KnowledgeFactory> */
     use HasFactory;
 
     /**
@@ -18,26 +18,20 @@ class Serie extends Model
      * @var list<string>
      */
     protected $fillable = [
-        'stage',
+        'unit_id',
         'name',
-        'order',
     ];
 
     /**
-     * Get the attributes that should be cast.
-     *
-     * @return array<string, string>
+     * Get the unit that owns the knowledge.
      */
-    protected function casts(): array
+    public function unit(): BelongsTo
     {
-        return [
-            'stage' => Stage::class,
-            'order' => 'integer',
-        ];
+        return $this->belongsTo(Unit::class);
     }
 
     /**
-     * Get the bnccs for the serie.
+     * Get the bnccs for the knowledge.
      */
     public function bnccs(): HasMany
     {

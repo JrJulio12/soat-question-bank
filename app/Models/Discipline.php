@@ -5,6 +5,7 @@ namespace App\Models;
 use App\Enums\Stage;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Discipline extends Model
 {
@@ -31,5 +32,21 @@ class Discipline extends Model
         return [
             'stage' => Stage::class,
         ];
+    }
+
+    /**
+     * Get the units for the discipline.
+     */
+    public function units(): HasMany
+    {
+        return $this->hasMany(Unit::class);
+    }
+
+    /**
+     * Get the bnccs for the discipline.
+     */
+    public function bnccs(): HasMany
+    {
+        return $this->hasMany(Bncc::class);
     }
 }
