@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 class Subject extends Model
 {
@@ -27,6 +28,14 @@ class Subject extends Model
     public function chapter(): BelongsTo
     {
         return $this->belongsTo(Chapter::class);
+    }
+
+    /**
+     * Get the questions associated with the subject.
+     */
+    public function questions(): BelongsToMany
+    {
+        return $this->belongsToMany(Question::class);
     }
 }
 

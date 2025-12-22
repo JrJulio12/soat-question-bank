@@ -57,5 +57,13 @@ class Question extends Model
     {
         return $this->belongsToMany(Bncc::class);
     }
+
+    /**
+     * Get the subjects associated with the question.
+     */
+    public function subjects(): BelongsToMany
+    {
+        return $this->belongsToMany(Subject::class);
+    }
 }
 

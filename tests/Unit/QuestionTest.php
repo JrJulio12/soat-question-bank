@@ -6,11 +6,14 @@ use App\Enums\QuestionStatus;
 use App\Enums\QuestionType;
 use App\Enums\Stage;
 use App\Models\Bncc;
+use App\Models\Chapter;
 use App\Models\Discipline;
 use App\Models\Knowledge;
 use App\Models\Option;
 use App\Models\Question;
 use App\Models\Serie;
+use App\Models\Subject;
+use App\Models\Topic;
 use App\Models\Unit;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
@@ -197,6 +200,94 @@ class QuestionTest extends TestCase
         $this->assertDatabaseMissing('bncc_question', [
             'question_id' => $question->id,
             'bncc_id' => $bncc->id,
+        ]);
+    }
+
+    public function test_question_has_many_subjects(): void
+    {
+        $question = Question::create([
+            'stage' => Stage::EF,
+            'type' => QuestionType::MULTIPLE_CHOICE,
+            'stem' => 'Test question',
+            'status' => QuestionStatus::DRAFT,
+        ]);
+
+        $discipline = Discipline::create([
+            'stage' => Stage::EF,
+            'name' => 'Mathematics',
+        ]);
+
+        $topic = Topic::create([
+            'name' => 'Algebra',
+            'discipline_id' => $discipline->id,
+        ]);
+
+        $chapter = Chapter::create([
+            'name' => 'Linear Equations',
+            'topic_id' => $topic->id,
+        ]);
+
+        $subject1 = Subject::create([
+            'name' => 'Solving Equations',
+            'chapter_id' => $chapter->id,
+        ]);
+
+        $subject2 = Subject::create([
+            'name' => 'Graphing Linear Equations',
+            'chapter_id' => $chapter->id,
+        ]);
+
+        $question->subjects()->attach([$subject1->id, $subject2->id]);
+
+        $this->assertCount(2, $question->subjects);
+        $this->assertTrue($question->subjects->contains($subject1));
+        $this->assertTrue($question->subjects->contains($subject2));
+    }
+
+    public function test_question_can_attach_and_detach_subjects(): void
+    {
+        $question = Question::create([
+            'stage' => Stage::EF,
+            'type' => QuestionType::MULTIPLE_CHOICE,
+            'stem' => 'Test question',
+            'status' => QuestionStatus::DRAFT,
+        ]);
+
+        $discipline = Discipline::create([
+            'stage' => Stage::EF,
+            'name' => 'Mathematics',
+        ]);
+
+        $topic = Topic::create([
+            'name' => 'Algebra',
+            'discipline_id' => $discipline->id,
+        ]);
+
+        $chapter = Chapter::create([
+            'name' => 'Linear Equations',
+            'topic_id' => $topic->id,
+        ]);
+
+        $subject = Subject::create([
+            'name' => 'Solving Equations',
+            'chapter_id' => $chapter->id,
+        ]);
+
+        // Test attach
+        $question->subjects()->attach($subject->id);
+        $this->assertTrue($question->subjects->contains($subject));
+        $this->assertDatabaseHas('question_subject', [
+            'question_id' => $question->id,
+            'subject_id' => $subject->id,
+        ]);
+
+        // Test detach
+        $question->subjects()->detach($subject->id);
+        $question->refresh();
+        $this->assertFalse($question->subjects->contains($subject));
+        $this->assertDatabaseMissing('question_subject', [
+            'question_id' => $question->id,
+            'subject_id' => $subject->id,
         ]);
     }
 }
