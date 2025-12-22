@@ -7,6 +7,7 @@ use App\Enums\QuestionStatus;
 use App\Enums\QuestionType;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Question extends Model
@@ -47,6 +48,14 @@ class Question extends Model
     public function options(): HasMany
     {
         return $this->hasMany(Option::class);
+    }
+
+    /**
+     * Get the BNCCs associated with the question.
+     */
+    public function bnccs(): BelongsToMany
+    {
+        return $this->belongsToMany(Bncc::class);
     }
 }
 
