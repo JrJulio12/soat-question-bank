@@ -11,8 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('knowledges', function (Blueprint $table) {
-            $table->text('name')->change();
+        Schema::create('topics', function (Blueprint $table) {
+            $table->id();
+            $table->string('name');
+            $table->foreignId('discipline_id')->constrained()->onDelete('cascade');
+            $table->timestamps();
+
+            $table->index('discipline_id');
         });
     }
 
@@ -21,9 +26,7 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::table('knowledges', function (Blueprint $table) {
-            $table->string('name')->change();
-        });
+        Schema::dropIfExists('topics');
     }
 };
 

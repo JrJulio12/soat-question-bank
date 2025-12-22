@@ -36,3 +36,4 @@ class KnowledgeSeeder extends Seeder
         }
     }
 }
+

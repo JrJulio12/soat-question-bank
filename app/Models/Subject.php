@@ -4,11 +4,11 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
-class Area extends Model
+class Subject extends Model
 {
-    /** @use HasFactory<\Database\Factories\AreaFactory> */
+    /** @use HasFactory<\Database\Factories\SubjectFactory> */
     use HasFactory;
 
     /**
@@ -18,13 +18,15 @@ class Area extends Model
      */
     protected $fillable = [
         'name',
+        'chapter_id',
     ];
 
     /**
-     * Get the competences for the area.
+     * Get the chapter that owns the subject.
      */
-    public function competences(): HasMany
+    public function chapter(): BelongsTo
     {
-        return $this->hasMany(Competence::class);
+        return $this->belongsTo(Chapter::class);
     }
 }
+

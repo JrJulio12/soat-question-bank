@@ -5,16 +5,13 @@ namespace Tests\Unit;
 use App\Enums\QuestionStatus;
 use App\Enums\QuestionType;
 use App\Enums\Stage;
-use App\Models\Area;
 use App\Models\Bncc;
-use App\Models\Competence;
 use App\Models\Discipline;
 use App\Models\Knowledge;
 use App\Models\Question;
 use App\Models\Serie;
 use App\Models\Unit;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use InvalidArgumentException;
 use Tests\TestCase;
 
 class BnccTest extends TestCase
@@ -75,22 +72,11 @@ class BnccTest extends TestCase
             'name' => 'Mathematics',
         ]);
 
-        $area = Area::create([
-            'name' => 'Numbers and Operations',
-        ]);
-
-        $competence = Competence::create([
-            'area_id' => $area->id,
-            'code' => 'EM13MAT01',
-            'description' => 'Competence description',
-        ]);
-
         $bncc = Bncc::create([
             'stage' => Stage::EM,
             'code' => 'EM13MAT01',
             'description' => 'Test description',
             'discipline_id' => $discipline->id,
-            'competence_id' => $competence->id,
         ]);
 
         $bncc->series()->attach($serie->id);
@@ -142,39 +128,7 @@ class BnccTest extends TestCase
         ]);
     }
 
-    public function test_ef_stage_rejects_competence_id(): void
-    {
-        $discipline = Discipline::create(['stage' => Stage::EF, 'name' => 'Math']);
-        $area = Area::create(['name' => 'Area']);
-        $competence = Competence::create(['area_id' => $area->id, 'code' => 'CODE', 'description' => 'Desc']);
 
-        $this->expectException(InvalidArgumentException::class);
-        $this->expectExceptionMessage('Bncc with stage EF must not have a competence_id.');
-
-        Bncc::create([
-            'stage' => Stage::EF,
-            'code' => 'EF01MA01',
-            'description' => 'Test',
-            'discipline_id' => $discipline->id,
-            'competence_id' => $competence->id,
-        ]);
-    }
-
-    public function test_em_stage_requires_competence_id(): void
-    {
-        $discipline = Discipline::create(['stage' => Stage::EM, 'name' => 'Math']);
-
-        $this->expectException(InvalidArgumentException::class);
-        $this->expectExceptionMessage('Bncc with stage EM must have a competence_id.');
-
-        Bncc::create([
-            'stage' => Stage::EM,
-            'code' => 'EM13MAT01',
-            'description' => 'Test',
-            'discipline_id' => $discipline->id,
-            'competence_id' => null,
-        ]);
-    }
 
 
     public function test_direct_relationship_accessors_work(): void
@@ -211,27 +165,21 @@ class BnccTest extends TestCase
         $this->assertTrue($units->contains($unit1));
         $this->assertTrue($units->contains($unit2));
 
-        // Test EM stage - area accessor
+        // Test EM stage
         $serie2 = Serie::create(['stage' => Stage::EM, 'name' => '6th Grade', 'order' => 6]);
         $discipline2 = Discipline::create(['stage' => Stage::EM, 'name' => 'Math']);
-        $area2 = Area::create(['name' => 'Area']);
-        $competence2 = Competence::create(['area_id' => $area2->id, 'code' => 'CODE', 'description' => 'Desc']);
 
         $bncc2 = Bncc::create([
             'stage' => Stage::EM,
             'code' => 'EM13MAT01',
             'description' => 'Test',
             'discipline_id' => $discipline2->id,
-            'competence_id' => $competence2->id,
         ]);
 
         $bncc2->series()->attach($serie2->id);
         $bncc2->refresh();
         
-        // Test property access (verifies HasOneThrough relationship works)
-        $this->assertNotNull($bncc2->area);
-        $this->assertEquals($area2->id, $bncc2->area->id);
-        $this->assertEquals($area2->name, $bncc2->area->name);
+        $this->assertEquals($discipline2->id, $bncc2->discipline->id);
     }
 
     public function test_bncc_has_many_questions(): void

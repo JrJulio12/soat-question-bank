@@ -140,3 +140,4 @@ class BnccSeeder extends Seeder
         return Stage::from($defaultStage);
     }
 }
+
