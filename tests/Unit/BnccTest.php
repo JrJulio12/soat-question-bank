@@ -2,12 +2,15 @@
 
 namespace Tests\Unit;
 
+use App\Enums\QuestionStatus;
+use App\Enums\QuestionType;
 use App\Enums\Stage;
 use App\Models\Area;
 use App\Models\Bncc;
 use App\Models\Competence;
 use App\Models\Discipline;
 use App\Models\Knowledge;
+use App\Models\Question;
 use App\Models\Serie;
 use App\Models\Unit;
 use Illuminate\Foundation\Testing\RefreshDatabase;
@@ -246,5 +249,115 @@ class BnccTest extends TestCase
         $this->assertNotNull($bncc2->area);
         $this->assertEquals($area2->id, $bncc2->area->id);
         $this->assertEquals($area2->name, $bncc2->area->name);
+    }
+
+    public function test_bncc_has_many_questions(): void
+    {
+        $serie = Serie::create([
+            'stage' => Stage::EF,
+            'name' => '1st Grade',
+            'order' => 1,
+        ]);
+
+        $discipline = Discipline::create([
+            'stage' => Stage::EF,
+            'name' => 'Mathematics',
+        ]);
+
+        $unit = Unit::create([
+            'discipline_id' => $discipline->id,
+            'name' => 'Numbers',
+        ]);
+
+        $knowledge = Knowledge::create([
+            'unit_id' => $unit->id,
+            'name' => 'Basic Operations',
+        ]);
+
+        $bncc = Bncc::create([
+            'stage' => Stage::EF,
+            'code' => 'EF01MA01',
+            'description' => 'BNCC description',
+            'serie_id' => $serie->id,
+            'discipline_id' => $discipline->id,
+            'knowledge_id' => $knowledge->id,
+        ]);
+
+        $question1 = Question::create([
+            'stage' => Stage::EF,
+            'type' => QuestionType::MULTIPLE_CHOICE,
+            'stem' => 'First question',
+            'status' => QuestionStatus::DRAFT,
+        ]);
+
+        $question2 = Question::create([
+            'stage' => Stage::EF,
+            'type' => QuestionType::TRUE_FALSE,
+            'stem' => 'Second question',
+            'status' => QuestionStatus::PUBLISHED,
+        ]);
+
+        $bncc->questions()->attach([$question1->id, $question2->id]);
+
+        $this->assertCount(2, $bncc->questions);
+        $this->assertTrue($bncc->questions->contains($question1));
+        $this->assertTrue($bncc->questions->contains($question2));
+    }
+
+    public function test_bncc_can_attach_and_detach_questions(): void
+    {
+        $serie = Serie::create([
+            'stage' => Stage::EF,
+            'name' => '1st Grade',
+            'order' => 1,
+        ]);
+
+        $discipline = Discipline::create([
+            'stage' => Stage::EF,
+            'name' => 'Mathematics',
+        ]);
+
+        $unit = Unit::create([
+            'discipline_id' => $discipline->id,
+            'name' => 'Numbers',
+        ]);
+
+        $knowledge = Knowledge::create([
+            'unit_id' => $unit->id,
+            'name' => 'Basic Operations',
+        ]);
+
+        $bncc = Bncc::create([
+            'stage' => Stage::EF,
+            'code' => 'EF01MA01',
+            'description' => 'BNCC description',
+            'serie_id' => $serie->id,
+            'discipline_id' => $discipline->id,
+            'knowledge_id' => $knowledge->id,
+        ]);
+
+        $question = Question::create([
+            'stage' => Stage::EF,
+            'type' => QuestionType::MULTIPLE_CHOICE,
+            'stem' => 'Test question',
+            'status' => QuestionStatus::DRAFT,
+        ]);
+
+        // Test attach
+        $bncc->questions()->attach($question->id);
+        $this->assertTrue($bncc->questions->contains($question));
+        $this->assertDatabaseHas('bncc_question', [
+            'bncc_id' => $bncc->id,
+            'question_id' => $question->id,
+        ]);
+
+        // Test detach
+        $bncc->questions()->detach($question->id);
+        $bncc->refresh();
+        $this->assertFalse($bncc->questions->contains($question));
+        $this->assertDatabaseMissing('bncc_question', [
+            'bncc_id' => $bncc->id,
+            'question_id' => $question->id,
+        ]);
     }
 }

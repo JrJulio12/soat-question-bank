@@ -6,6 +6,7 @@ use App\Enums\Stage;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use InvalidArgumentException;
 use Znck\Eloquent\Traits\BelongsToThrough;
 
@@ -118,5 +119,13 @@ class Bncc extends Model
     public function unit()
     {
         return $this->belongsToThrough(Unit::class, Knowledge::class);
+    }
+
+    /**
+     * Get the questions associated with the BNCC.
+     */
+    public function questions(): BelongsToMany
+    {
+        return $this->belongsToMany(Question::class);
     }
 }
