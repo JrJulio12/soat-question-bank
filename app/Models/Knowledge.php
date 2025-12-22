@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Knowledge extends Model
@@ -35,8 +36,8 @@ class Knowledge extends Model
     /**
      * Get the bnccs for the knowledge.
      */
-    public function bnccs(): HasMany
+    public function bnccs(): BelongsToMany
     {
-        return $this->hasMany(Bncc::class);
+        return $this->belongsToMany(Bncc::class);
     }
 }

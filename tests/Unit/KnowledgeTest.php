@@ -71,19 +71,20 @@ class KnowledgeTest extends TestCase
             'stage' => Stage::EF,
             'code' => 'EF01MA01',
             'description' => 'First bncc',
-            'serie_id' => $serie->id,
             'discipline_id' => $discipline->id,
-            'knowledge_id' => $knowledge->id,
         ]);
 
         $bncc2 = Bncc::create([
             'stage' => Stage::EF,
             'code' => 'EF01MA02',
             'description' => 'Second bncc',
-            'serie_id' => $serie->id,
             'discipline_id' => $discipline->id,
-            'knowledge_id' => $knowledge->id,
         ]);
+
+        $bncc1->series()->attach($serie->id);
+        $bncc1->knowledges()->attach($knowledge->id);
+        $bncc2->series()->attach($serie->id);
+        $bncc2->knowledges()->attach($knowledge->id);
 
         $this->assertCount(2, $knowledge->bnccs);
         $this->assertTrue($knowledge->bnccs->contains($bncc1));

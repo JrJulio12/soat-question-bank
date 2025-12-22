@@ -120,19 +120,20 @@ class QuestionTest extends TestCase
             'stage' => Stage::EF,
             'code' => 'EF01MA01',
             'description' => 'First BNCC description',
-            'serie_id' => $serie->id,
             'discipline_id' => $discipline->id,
-            'knowledge_id' => $knowledge1->id,
         ]);
 
         $bncc2 = Bncc::create([
             'stage' => Stage::EF,
             'code' => 'EF01MA02',
             'description' => 'Second BNCC description',
-            'serie_id' => $serie->id,
             'discipline_id' => $discipline->id,
-            'knowledge_id' => $knowledge2->id,
         ]);
+
+        $bncc1->series()->attach($serie->id);
+        $bncc1->knowledges()->attach($knowledge1->id);
+        $bncc2->series()->attach($serie->id);
+        $bncc2->knowledges()->attach($knowledge2->id);
 
         $question->bnccs()->attach([$bncc1->id, $bncc2->id]);
 
@@ -175,10 +176,11 @@ class QuestionTest extends TestCase
             'stage' => Stage::EF,
             'code' => 'EF01MA01',
             'description' => 'BNCC description',
-            'serie_id' => $serie->id,
             'discipline_id' => $discipline->id,
-            'knowledge_id' => $knowledge->id,
         ]);
+
+        $bncc->series()->attach($serie->id);
+        $bncc->knowledges()->attach($knowledge->id);
 
         // Test attach
         $question->bnccs()->attach($bncc->id);

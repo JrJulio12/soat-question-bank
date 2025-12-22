@@ -48,11 +48,12 @@ class BnccTest extends TestCase
             'stage' => Stage::EF,
             'code' => 'EF01MA01',
             'description' => 'Test description',
-            'serie_id' => $serie->id,
             'discipline_id' => $discipline->id,
-            'knowledge_id' => $knowledge->id,
             'competence_id' => null,
         ]);
+
+        $bncc->series()->attach($serie->id);
+        $bncc->knowledges()->attach($knowledge->id);
 
         $this->assertDatabaseHas('bnccs', [
             'id' => $bncc->id,
@@ -88,11 +89,11 @@ class BnccTest extends TestCase
             'stage' => Stage::EM,
             'code' => 'EM13MAT01',
             'description' => 'Test description',
-            'serie_id' => $serie->id,
             'discipline_id' => $discipline->id,
-            'knowledge_id' => null,
             'competence_id' => $competence->id,
         ]);
+
+        $bncc->series()->attach($serie->id);
 
         $this->assertDatabaseHas('bnccs', [
             'id' => $bncc->id,
@@ -112,40 +113,38 @@ class BnccTest extends TestCase
             'stage' => Stage::EF,
             'code' => 'EF01MA01',
             'description' => 'Test',
-            'serie_id' => $serie->id,
             'discipline_id' => $discipline->id,
-            'knowledge_id' => $knowledge->id,
         ]);
 
-        $this->assertEquals($serie->id, $bncc->serie->id);
+        $bncc->series()->attach($serie->id);
+        $bncc->knowledges()->attach($knowledge->id);
+
+        $this->assertTrue($bncc->series->contains($serie));
         $this->assertEquals($discipline->id, $bncc->discipline->id);
-        $this->assertEquals($knowledge->id, $bncc->knowledge->id);
+        $this->assertTrue($bncc->knowledges->contains($knowledge));
     }
 
-    public function test_ef_stage_requires_knowledge_id(): void
+    public function test_ef_stage_can_be_created_without_knowledge(): void
     {
-        $serie = Serie::create(['stage' => Stage::EF, 'name' => '1st Grade', 'order' => 1]);
         $discipline = Discipline::create(['stage' => Stage::EF, 'name' => 'Math']);
 
-        $this->expectException(InvalidArgumentException::class);
-        $this->expectExceptionMessage('Bncc with stage EF must have a knowledge_id.');
-
-        Bncc::create([
+        $bncc = Bncc::create([
             'stage' => Stage::EF,
             'code' => 'EF01MA01',
             'description' => 'Test',
-            'serie_id' => $serie->id,
             'discipline_id' => $discipline->id,
-            'knowledge_id' => null,
+        ]);
+
+        $this->assertDatabaseHas('bnccs', [
+            'id' => $bncc->id,
+            'code' => 'EF01MA01',
+            'stage' => 'EF',
         ]);
     }
 
     public function test_ef_stage_rejects_competence_id(): void
     {
-        $serie = Serie::create(['stage' => Stage::EF, 'name' => '1st Grade', 'order' => 1]);
         $discipline = Discipline::create(['stage' => Stage::EF, 'name' => 'Math']);
-        $unit = Unit::create(['discipline_id' => $discipline->id, 'name' => 'Numbers']);
-        $knowledge = Knowledge::create(['unit_id' => $unit->id, 'name' => 'Operations']);
         $area = Area::create(['name' => 'Area']);
         $competence = Competence::create(['area_id' => $area->id, 'code' => 'CODE', 'description' => 'Desc']);
 
@@ -156,16 +155,13 @@ class BnccTest extends TestCase
             'stage' => Stage::EF,
             'code' => 'EF01MA01',
             'description' => 'Test',
-            'serie_id' => $serie->id,
             'discipline_id' => $discipline->id,
-            'knowledge_id' => $knowledge->id,
             'competence_id' => $competence->id,
         ]);
     }
 
     public function test_em_stage_requires_competence_id(): void
     {
-        $serie = Serie::create(['stage' => Stage::EM, 'name' => '6th Grade', 'order' => 6]);
         $discipline = Discipline::create(['stage' => Stage::EM, 'name' => 'Math']);
 
         $this->expectException(InvalidArgumentException::class);
@@ -175,58 +171,45 @@ class BnccTest extends TestCase
             'stage' => Stage::EM,
             'code' => 'EM13MAT01',
             'description' => 'Test',
-            'serie_id' => $serie->id,
             'discipline_id' => $discipline->id,
             'competence_id' => null,
         ]);
     }
 
-    public function test_em_stage_rejects_knowledge_id(): void
-    {
-        $serie = Serie::create(['stage' => Stage::EM, 'name' => '6th Grade', 'order' => 6]);
-        $discipline = Discipline::create(['stage' => Stage::EM, 'name' => 'Math']);
-        $area = Area::create(['name' => 'Area']);
-        $competence = Competence::create(['area_id' => $area->id, 'code' => 'CODE', 'description' => 'Desc']);
-        $unit = Unit::create(['discipline_id' => $discipline->id, 'name' => 'Numbers']);
-        $knowledge = Knowledge::create(['unit_id' => $unit->id, 'name' => 'Operations']);
-
-        $this->expectException(InvalidArgumentException::class);
-        $this->expectExceptionMessage('Bncc with stage EM must not have a knowledge_id.');
-
-        Bncc::create([
-            'stage' => Stage::EM,
-            'code' => 'EM13MAT01',
-            'description' => 'Test',
-            'serie_id' => $serie->id,
-            'discipline_id' => $discipline->id,
-            'competence_id' => $competence->id,
-            'knowledge_id' => $knowledge->id,
-        ]);
-    }
 
     public function test_direct_relationship_accessors_work(): void
     {
-        // Test EF stage - unit accessor
+        // Test EF stage - units accessor
         $serie = Serie::create(['stage' => Stage::EF, 'name' => '1st Grade', 'order' => 1]);
         $discipline = Discipline::create(['stage' => Stage::EF, 'name' => 'Math']);
-        $unit = Unit::create(['discipline_id' => $discipline->id, 'name' => 'Numbers']);
-        $knowledge = Knowledge::create(['unit_id' => $unit->id, 'name' => 'Operations']);
+
+        $unit1 = Unit::create(['discipline_id' => $discipline->id, 'name' => 'Numbers']);
+        $unit1 = Unit::where('id', $unit1->id)->first();
+
+        $unit2 = Unit::create(['discipline_id' => $discipline->id, 'name' => 'Algebra']);
+        $unit2 = Unit::where('id', $unit2->id)->first();
+
+        $knowledge1 = Knowledge::create(['unit_id' => $unit1->id, 'name' => 'Operations']);
+        $knowledge2 = Knowledge::create(['unit_id' => $unit2->id, 'name' => 'Equations']);
 
         $bncc = Bncc::create([
             'stage' => Stage::EF,
             'code' => 'EF01MA01',
             'description' => 'Test',
-            'serie_id' => $serie->id,
             'discipline_id' => $discipline->id,
-            'knowledge_id' => $knowledge->id,
         ]);
+
+        $bncc->series()->attach($serie->id);
+        $bncc->knowledges()->attach([$knowledge1->id, $knowledge2->id]);
 
         $bncc->refresh();
 
-        // Test property access (verifies HasOneThrough relationship works)
-        $this->assertNotNull($bncc->unit);
-        $this->assertEquals($unit->id, $bncc->unit->id);
-        $this->assertEquals($unit->name, $bncc->unit->name);
+        // Test units() method returns collection of all units from knowledges
+        $units = $bncc->units();
+
+        $this->assertCount(2, $units);
+        $this->assertTrue($units->contains($unit1));
+        $this->assertTrue($units->contains($unit2));
 
         // Test EM stage - area accessor
         $serie2 = Serie::create(['stage' => Stage::EM, 'name' => '6th Grade', 'order' => 6]);
@@ -238,11 +221,11 @@ class BnccTest extends TestCase
             'stage' => Stage::EM,
             'code' => 'EM13MAT01',
             'description' => 'Test',
-            'serie_id' => $serie2->id,
             'discipline_id' => $discipline2->id,
             'competence_id' => $competence2->id,
         ]);
 
+        $bncc2->series()->attach($serie2->id);
         $bncc2->refresh();
         
         // Test property access (verifies HasOneThrough relationship works)
@@ -278,10 +261,11 @@ class BnccTest extends TestCase
             'stage' => Stage::EF,
             'code' => 'EF01MA01',
             'description' => 'BNCC description',
-            'serie_id' => $serie->id,
             'discipline_id' => $discipline->id,
-            'knowledge_id' => $knowledge->id,
         ]);
+
+        $bncc->series()->attach($serie->id);
+        $bncc->knowledges()->attach($knowledge->id);
 
         $question1 = Question::create([
             'stage' => Stage::EF,
@@ -331,10 +315,11 @@ class BnccTest extends TestCase
             'stage' => Stage::EF,
             'code' => 'EF01MA01',
             'description' => 'BNCC description',
-            'serie_id' => $serie->id,
             'discipline_id' => $discipline->id,
-            'knowledge_id' => $knowledge->id,
         ]);
+
+        $bncc->series()->attach($serie->id);
+        $bncc->knowledges()->attach($knowledge->id);
 
         $question = Question::create([
             'stage' => Stage::EF,
@@ -359,5 +344,119 @@ class BnccTest extends TestCase
             'bncc_id' => $bncc->id,
             'question_id' => $question->id,
         ]);
+    }
+
+    public function test_bncc_can_have_multiple_series(): void
+    {
+        $serie1 = Serie::create([
+            'stage' => Stage::EF,
+            'name' => '1st Grade',
+            'order' => 1,
+        ]);
+
+        $serie2 = Serie::create([
+            'stage' => Stage::EF,
+            'name' => '2nd Grade',
+            'order' => 2,
+        ]);
+
+        $discipline = Discipline::create([
+            'stage' => Stage::EF,
+            'name' => 'Mathematics',
+        ]);
+
+        $bncc = Bncc::create([
+            'stage' => Stage::EF,
+            'code' => 'EF01MA01',
+            'description' => 'BNCC description',
+            'discipline_id' => $discipline->id,
+        ]);
+
+        $bncc->series()->attach([$serie1->id, $serie2->id]);
+
+        $this->assertCount(2, $bncc->series);
+        $this->assertTrue($bncc->series->contains($serie1));
+        $this->assertTrue($bncc->series->contains($serie2));
+    }
+
+    public function test_bncc_can_have_multiple_knowledges(): void
+    {
+        $discipline = Discipline::create([
+            'stage' => Stage::EF,
+            'name' => 'Mathematics',
+        ]);
+
+        $unit = Unit::create([
+            'discipline_id' => $discipline->id,
+            'name' => 'Numbers',
+        ]);
+
+        $knowledge1 = Knowledge::create([
+            'unit_id' => $unit->id,
+            'name' => 'Basic Operations',
+        ]);
+
+        $knowledge2 = Knowledge::create([
+            'unit_id' => $unit->id,
+            'name' => 'Advanced Operations',
+        ]);
+
+        $bncc = Bncc::create([
+            'stage' => Stage::EF,
+            'code' => 'EF01MA01',
+            'description' => 'BNCC description',
+            'discipline_id' => $discipline->id,
+        ]);
+
+        $bncc->knowledges()->attach([$knowledge1->id, $knowledge2->id]);
+
+        $this->assertCount(2, $bncc->knowledges);
+        $this->assertTrue($bncc->knowledges->contains($knowledge1));
+        $this->assertTrue($bncc->knowledges->contains($knowledge2));
+    }
+
+    public function test_bncc_units_returns_all_units_from_knowledges(): void
+    {
+        $discipline = Discipline::create([
+            'stage' => Stage::EF,
+            'name' => 'Mathematics',
+        ]);
+
+        $unit1 = Unit::create([
+            'discipline_id' => $discipline->id,
+            'name' => 'Numbers',
+        ]);
+
+        $unit2 = Unit::create([
+            'discipline_id' => $discipline->id,
+            'name' => 'Algebra',
+        ]);
+
+        $knowledge1 = Knowledge::create([
+            'unit_id' => $unit1->id,
+            'name' => 'Basic Operations',
+        ]);
+
+        $knowledge2 = Knowledge::create([
+            'unit_id' => $unit2->id,
+            'name' => 'Equations',
+        ]);
+
+        $bncc = Bncc::create([
+            'stage' => Stage::EF,
+            'code' => 'EF01MA01',
+            'description' => 'BNCC description',
+            'discipline_id' => $discipline->id,
+        ]);
+
+        $bncc->knowledges()->attach([$knowledge1->id, $knowledge2->id]);
+
+        $units = $bncc->units();
+
+        $this->assertCount(2, $units);
+        $this->assertTrue($units->contains('id', $unit1->id));
+        $this->assertTrue($units->contains('id', $unit2->id));
+        $this->assertEquals($unit1->name, $units->firstWhere('id', $unit1->id)->name);
+        $this->assertEquals($unit2->name, $units->firstWhere('id', $unit2->id)->name);
     }
 }

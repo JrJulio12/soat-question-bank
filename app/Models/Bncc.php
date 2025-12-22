@@ -27,20 +27,14 @@ class Bncc extends Model
             $stage = $bncc->stage;
 
             if ($stage === Stage::EF) {
-                // EF stage requires knowledge_id and must not have competence_id
-                if ($bncc->knowledge_id === null) {
-                    throw new InvalidArgumentException('Bncc with stage EF must have a knowledge_id.');
-                }
+                // EF stage must not have competence_id
                 if ($bncc->competence_id !== null) {
                     throw new InvalidArgumentException('Bncc with stage EF must not have a competence_id.');
                 }
             } elseif ($stage === Stage::EM) {
-                // EM stage requires competence_id and must not have knowledge_id
+                // EM stage requires competence_id
                 if ($bncc->competence_id === null) {
                     throw new InvalidArgumentException('Bncc with stage EM must have a competence_id.');
-                }
-                if ($bncc->knowledge_id !== null) {
-                    throw new InvalidArgumentException('Bncc with stage EM must not have a knowledge_id.');
                 }
             }
         });
@@ -55,9 +49,7 @@ class Bncc extends Model
         'stage',
         'code',
         'description',
-        'serie_id',
         'discipline_id',
-        'knowledge_id',
         'competence_id',
     ];
 
@@ -74,11 +66,11 @@ class Bncc extends Model
     }
 
     /**
-     * Get the serie that owns the bncc.
+     * Get the series associated with the bncc.
      */
-    public function serie(): BelongsTo
+    public function series(): BelongsToMany
     {
-        return $this->belongsTo(Serie::class);
+        return $this->belongsToMany(Serie::class);
     }
 
     /**
@@ -90,11 +82,11 @@ class Bncc extends Model
     }
 
     /**
-     * Get the knowledge that owns the bncc.
+     * Get the knowledges associated with the bncc.
      */
-    public function knowledge(): BelongsTo
+    public function knowledges(): BelongsToMany
     {
-        return $this->belongsTo(Knowledge::class);
+        return $this->belongsToMany(Knowledge::class);
     }
 
     /**
@@ -114,11 +106,17 @@ class Bncc extends Model
     }
 
     /**
-     * Get the unit through knowledge (for EF stage).
+     * Get all units from all associated knowledges (for EF stage).
      */
-    public function unit()
+    public function units()
     {
-        return $this->belongsToThrough(Unit::class, Knowledge::class);
+        return $this->knowledges()
+            ->with('unit')
+            ->get()
+            ->pluck('unit')
+            ->filter()
+            ->unique('id')
+            ->values();
     }
 
     /**

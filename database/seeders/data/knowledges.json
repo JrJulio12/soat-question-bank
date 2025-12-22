@@ -1,0 +1,3546 @@
+[
+	{
+		"name" : "Arte e tecnologia",
+		"unit" : "Artes integradas"
+	},
+	{
+		"name" : "Contextos e práticas",
+		"unit" : "Artes integradas"
+	},
+	{
+		"name" : "Matrizes estéticas e culturais",
+		"unit" : "Artes integradas"
+	},
+	{
+		"name" : "Patrimônio cultural",
+		"unit" : "Artes integradas"
+	},
+	{
+		"name" : "Processos de criação",
+		"unit" : "Artes integradas"
+	},
+	{
+		"name" : "Sistemas da linguagem",
+		"unit" : "Artes visuais"
+	},
+	{
+		"name" : "Materialidades",
+		"unit" : "Música"
+	},
+	{
+		"name" : "Notação e registro musical",
+		"unit" : "Música"
+	},
+	{
+		"name" : "Elementos da linguagem",
+		"unit" : "Teatro"
+	},
+	{
+		"name" : "Aspectos quantitativos das transformações químicas Estrutura da matéria Radiações e suas aplicações na saúde",
+		"unit" : "Matéria e energia"
+	},
+	{
+		"name" : "Características dos materiais",
+		"unit" : "Matéria e energia"
+	},
+	{
+		"name" : "Fontes e tipos de energia Transformação de energia Cálculo de consumo de energia elétrica Circuitos elétricos Uso consciente de energia elétrica",
+		"unit" : "Matéria e energia"
+	},
+	{
+		"name" : "Misturas Transformações reversíveis e não reversíveis",
+		"unit" : "Matéria e energia"
+	},
+	{
+		"name" : "Misturas homogêneas e heterogêneas Separação de materiais Materiais sintéticos Transformações químicas",
+		"unit" : "Matéria e energia"
+	},
+	{
+		"name" : "Máquinas simples Formas de propagação do calor Equilíbrio termodinâmico e vida na Terra História dos combustíveis e das máquinas térmicas",
+		"unit" : "Matéria e energia"
+	},
+	{
+		"name" : "Produção de som Efeitos da luz nos materiais Saúde auditiva e visual",
+		"unit" : "Matéria e energia"
+	},
+	{
+		"name" : "Propriedades e usos dos materiais Prevenção de acidentes domésticos",
+		"unit" : "Matéria e energia"
+	},
+	{
+		"name" : "Propriedades físicas dos materiais Ciclo hidrológico Consumo consciente Reciclagem",
+		"unit" : "Matéria e energia"
+	},
+	{
+		"name" : "Características da Terra Observação do céu Usos do solo",
+		"unit" : "Terra e Universo"
+	},
+	{
+		"name" : "Composição do ar Efeito estufa Camada de ozônio Fenômenos naturais (vulcões, terremotos e tsunamis) Placas tectônicas e deriva continental",
+		"unit" : "Terra e Universo"
+	},
+	{
+		"name" : "Composição, estrutura e localização do Sistema Solar no Universo Astronomia e cultura Vida humana fora da Terra Ordem de grandeza astronômica Evolução estelar",
+		"unit" : "Terra e Universo"
+	},
+	{
+		"name" : "Constelações e mapas celestes Movimento de rotação da Terra Periodicidade das fases da Lua Instrumentos óticos",
+		"unit" : "Terra e Universo"
+	},
+	{
+		"name" : "Escalas de tempo",
+		"unit" : "Terra e Universo"
+	},
+	{
+		"name" : "Forma, estrutura e movimentos da Terra",
+		"unit" : "Terra e Universo"
+	},
+	{
+		"name" : "Movimento aparente do Sol no céu O Sol como fonte de luz e calor",
+		"unit" : "Terra e Universo"
+	},
+	{
+		"name" : "Pontos cardeais Calendários, fenômenos cíclicos e cultura",
+		"unit" : "Terra e Universo"
+	},
+	{
+		"name" : "Sistema Sol, Terra e Lua Clima",
+		"unit" : "Terra e Universo"
+	},
+	{
+		"name" : "Cadeias alimentares simples Microrganismos",
+		"unit" : "Vida e evolução"
+	},
+	{
+		"name" : "Características e desenvolvimento dos animais",
+		"unit" : "Vida e evolução"
+	},
+	{
+		"name" : "Corpo humano Respeito à diversidade",
+		"unit" : "Vida e evolução"
+	},
+	{
+		"name" : "Célula como unidade da vida Interação entre os sistemas locomotor e nervoso Lentes corretivas",
+		"unit" : "Vida e evolução"
+	},
+	{
+		"name" : "Diversidade de ecossistemas Fenômenos naturais e impactos ambientais Programas e indicadores de saúde pública",
+		"unit" : "Vida e evolução"
+	},
+	{
+		"name" : "Hereditariedade Ideias evolucionistas Preservação da biodiversidade",
+		"unit" : "Vida e evolução"
+	},
+	{
+		"name" : "Mecanismos reprodutivos Sexualidade",
+		"unit" : "Vida e evolução"
+	},
+	{
+		"name" : "Nutrição do organismo Hábitos alimentares Integração entre os sistemas digestório, respiratório e circulatório",
+		"unit" : "Vida e evolução"
+	},
+	{
+		"name" : "Seres vivos no ambiente Plantas",
+		"unit" : "Vida e evolução"
+	},
+	{
+		"name" : "Brincadeiras e jogos da cultura popular presentes no contexto comunitário e regional",
+		"unit" : "Brincadeiras e jogos"
+	},
+	{
+		"name" : "Brincadeiras e jogos populares do Brasil e do mundo Brincadeiras e jogos de matriz indígena e africana",
+		"unit" : "Brincadeiras e jogos"
+	},
+	{
+		"name" : "Jogos eletrônicos",
+		"unit" : "Brincadeiras e jogos"
+	},
+	{
+		"name" : "Danças de salão",
+		"unit" : "Danças"
+	},
+	{
+		"name" : "Danças do Brasil e do mundo Danças de matriz indígena e africana",
+		"unit" : "Danças"
+	},
+	{
+		"name" : "Danças do contexto comunitário e regional",
+		"unit" : "Danças"
+	},
+	{
+		"name" : "Danças urbanas",
+		"unit" : "Danças"
+	},
+	{
+		"name" : "Esportes de campo e taco Esportes de rede/parede Esportes de invasão",
+		"unit" : "Esportes"
+	},
+	{
+		"name" : "Esportes de marca Esportes de precisão",
+		"unit" : "Esportes"
+	},
+	{
+		"name" : "Esportes de marca Esportes de precisão Esportes de invasão Esportes técnico-combinatórios",
+		"unit" : "Esportes"
+	},
+	{
+		"name" : "Esportes de rede/parede Esportes de campo e taco Esportes de invasão Esportes de combate",
+		"unit" : "Esportes"
+	},
+	{
+		"name" : "Ginástica de condicionamento físico",
+		"unit" : "Ginásticas"
+	},
+	{
+		"name" : "Ginástica de condicionamento físico Ginástica de conscientização corporal",
+		"unit" : "Ginásticas"
+	},
+	{
+		"name" : "Ginástica geral",
+		"unit" : "Ginásticas"
+	},
+	{
+		"name" : "Lutas do Brasil",
+		"unit" : "Lutas"
+	},
+	{
+		"name" : "Lutas do contexto comunitário e regional Lutas de matriz indígena e africana",
+		"unit" : "Lutas"
+	},
+	{
+		"name" : "Lutas do mundo",
+		"unit" : "Lutas"
+	},
+	{
+		"name" : "Práticas corporais de aventura na natureza",
+		"unit" : "Práticas corporais de aventura"
+	},
+	{
+		"name" : "Práticas corporais de aventura urbanas",
+		"unit" : "Práticas corporais de aventura"
+	},
+	{
+		"name" : "A divisão do mundo em Ocidente e Oriente",
+		"unit" : "Conexões e escalas"
+	},
+	{
+		"name" : "Características da população brasileira",
+		"unit" : "Conexões e escalas"
+	},
+	{
+		"name" : "Ciclos naturais e a vida cotidiana",
+		"unit" : "Conexões e escalas"
+	},
+	{
+		"name" : "Corporações e organismos internacionais e do Brasil na ordem econômica mundial",
+		"unit" : "Conexões e escalas"
+	},
+	{
+		"name" : "Experiências da comunidade no tempo e no espaço",
+		"unit" : "Conexões e escalas"
+	},
+	{
+		"name" : "Formação territorial do Brasil",
+		"unit" : "Conexões e escalas"
+	},
+	{
+		"name" : "Integração mundial e suas interpretações: globalização e mundialização",
+		"unit" : "Conexões e escalas"
+	},
+	{
+		"name" : "Intercâmbios históricos e culturais entre Europa, Ásia e Oceania",
+		"unit" : "Conexões e escalas"
+	},
+	{
+		"name" : "Mudanças e permanências",
+		"unit" : "Conexões e escalas"
+	},
+	{
+		"name" : "Paisagens naturais e antrópicas em transformação",
+		"unit" : "Conexões e escalas"
+	},
+	{
+		"name" : "Relação campo e cidade",
+		"unit" : "Conexões e escalas"
+	},
+	{
+		"name" : "Relações entre os componentes físico-naturais",
+		"unit" : "Conexões e escalas"
+	},
+	{
+		"name" : "Território, redes e urbanização",
+		"unit" : "Conexões e escalas"
+	},
+	{
+		"name" : "Territórios étnico-culturais",
+		"unit" : "Conexões e escalas"
+	},
+	{
+		"name" : "Unidades político-administrativas do Brasil",
+		"unit" : "Conexões e escalas"
+	},
+	{
+		"name" : "Cartografia: anamorfose, croquis e mapas temáticos da América e África",
+		"unit" : "Formas de representação e pensamento espacial"
+	},
+	{
+		"name" : "Elementos constitutivos dos mapas",
+		"unit" : "Formas de representação e pensamento espacial"
+	},
+	{
+		"name" : "Fenômenos naturais e sociais representados de diferentes maneiras",
+		"unit" : "Formas de representação e pensamento espacial"
+	},
+	{
+		"name" : "Leitura e elaboração de mapas temáticos, croquis e outras formas de representação para analisar informações geográficas",
+		"unit" : "Formas de representação e pensamento espacial"
+	},
+	{
+		"name" : "Localização, orientação e representação espacial",
+		"unit" : "Formas de representação e pensamento espacial"
+	},
+	{
+		"name" : "Mapas e imagens de satélite",
+		"unit" : "Formas de representação e pensamento espacial"
+	},
+	{
+		"name" : "Mapas temáticos do Brasil",
+		"unit" : "Formas de representação e pensamento espacial"
+	},
+	{
+		"name" : "Pontos de referência",
+		"unit" : "Formas de representação e pensamento espacial"
+	},
+	{
+		"name" : "Representação das cidades e do espaço urbano",
+		"unit" : "Formas de representação e pensamento espacial"
+	},
+	{
+		"name" : "Representações cartográficas",
+		"unit" : "Formas de representação e pensamento espacial"
+	},
+	{
+		"name" : "Sistema de orientação",
+		"unit" : "Formas de representação e pensamento espacial"
+	},
+	{
+		"name" : "Cadeias industriais e inovação no uso dos recursos naturais e matérias-primas",
+		"unit" : "Mundo do trabalho"
+	},
+	{
+		"name" : "Desigualdade social e o trabalho",
+		"unit" : "Mundo do trabalho"
+	},
+	{
+		"name" : "Diferentes tipos de trabalho existentes no seu dia a dia",
+		"unit" : "Mundo do trabalho"
+	},
+	{
+		"name" : "Matéria-prima e indústria",
+		"unit" : "Mundo do trabalho"
+	},
+	{
+		"name" : "Os diferentes contextos e os meios técnico e tecnológico na produção",
+		"unit" : "Mundo do trabalho"
+	},
+	{
+		"name" : "Produção, circulação e consumo",
+		"unit" : "Mundo do trabalho"
+	},
+	{
+		"name" : "Produção, circulação e consumo de mercadorias",
+		"unit" : "Mundo do trabalho"
+	},
+	{
+		"name" : "Tipos de trabalho em lugares e tempos diferentes",
+		"unit" : "Mundo do trabalho"
+	},
+	{
+		"name" : "Trabalho e inovação tecnológica",
+		"unit" : "Mundo do trabalho"
+	},
+	{
+		"name" : "Trabalho no campo e na cidade",
+		"unit" : "Mundo do trabalho"
+	},
+	{
+		"name" : "Transformação das paisagens naturais e antrópicas",
+		"unit" : "Mundo do trabalho"
+	},
+	{
+		"name" : "Transformações do espaço na sociedade urbano-industrial",
+		"unit" : "Mundo do trabalho"
+	},
+	{
+		"name" : "Transformações do espaço na sociedade urbano-industrial na América Latina",
+		"unit" : "Mundo do trabalho"
+	},
+	{
+		"name" : "Atividades humanas e dinâmica climática",
+		"unit" : "Natureza, ambientes e qualidade de vida"
+	},
+	{
+		"name" : "Biodiversidade brasileira",
+		"unit" : "Natureza, ambientes e qualidade de vida"
+	},
+	{
+		"name" : "Biodiversidade e ciclo hidrológico",
+		"unit" : "Natureza, ambientes e qualidade de vida"
+	},
+	{
+		"name" : "Condições de vida nos lugares de vivência",
+		"unit" : "Natureza, ambientes e qualidade de vida"
+	},
+	{
+		"name" : "Conservação e degradação da natureza",
+		"unit" : "Natureza, ambientes e qualidade de vida"
+	},
+	{
+		"name" : "Diferentes tipos de poluição",
+		"unit" : "Natureza, ambientes e qualidade de vida"
+	},
+	{
+		"name" : "Diversidade ambiental e as transformações nas paisagens na América Latina",
+		"unit" : "Natureza, ambientes e qualidade de vida"
+	},
+	{
+		"name" : "Diversidade ambiental e as transformações nas paisagens na Europa, na Ásia e na Oceania",
+		"unit" : "Natureza, ambientes e qualidade de vida"
+	},
+	{
+		"name" : "Gestão pública da qualidade de vida",
+		"unit" : "Natureza, ambientes e qualidade de vida"
+	},
+	{
+		"name" : "Identidades e interculturalidades regionais: Estados Unidos da América, América espanhola e portuguesa e África",
+		"unit" : "Natureza, ambientes e qualidade de vida"
+	},
+	{
+		"name" : "Impactos das atividades humanas",
+		"unit" : "Natureza, ambientes e qualidade de vida"
+	},
+	{
+		"name" : "Os usos dos recursos naturais: solo e água no campo e na cidade",
+		"unit" : "Natureza, ambientes e qualidade de vida"
+	},
+	{
+		"name" : "Qualidade ambiental",
+		"unit" : "Natureza, ambientes e qualidade de vida"
+	},
+	{
+		"name" : "A cidade e o campo: aproximações e diferenças",
+		"unit" : "O sujeito e seu lugar no mundo"
+	},
+	{
+		"name" : "A hegemonia europeia na economia, na política e na cultura",
+		"unit" : "O sujeito e seu lugar no mundo"
+	},
+	{
+		"name" : "As manifestações culturais na formação populacional",
+		"unit" : "O sujeito e seu lugar no mundo"
+	},
+	{
+		"name" : "Convivência e interações entre pessoas na comunidade",
+		"unit" : "O sujeito e seu lugar no mundo"
+	},
+	{
+		"name" : "Corporações e organismos internacionais",
+		"unit" : "O sujeito e seu lugar no mundo"
+	},
+	{
+		"name" : "Diferenças étnico-raciais e étnico-culturais e desigualdades sociais",
+		"unit" : "O sujeito e seu lugar no mundo"
+	},
+	{
+		"name" : "Dinâmica populacional",
+		"unit" : "O sujeito e seu lugar no mundo"
+	},
+	{
+		"name" : "Distribuição da população mundial e deslocamentos populacionais",
+		"unit" : "O sujeito e seu lugar no mundo"
+	},
+	{
+		"name" : "Diversidade e dinâmica da população mundial e local",
+		"unit" : "O sujeito e seu lugar no mundo"
+	},
+	{
+		"name" : "Ideias e concepções sobre a formação territorial do Brasil",
+		"unit" : "O sujeito e seu lugar no mundo"
+	},
+	{
+		"name" : "Identidade sociocultural",
+		"unit" : "O sujeito e seu lugar no mundo"
+	},
+	{
+		"name" : "Instâncias do poder público e canais de participação social",
+		"unit" : "O sujeito e seu lugar no mundo"
+	},
+	{
+		"name" : "O modo de vida das crianças em diferentes lugares",
+		"unit" : "O sujeito e seu lugar no mundo"
+	},
+	{
+		"name" : "Processos migratórios no Brasil",
+		"unit" : "O sujeito e seu lugar no mundo"
+	},
+	{
+		"name" : "Riscos e cuidados nos meios de transporte e de comunicação",
+		"unit" : "O sujeito e seu lugar no mundo"
+	},
+	{
+		"name" : "Situações de convívio em diferentes lugares",
+		"unit" : "O sujeito e seu lugar no mundo"
+	},
+	{
+		"name" : "Território e diversidade cultural",
+		"unit" : "O sujeito e seu lugar no mundo"
+	},
+	{
+		"name" : "A noção do “Eu” e do “Outro”: comunidade, convivências e interações entre pessoas",
+		"unit" : "A comunidade e seus registros"
+	},
+	{
+		"name" : "A noção do “Eu” e do “Outro”: registros de experiências pessoais e da comunidade no tempo e no espaço",
+		"unit" : "A comunidade e seus registros"
+	},
+	{
+		"name" : "Formas de registrar e narrar histórias (marcos de memória materiais e imateriais)",
+		"unit" : "A comunidade e seus registros"
+	},
+	{
+		"name" : "O tempo como medida",
+		"unit" : "A comunidade e seus registros"
+	},
+	{
+		"name" : "A Guerra Fria: confrontos de dois modelos políticos A Revolução Chinesa e as tensões entre China e Rússia A Revolução Cubana e as tensões entre Estados Unidos da América e Cuba",
+		"unit" : "A história recente"
+	},
+	{
+		"name" : "As experiências ditatoriais na América Latina",
+		"unit" : "A história recente"
+	},
+	{
+		"name" : "O fim da Guerra Fria e o processo de globalização Políticas econômicas na América Latina",
+		"unit" : "A história recente"
+	},
+	{
+		"name" : "Os conflitos do século XXI e a questão do terrorismo Pluralidades e diversidades identitárias na atualidade As pautas dos povos indígenas no século XXI e suas formas de inserção no debate local, regional, nacional e internacional",
+		"unit" : "A história recente"
+	},
+	{
+		"name" : "Os processos de descolonização na África e na Ásia",
+		"unit" : "A história recente"
+	},
+	{
+		"name" : "O Ocidente Clássico: aspectos da cultura na Grécia e em Roma",
+		"unit" : "A invenção do mundo clássico e o contraponto com outras sociedades"
+	},
+	{
+		"name" : "Povos da Antiguidade na África (egípcios), no Oriente Médio (mesopotâmicos) e nas Américas (pré-colombianos) Os povos indígenas originários do atual território brasileiro e seus hábitos culturais e sociais",
+		"unit" : "A invenção do mundo clássico e o contraponto com outras sociedades"
+	},
+	{
+		"name" : "A cidade e suas atividades: trabalho, cultura e lazer",
+		"unit" : "A noção de espaço público e privado"
+	},
+	{
+		"name" : "A cidade, seus espaços públicos e privados e suas áreas de conservação ambiental",
+		"unit" : "A noção de espaço público e privado"
+	},
+	{
+		"name" : "A conquista da América e as formas de organização política dos indígenas e europeus: conflitos, dominação e conciliação",
+		"unit" : "A organização do poder e as dinâmicas do mundo colonial americano"
+	},
+	{
+		"name" : "A estruturação dos vice-reinos nas Américas Resistências indígenas, invasões e expansão na América portuguesa",
+		"unit" : "A organização do poder e as dinâmicas do mundo colonial americano"
+	},
+	{
+		"name" : "A formação e o funcionamento das monarquias europeias: a lógica da centralização política e os conflitos na Europa",
+		"unit" : "A organização do poder e as dinâmicas do mundo colonial americano"
+	},
+	{
+		"name" : "As fontes: relatos orais, objetos, imagens (pinturas, fotografias, vídeos), músicas, escrita, tecnologias digitais de informação e comunicação e inscrições nas paredes, ruas e espaços sociais",
+		"unit" : "As formas de registrar as experiências da comunidade"
+	},
+	{
+		"name" : "O “Eu”, o “Outro” e os diferentes grupos sociais e étnicos que compõem a cidade e os municípios: os desafios sociais, culturais e ambientais do lugar onde vive",
+		"unit" : "As pessoas e os grupos que compõem a cidade e o município"
+	},
+	{
+		"name" : "Os patrimônios históricos e culturais da cidade e/ou do município em que vive",
+		"unit" : "As pessoas e os grupos que compõem a cidade e o município"
+	},
+	{
+		"name" : "O surgimento da espécie humana no continente africano e sua expansão pelo mundo",
+		"unit" : "As questões históricas relativas às migrações"
+	},
+	{
+		"name" : "Os processos migratórios para a formação do Brasil: os grupos indígenas, a presença portuguesa e a diáspora forçada dos africanos Os processos migratórios do final do século XIX e início do século XX no Brasil As dinâmicas internas de migração no Brasil a partir dos anos 1960",
+		"unit" : "As questões históricas relativas às migrações"
+	},
+	{
+		"name" : "A circulação de pessoas e as transformações no meio natural",
+		"unit" : "Circulação de pessoas, produtos e culturas"
+	},
+	{
+		"name" : "A invenção do comércio e a circulação de produtos",
+		"unit" : "Circulação de pessoas, produtos e culturas"
+	},
+	{
+		"name" : "As rotas terrestres, fluviais e marítimas e seus impactos para a formação de cidades e as transformações do meio natural",
+		"unit" : "Circulação de pessoas, produtos e culturas"
+	},
+	{
+		"name" : "O mundo da tecnologia: a integração de pessoas e as exclusões sociais e culturais",
+		"unit" : "Circulação de pessoas, produtos e culturas"
+	},
+	{
+		"name" : "Nacionalismo, revoluções e as novas nações europeias",
+		"unit" : "Configurações do mundo no século XIX"
+	},
+	{
+		"name" : "O imperialismo europeu e a partilha da África e da Ásia",
+		"unit" : "Configurações do mundo no século XIX"
+	},
+	{
+		"name" : "Os Estados Unidos da América e a América Latina no século XIX",
+		"unit" : "Configurações do mundo no século XIX"
+	},
+	{
+		"name" : "Pensamento e cultura no século XIX: darwinismo e racismo O discurso civilizatório nas Américas, o silenciamento dos saberes indígenas e as formas de integração e destruição de comunidades e povos indígenas A resistência dos povos e comunidades indígenas diante da ofensiva civilizatória",
+		"unit" : "Configurações do mundo no século XIX"
+	},
+	{
+		"name" : "Uma nova ordem econômica: as demandas do capitalismo industrial e o lugar das economias africanas e asiáticas nas dinâmicas globais",
+		"unit" : "Configurações do mundo no século XIX"
+	},
+	{
+		"name" : "A questão do tempo, sincronias e diacronias: reflexões sobre o sentido das cronologias",
+		"unit" : "História: tempo, espaço e formas de registros"
+	},
+	{
+		"name" : "As origens da humanidade, seus deslocamentos e os processos de sedentarização",
+		"unit" : "História: tempo, espaço e formas de registros"
+	},
+	{
+		"name" : "Formas de registro da história e da produção do conhecimento histórico",
+		"unit" : "História: tempo, espaço e formas de registros"
+	},
+	{
+		"name" : "As descobertas científicas e a expansão marítima",
+		"unit" : "Humanismos, Renascimentos e o Novo Mundo"
+	},
+	{
+		"name" : "Humanismos: uma nova visão de ser humano e de mundo Renascimentos artísticos e culturais",
+		"unit" : "Humanismos, Renascimentos e o Novo Mundo"
+	},
+	{
+		"name" : "Reformas religiosas: a cristandade fragmentada",
+		"unit" : "Humanismos, Renascimentos e o Novo Mundo"
+	},
+	{
+		"name" : "A emergência do capitalismo",
+		"unit" : "Lógicas comerciais e mercantis da modernidade"
+	},
+	{
+		"name" : "As lógicas internas das sociedades africanas As formas de organização das sociedades ameríndias A escravidão moderna e o tráfico de escravizados",
+		"unit" : "Lógicas comerciais e mercantis da modernidade"
+	},
+	{
+		"name" : "As lógicas mercantis e o domínio europeu sobre os mares e o contraponto Oriental",
+		"unit" : "Lógicas comerciais e mercantis da modernidade"
+	},
+	{
+		"name" : "A passagem do mundo antigo para o mundo medieval A fragmentação do poder político na Idade Média",
+		"unit" : "Lógicas de organização política"
+	},
+	{
+		"name" : "As noções de cidadania e política na Grécia e em Roma • Domínios e expansão das culturas grega e romana • Significados do conceito de “império” e as lógicas de conquista, conflito e negociação dessa forma de organização política As diferentes formas de organização política na África: reinos, impérios, cidades-estados e sociedades linhageiras ou aldeias",
+		"unit" : "Lógicas de organização política"
+	},
+	{
+		"name" : "O Mediterrâneo como espaço de interação entre as sociedades da Europa, da África e do Oriente Médio",
+		"unit" : "Lógicas de organização política"
+	},
+	{
+		"name" : "O Brasil da era JK e o ideal de uma nação moderna: a urbanização e seus desdobramentos em um país em transformação",
+		"unit" : "Modernização, ditadura civil-militar e redemocratização: o Brasil após 1946"
+	},
+	{
+		"name" : "O processo de redemocratização A Constituição de 1988 e a emancipação das cidadanias (analfabetos, indígenas, negros, jovens etc.) A história recente do Brasil: transformações políticas, econômicas, sociais e culturais de 1989 aos dias atuais Os protagonismos da sociedade civil e as alterações da sociedade brasileira A questão da violência contra populações marginalizadas O Brasil e suas relações internacionais na era da globalização",
+		"unit" : "Modernização, ditadura civil-militar e redemocratização: o Brasil após 1946"
+	},
+	{
+		"name" : "Os anos 1960: revolução cultural? A ditadura civil-militar e os processos de resistência As questões indígena e negra e a ditadura",
+		"unit" : "Modernização, ditadura civil-militar e redemocratização: o Brasil após 1946"
+	},
+	{
+		"name" : "A escola, sua representação espacial, sua história e seu papel na comunidade",
+		"unit" : "Mundo pessoal: eu, meu grupo social e meu tempo"
+	},
+	{
+		"name" : "A vida em casa, a vida na escola e formas de representação social e espacial: os jogos e brincadeiras como forma de interação social e espacial",
+		"unit" : "Mundo pessoal: eu, meu grupo social e meu tempo"
+	},
+	{
+		"name" : "A vida em família: diferentes configurações e vínculos",
+		"unit" : "Mundo pessoal: eu, meu grupo social e meu tempo"
+	},
+	{
+		"name" : "A escola e a diversidade do grupo social envolvido",
+		"unit" : "Mundo pessoal: meu lugar no mundo"
+	},
+	{
+		"name" : "As diferentes formas de organização da família e da comunidade: os vínculos pessoais e as relações de amizade",
+		"unit" : "Mundo pessoal: meu lugar no mundo"
+	},
+	{
+		"name" : "As fases da vida e a ideia de temporalidade (passado, presente, futuro)",
+		"unit" : "Mundo pessoal: meu lugar no mundo"
+	},
+	{
+		"name" : "A produção do imaginário nacional brasileiro: cultura popular, representações visuais, letras e o Romantismo no Brasil",
+		"unit" : "O Brasil no século XIX"
+	},
+	{
+		"name" : "Brasil: Primeiro Reinado O Período Regencial e as contestações ao poder central O Brasil do Segundo Reinado: política e economia • A Lei de Terras e seus desdobramentos na política do Segundo Reinado • Territórios e fronteiras: a Guerra do Paraguai",
+		"unit" : "O Brasil no século XIX"
+	},
+	{
+		"name" : "O escravismo no Brasil do século XIX: plantations e revoltas de escravizados, abolicionismo e políticas migratórias no Brasil Imperial",
+		"unit" : "O Brasil no século XIX"
+	},
+	{
+		"name" : "Políticas de extermínio do indígena durante o Império",
+		"unit" : "O Brasil no século XIX"
+	},
+	{
+		"name" : "A produção dos marcos da memória: a cidade e o campo, aproximações e diferenças",
+		"unit" : "O lugar em que vive"
+	},
+	{
+		"name" : "A produção dos marcos da memória: formação cultural da população",
+		"unit" : "O lugar em que vive"
+	},
+	{
+		"name" : "A produção dos marcos da memória: os lugares de memória (ruas, praças, escolas, monumentos, museus etc.)",
+		"unit" : "O lugar em que vive"
+	},
+	{
+		"name" : "A questão do iluminismo e da ilustração",
+		"unit" : "O mundo contemporâneo: o Antigo Regime em crise"
+	},
+	{
+		"name" : "As revoluções inglesas e os princípios do liberalismo",
+		"unit" : "O mundo contemporâneo: o Antigo Regime em crise"
+	},
+	{
+		"name" : "Rebeliões na América portuguesa: as conjurações mineira e baiana",
+		"unit" : "O mundo contemporâneo: o Antigo Regime em crise"
+	},
+	{
+		"name" : "Revolução Francesa e seus desdobramentos",
+		"unit" : "O mundo contemporâneo: o Antigo Regime em crise"
+	},
+	{
+		"name" : "Revolução Industrial e seus impactos na produção e circulação de povos, produtos e culturas",
+		"unit" : "O mundo contemporâneo: o Antigo Regime em crise"
+	},
+	{
+		"name" : "A construção da ideia de modernidade e seus impactos na concepção de História A ideia de “Novo Mundo” ante o Mundo Antigo: permanências e rupturas de saberes e práticas na emergência do mundo moderno",
+		"unit" : "O mundo moderno e a conexão entre sociedades africanas, americanas e europeias"
+	},
+	{
+		"name" : "Saberes dos povos africanos e pré-colombianos expressos na cultura material e imaterial",
+		"unit" : "O mundo moderno e a conexão entre sociedades africanas, americanas e europeias"
+	},
+	{
+		"name" : "A questão da inserção dos negros no período republicano do pós-abolição Os movimentos sociais e a imprensa negra; a cultura afro-brasileira como elemento de resistência e superação das discriminações",
+		"unit" : "O nascimento da República no Brasil e os processos históricos até a metade do século XX"
+	},
+	{
+		"name" : "A questão indígena durante a República (até 1964)",
+		"unit" : "O nascimento da República no Brasil e os processos históricos até a metade do século XX"
+	},
+	{
+		"name" : "Anarquismo e protagonismo feminino",
+		"unit" : "O nascimento da República no Brasil e os processos históricos até a metade do século XX"
+	},
+	{
+		"name" : "Experiências republicanas e práticas autoritárias: as tensões e disputas do mundo contemporâneo A proclamação da República e seus primeiros desdobramentos",
+		"unit" : "O nascimento da República no Brasil e os processos históricos até a metade do século XX"
+	},
+	{
+		"name" : "O período varguista e suas contradições A emergência da vida urbana e a segregação espacial O trabalhismo e seu protagonismo político",
+		"unit" : "O nascimento da República no Brasil e os processos históricos até a metade do século XX"
+	},
+	{
+		"name" : "Primeira República e suas características Contestações e dinâmicas da vida cultural no Brasil entre 1900 e 1930",
+		"unit" : "O nascimento da República no Brasil e os processos históricos até a metade do século XX"
+	},
+	{
+		"name" : "A sobrevivência e a relação com a natureza",
+		"unit" : "O trabalho e a sustentabilidade na comunidade"
+	},
+	{
+		"name" : "A tutela da população indígena, a escravidão dos negros e a tutela dos egressos da escravidão",
+		"unit" : "Os processos de independência nas Américas"
+	},
+	{
+		"name" : "Independência dos Estados Unidos da América Independências na América espanhola • A revolução dos escravizados em São Domingo e seus múltiplos significados e desdobramentos: o caso do Haiti Os caminhos até a independência do Brasil",
+		"unit" : "Os processos de independência nas Américas"
+	},
+	{
+		"name" : "As formas de organização social e política: a noção de Estado",
+		"unit" : "Povos e culturas: meu lugar no mundo e meu grupo social"
+	},
+	{
+		"name" : "Cidadania, diversidade cultural e respeito às diferenças sociais, culturais e históricas",
+		"unit" : "Povos e culturas: meu lugar no mundo e meu grupo social"
+	},
+	{
+		"name" : "O papel das religiões e da cultura para a formação dos povos antigos",
+		"unit" : "Povos e culturas: meu lugar no mundo e meu grupo social"
+	},
+	{
+		"name" : "O que forma um povo: do nomadismo aos primeiros povos sedentarizados",
+		"unit" : "Povos e culturas: meu lugar no mundo e meu grupo social"
+	},
+	{
+		"name" : "As tradições orais e a valorização da memória O surgimento da escrita e a noção de fonte para a transmissão de saberes, culturas e histórias",
+		"unit" : "Registros da história: linguagens e culturas"
+	},
+	{
+		"name" : "Os patrimônios materiais e imateriais da humanidade",
+		"unit" : "Registros da história: linguagens e culturas"
+	},
+	{
+		"name" : "A Organização das Nações Unidas (ONU) e a questão dos Direitos Humanos",
+		"unit" : "Totalitarismos e conflitos mundiais"
+	},
+	{
+		"name" : "A emergência do fascismo e do nazismo A Segunda Guerra Mundial Judeus e outras vítimas do holocausto",
+		"unit" : "Totalitarismos e conflitos mundiais"
+	},
+	{
+		"name" : "O colonialismo na África As guerras mundiais, a crise do colonialismo e o advento dos nacionalismos africanos e asiáticos",
+		"unit" : "Totalitarismos e conflitos mundiais"
+	},
+	{
+		"name" : "O mundo em conflito: a Primeira Guerra Mundial A questão da Palestina A Revolução Russa A crise capitalista de 1929",
+		"unit" : "Totalitarismos e conflitos mundiais"
+	},
+	{
+		"name" : "O papel da mulher na Grécia e em Roma, e no período medieval",
+		"unit" : "Trabalho e formas de organização social e cultural"
+	},
+	{
+		"name" : "O papel da religião cristã, dos mosteiros e da cultura na Idade Média",
+		"unit" : "Trabalho e formas de organização social e cultural"
+	},
+	{
+		"name" : "Senhores e servos no mundo antigo e no medieval Escravidão e trabalho livre em diferentes temporalidades e espaços (Roma Antiga, Europa medieval e África) Lógicas comerciais na Antiguidade romana e no mundo medieval",
+		"unit" : "Trabalho e formas de organização social e cultural"
+	},
+	{
+		"name" : "A ação das pessoas, grupos sociais e comunidades no tempo e no espaço: nomadismo, agricultura, escrita, navegações, indústria, entre outras",
+		"unit" : "Transformações e permanências nas trajetórias dos grupos humanos"
+	},
+	{
+		"name" : "O passado e o presente: a noção de permanência e as lentas transformações sociais e culturais",
+		"unit" : "Transformações e permanências nas trajetórias dos grupos humanos"
+	},
+	{
+		"name" : "Espanhol",
+		"unit" : "Espanhol"
+	},
+	{
+		"name" : "Presença da língua inglesa no cotidiano",
+		"unit" : "A língua inglesa no cotidiano da sociedade brasileira/comunidade"
+	},
+	{
+		"name" : "A língua inglesa como língua global na sociedade contemporânea",
+		"unit" : "A língua inglesa no mundo"
+	},
+	{
+		"name" : "A língua inglesa e seu papel no intercâmbio científico, econômico e político",
+		"unit" : "A língua inglesa no mundo"
+	},
+	{
+		"name" : "Expansão da língua inglesa: contexto histórico",
+		"unit" : "A língua inglesa no mundo"
+	},
+	{
+		"name" : "Países que têm a língua inglesa como língua materna e/ou oficial",
+		"unit" : "A língua inglesa no mundo"
+	},
+	{
+		"name" : "Partilha de leitura",
+		"unit" : "Atitudes e disposições favoráveis do leitor"
+	},
+	{
+		"name" : "Partilha de leitura, com mediação do professor",
+		"unit" : "Atitudes e disposições favoráveis do leitor"
+	},
+	{
+		"name" : "Reflexão pós-leitura",
+		"unit" : "Avaliação dos textos lidos"
+	},
+	{
+		"name" : "Compreensão de textos orais de cunho descritivo ou narrativo",
+		"unit" : "Compreensão oral"
+	},
+	{
+		"name" : "Compreensão de textos orais, multimodais, de cunho argumentativo",
+		"unit" : "Compreensão oral"
+	},
+	{
+		"name" : "Compreensão de textos orais, multimodais, de cunho informativo/jornalístico",
+		"unit" : "Compreensão oral"
+	},
+	{
+		"name" : "Estratégias de compreensão de textos orais: conhecimentos prévios",
+		"unit" : "Compreensão oral"
+	},
+	{
+		"name" : "Estratégias de compreensão de textos orais: palavras cognatas e pistas do contexto discursivo",
+		"unit" : "Compreensão oral"
+	},
+	{
+		"name" : "Construção de identidades no mundo globalizado",
+		"unit" : "Comunicação intercultural"
+	},
+	{
+		"name" : "Impacto de aspectos culturais na comunicação",
+		"unit" : "Comunicação intercultural"
+	},
+	{
+		"name" : "Variação linguística",
+		"unit" : "Comunicação intercultural"
+	},
+	{
+		"name" : "Escrita: construção da argumentação",
+		"unit" : "Estratégias de escrita"
+	},
+	{
+		"name" : "Escrita: construção da persuasão",
+		"unit" : "Estratégias de escrita"
+	},
+	{
+		"name" : "Revisão de textos com a mediação do professor",
+		"unit" : "Estratégias de escrita: escrita e pós- escrita"
+	},
+	{
+		"name" : "Planejamento do texto: brainstorming",
+		"unit" : "Estratégias de escrita: pré-escrita"
+	},
+	{
+		"name" : "Planejamento do texto: organização de ideias",
+		"unit" : "Estratégias de escrita: pré-escrita"
+	},
+	{
+		"name" : "Escrita: organização em parágrafos ou tópicos, com mediação do professor",
+		"unit" : "Estratégias de escrita: pré-escrita e escrita"
+	},
+	{
+		"name" : "Pré-escrita: planejamento de produção escrita, com mediação do professor",
+		"unit" : "Estratégias de escrita: pré-escrita e escrita"
+	},
+	{
+		"name" : "Compreensão geral e específica: leitura rápida (skimming, scanning)",
+		"unit" : "Estratégias de leitura"
+	},
+	{
+		"name" : "Construção de sentidos por meio de inferências e reconhecimento de implícitos",
+		"unit" : "Estratégias de leitura"
+	},
+	{
+		"name" : "Construção do sentido global do texto",
+		"unit" : "Estratégias de leitura"
+	},
+	{
+		"name" : "Hipóteses sobre a finalidade de um texto",
+		"unit" : "Estratégias de leitura"
+	},
+	{
+		"name" : "Recursos de argumentação",
+		"unit" : "Estratégias de leitura"
+	},
+	{
+		"name" : "Recursos de persuasão",
+		"unit" : "Estratégias de leitura"
+	},
+	{
+		"name" : "Conectores (linking words)",
+		"unit" : "Estudo do léxico"
+	},
+	{
+		"name" : "Construção de repertório lexical",
+		"unit" : "Estudo do léxico"
+	},
+	{
+		"name" : "Formação de palavras: prefixos e sufixos",
+		"unit" : "Estudo do léxico"
+	},
+	{
+		"name" : "Polissemia",
+		"unit" : "Estudo do léxico"
+	},
+	{
+		"name" : "Pronúncia",
+		"unit" : "Estudo do léxico"
+	},
+	{
+		"name" : "Usos de linguagem em meio digital: “internetês”",
+		"unit" : "Estudo do léxico"
+	},
+	{
+		"name" : "Adjetivos possessivos",
+		"unit" : "Gramática"
+	},
+	{
+		"name" : "Caso genitivo (‘s)",
+		"unit" : "Gramática"
+	},
+	{
+		"name" : "Comparativos e superlativos",
+		"unit" : "Gramática"
+	},
+	{
+		"name" : "Imperativo",
+		"unit" : "Gramática"
+	},
+	{
+		"name" : "Orações condicionais (tipos 1 e 2)",
+		"unit" : "Gramática"
+	},
+	{
+		"name" : "Passado simples e contínuo (formas afirmativa, negativa e interrogativa)",
+		"unit" : "Gramática"
+	},
+	{
+		"name" : "Presente simples e contínuo (formas afirmativa, negativa e interrogativa)",
+		"unit" : "Gramática"
+	},
+	{
+		"name" : "Pronomes do caso reto e do caso oblíquo",
+		"unit" : "Gramática"
+	},
+	{
+		"name" : "Pronomes relativos",
+		"unit" : "Gramática"
+	},
+	{
+		"name" : "Quantificadores",
+		"unit" : "Gramática"
+	},
+	{
+		"name" : "Verbo modal can (presente e passado)",
+		"unit" : "Gramática"
+	},
+	{
+		"name" : "Verbos modais: should, must, have to, may e might",
+		"unit" : "Gramática"
+	},
+	{
+		"name" : "Verbos para indicar o futuro",
+		"unit" : "Gramática"
+	},
+	{
+		"name" : "Inglês EFAI",
+		"unit" : "Inglês EFAI"
+	},
+	{
+		"name" : "Construção de laços afetivos e convívio social",
+		"unit" : "Interação discursiva"
+	},
+	{
+		"name" : "Funções e usos da língua inglesa em sala de aula (Classroom language)",
+		"unit" : "Interação discursiva"
+	},
+	{
+		"name" : "Funções e usos da língua inglesa: convivência e colaboração em sala de aula",
+		"unit" : "Interação discursiva"
+	},
+	{
+		"name" : "Funções e usos da língua inglesa: persuasão",
+		"unit" : "Interação discursiva"
+	},
+	{
+		"name" : "Negociação de sentidos (mal-entendidos no uso da língua inglesa e conflito de opiniões)",
+		"unit" : "Interação discursiva"
+	},
+	{
+		"name" : "Práticas investigativas",
+		"unit" : "Interação discursiva"
+	},
+	{
+		"name" : "Usos de recursos linguísticos e paralinguísticos no intercâmbio oral",
+		"unit" : "Interação discursiva"
+	},
+	{
+		"name" : "Construção de repertório artístico-cultural",
+		"unit" : "Manifestações culturais"
+	},
+	{
+		"name" : "Produção de textos orais com autonomia",
+		"unit" : "Produção oral"
+	},
+	{
+		"name" : "Produção de textos orais, com a mediação do professor",
+		"unit" : "Produção oral"
+	},
+	{
+		"name" : "Produção de textos orais, com mediação do professor",
+		"unit" : "Produção oral"
+	},
+	{
+		"name" : "Produção de textos escritos com mediação do professor/colegas",
+		"unit" : "Práticas de escrita"
+	},
+	{
+		"name" : "Produção de textos escritos, com mediação do professor/colegas",
+		"unit" : "Práticas de escrita"
+	},
+	{
+		"name" : "Produção de textos escritos, em formatos diversos, com a mediação do professor",
+		"unit" : "Práticas de escrita"
+	},
+	{
+		"name" : "Produção de textos escritos, em formatos diversos, com mediação do professor",
+		"unit" : "Práticas de escrita"
+	},
+	{
+		"name" : "Construção de repertório lexical e autonomia leitora",
+		"unit" : "Práticas de leitura e construção de repertório lexical"
+	},
+	{
+		"name" : "Leitura de textos de cunho artístico/literário",
+		"unit" : "Práticas de leitura e fruição"
+	},
+	{
+		"name" : "Informações em ambientes virtuais",
+		"unit" : "Práticas de leitura e novas tecnologias"
+	},
+	{
+		"name" : "Leitura de textos digitais para estudo",
+		"unit" : "Práticas de leitura e pesquisa"
+	},
+	{
+		"name" : "Objetivos de leitura",
+		"unit" : "Práticas de leitura e pesquisa"
+	},
+	{
+		"name" : "Análise de textos legais/normativos, propositivos e reivindicatórios",
+		"unit" : "Análise linguística/semiótica"
+	},
+	{
+		"name" : "Argumentação: movimentos argumentativos, tipos de argumento e força argumentativa",
+		"unit" : "Análise linguística/semiótica"
+	},
+	{
+		"name" : "Coesão",
+		"unit" : "Análise linguística/semiótica"
+	},
+	{
+		"name" : "Construção composicional",
+		"unit" : "Análise linguística/semiótica"
+	},
+	{
+		"name" : "Construção composicional Elementos paralinguísticos e cinésicos Apresentações orais",
+		"unit" : "Análise linguística/semiótica"
+	},
+	{
+		"name" : "Construção composicional e estilo Gêneros de divulgação científica",
+		"unit" : "Análise linguística/semiótica"
+	},
+	{
+		"name" : "Efeito de sentido",
+		"unit" : "Análise linguística/semiótica"
+	},
+	{
+		"name" : "Elementos notacionais da escrita",
+		"unit" : "Análise linguística/semiótica"
+	},
+	{
+		"name" : "Elementos notacionais da escrita/morfossintaxe",
+		"unit" : "Análise linguística/semiótica"
+	},
+	{
+		"name" : "Estilo",
+		"unit" : "Análise linguística/semiótica"
+	},
+	{
+		"name" : "Figuras de linguagem",
+		"unit" : "Análise linguística/semiótica"
+	},
+	{
+		"name" : "Fono-ortografia",
+		"unit" : "Análise linguística/semiótica"
+	},
+	{
+		"name" : "Léxico/morfologia",
+		"unit" : "Análise linguística/semiótica"
+	},
+	{
+		"name" : "Marcas linguísticas Intertextualidade",
+		"unit" : "Análise linguística/semiótica"
+	},
+	{
+		"name" : "Modalização",
+		"unit" : "Análise linguística/semiótica"
+	},
+	{
+		"name" : "Morfossintaxe",
+		"unit" : "Análise linguística/semiótica"
+	},
+	{
+		"name" : "Movimentos argumentativos e força dos argumentos",
+		"unit" : "Análise linguística/semiótica"
+	},
+	{
+		"name" : "Recursos linguísticos e semióticos que operam nos textos pertencentes aos gêneros literários",
+		"unit" : "Análise linguística/semiótica"
+	},
+	{
+		"name" : "Semântica",
+		"unit" : "Análise linguística/semiótica"
+	},
+	{
+		"name" : "Semântica Coesão",
+		"unit" : "Análise linguística/semiótica"
+	},
+	{
+		"name" : "Sequências textuais",
+		"unit" : "Análise linguística/semiótica"
+	},
+	{
+		"name" : "Sintaxe",
+		"unit" : "Análise linguística/semiótica"
+	},
+	{
+		"name" : "Textualização",
+		"unit" : "Análise linguística/semiótica"
+	},
+	{
+		"name" : "Textualização Progressão temática",
+		"unit" : "Análise linguística/semiótica"
+	},
+	{
+		"name" : "Usar adequadamente ferramentas de apoio a apresentações orais",
+		"unit" : "Análise linguística/semiótica"
+	},
+	{
+		"name" : "Conhecimento do alfabeto do português do Brasil",
+		"unit" : "Análise linguística/semiótica (Alfabetização)"
+	},
+	{
+		"name" : "Forma de composição dos textos/Adequação do texto às normas de escrita",
+		"unit" : "Análise linguística/semiótica (Alfabetização)"
+	},
+	{
+		"name" : "Formas de composição de textos poéticos",
+		"unit" : "Análise linguística/semiótica (Alfabetização)"
+	},
+	{
+		"name" : "Formas de composição de textos poéticos visuais",
+		"unit" : "Análise linguística/semiótica (Alfabetização)"
+	},
+	{
+		"name" : "Sinonímia e antonímia/Morfologia/Pontuação",
+		"unit" : "Análise linguística/semiótica (Alfabetização)"
+	},
+	{
+		"name" : "Conhecimento das diversas grafias do alfabeto/ Acentuação",
+		"unit" : "Análise linguística/semiótica (Ortografização)"
+	},
+	{
+		"name" : "Conhecimento do alfabeto do português do Brasil/Ordem alfabética/Polissemia",
+		"unit" : "Análise linguística/semiótica (Ortografização)"
+	},
+	{
+		"name" : "Construção do sistema alfabético",
+		"unit" : "Análise linguística/semiótica (Ortografização)"
+	},
+	{
+		"name" : "Construção do sistema alfabético e da ortografia",
+		"unit" : "Análise linguística/semiótica (Ortografização)"
+	},
+	{
+		"name" : "Discurso direto e indireto",
+		"unit" : "Análise linguística/semiótica (Ortografização)"
+	},
+	{
+		"name" : "Forma de composição de textos dramáticos",
+		"unit" : "Análise linguística/semiótica (Ortografização)"
+	},
+	{
+		"name" : "Forma de composição de textos poéticos",
+		"unit" : "Análise linguística/semiótica (Ortografização)"
+	},
+	{
+		"name" : "Forma de composição de textos poéticos visuais",
+		"unit" : "Análise linguística/semiótica (Ortografização)"
+	},
+	{
+		"name" : "Forma de composição do texto",
+		"unit" : "Análise linguística/semiótica (Ortografização)"
+	},
+	{
+		"name" : "Forma de composição dos textos",
+		"unit" : "Análise linguística/semiótica (Ortografização)"
+	},
+	{
+		"name" : "Forma de composição dos textos Adequação do texto às normas de escrita",
+		"unit" : "Análise linguística/semiótica (Ortografização)"
+	},
+	{
+		"name" : "Forma de composição dos textos Coesão e articuladores",
+		"unit" : "Análise linguística/semiótica (Ortografização)"
+	},
+	{
+		"name" : "Formas de composição de narrativas",
+		"unit" : "Análise linguística/semiótica (Ortografização)"
+	},
+	{
+		"name" : "Morfologia",
+		"unit" : "Análise linguística/semiótica (Ortografização)"
+	},
+	{
+		"name" : "Pontuação",
+		"unit" : "Análise linguística/semiótica (Ortografização)"
+	},
+	{
+		"name" : "Segmentação de palavras/Classificação de palavras por número de sílabas",
+		"unit" : "Análise linguística/semiótica (Ortografização)"
+	},
+	{
+		"name" : "Correspondência fonema-grafema",
+		"unit" : "Escrita (compartilhada e autônoma)"
+	},
+	{
+		"name" : "Escrita compartilhada",
+		"unit" : "Escrita (compartilhada e autônoma)"
+	},
+	{
+		"name" : "Adesão às práticas de leitura",
+		"unit" : "Leitura"
+	},
+	{
+		"name" : "Apreciação e réplica",
+		"unit" : "Leitura"
+	},
+	{
+		"name" : "Apreciação e réplica Relação entre gêneros e mídias",
+		"unit" : "Leitura"
+	},
+	{
+		"name" : "Contexto de produção, circulação e recepção de textos e práticas relacionadas à defesa de direitos e à participação social",
+		"unit" : "Leitura"
+	},
+	{
+		"name" : "Curadoria de informação",
+		"unit" : "Leitura"
+	},
+	{
+		"name" : "Efeitos de sentido",
+		"unit" : "Leitura"
+	},
+	{
+		"name" : "Efeitos de sentido Exploração da multissemiose",
+		"unit" : "Leitura"
+	},
+	{
+		"name" : "Estratégia de leitura Distinção de fato e opinião",
+		"unit" : "Leitura"
+	},
+	{
+		"name" : "Estratégia de leitura: apreender os sentidos globais do texto",
+		"unit" : "Leitura"
+	},
+	{
+		"name" : "Estratégia de leitura: apreender os sentidos globais do texto Apreciação e réplica",
+		"unit" : "Leitura"
+	},
+	{
+		"name" : "Estratégia de leitura: identificação de teses e argumentos Apreciação e réplica",
+		"unit" : "Leitura"
+	},
+	{
+		"name" : "Estratégias de leitura Apreciação e réplica",
+		"unit" : "Leitura"
+	},
+	{
+		"name" : "Estratégias e procedimentos de leitura Relação do verbal com outras semioses Procedimentos e gêneros de apoio à compreensão",
+		"unit" : "Leitura"
+	},
+	{
+		"name" : "Estratégias e procedimentos de leitura em textos legais e normativos",
+		"unit" : "Leitura"
+	},
+	{
+		"name" : "Estratégias e procedimentos de leitura em textos reivindicatórios ou propositivos",
+		"unit" : "Leitura"
+	},
+	{
+		"name" : "Estratégias, procedimentos de leitura em textos reivindicatórios ou propositivos",
+		"unit" : "Leitura"
+	},
+	{
+		"name" : "Reconstrução da textualidade Efeitos de sentidos provocados pelos usos de recursos linguísticos e multissemióticos",
+		"unit" : "Leitura"
+	},
+	{
+		"name" : "Reconstrução da textualidade e compreensão dos efeitos de sentidos provocados pelos usos de recursos linguísticos e multissemióticos",
+		"unit" : "Leitura"
+	},
+	{
+		"name" : "Reconstrução das condições de produção e circulação e adequação do texto à construção composicional e ao estilo de gênero (Lei, código, estatuto, código, regimento etc.)",
+		"unit" : "Leitura"
+	},
+	{
+		"name" : "Reconstrução das condições de produção e recepção dos textos e adequação do texto à construção composicional e ao estilo de gênero",
+		"unit" : "Leitura"
+	},
+	{
+		"name" : "Reconstrução das condições de produção, circulação e recepção Apreciação e réplica",
+		"unit" : "Leitura"
+	},
+	{
+		"name" : "Reconstrução do contexto de produção, circulação e recepção de textos Caracterização do campo jornalístico e relação entre os gêneros em circulação, mídias e práticas da cultura digital",
+		"unit" : "Leitura"
+	},
+	{
+		"name" : "Reconstrução do contexto de produção, circulação e recepção de textos legais e normativos",
+		"unit" : "Leitura"
+	},
+	{
+		"name" : "Relação entre contexto de produção e características composicionais e estilísticas dos gêneros (carta de solicitação, carta de reclamação, petição on-line, carta aberta, abaixo-assinado, proposta etc.) Apreciação e réplica",
+		"unit" : "Leitura"
+	},
+	{
+		"name" : "Relação entre contexto de produção e características composicionais e estilísticas dos gêneros Apreciação e réplica",
+		"unit" : "Leitura"
+	},
+	{
+		"name" : "Relação entre textos",
+		"unit" : "Leitura"
+	},
+	{
+		"name" : "Apreciação estética/Estilo",
+		"unit" : "Leitura/escuta (compartilhada e autônoma)"
+	},
+	{
+		"name" : "Compreensão",
+		"unit" : "Leitura/escuta (compartilhada e autônoma)"
+	},
+	{
+		"name" : "Compreensão em leitura",
+		"unit" : "Leitura/escuta (compartilhada e autônoma)"
+	},
+	{
+		"name" : "Decodificação/Fluência de leitura",
+		"unit" : "Leitura/escuta (compartilhada e autônoma)"
+	},
+	{
+		"name" : "Estratégia de leitura",
+		"unit" : "Leitura/escuta (compartilhada e autônoma)"
+	},
+	{
+		"name" : "Formação de leitor",
+		"unit" : "Leitura/escuta (compartilhada e autônoma)"
+	},
+	{
+		"name" : "Formação do leitor literário",
+		"unit" : "Leitura/escuta (compartilhada e autônoma)"
+	},
+	{
+		"name" : "Formação do leitor literário/ Leitura multissemiótica",
+		"unit" : "Leitura/escuta (compartilhada e autônoma)"
+	},
+	{
+		"name" : "Formação do leitor literário/Leitura multissemiótica",
+		"unit" : "Leitura/escuta (compartilhada e autônoma)"
+	},
+	{
+		"name" : "Imagens analíticas em textos",
+		"unit" : "Leitura/escuta (compartilhada e autônoma)"
+	},
+	{
+		"name" : "Leitura colaborativa e autônoma",
+		"unit" : "Leitura/escuta (compartilhada e autônoma)"
+	},
+	{
+		"name" : "Leitura de imagens em narrativas visuais",
+		"unit" : "Leitura/escuta (compartilhada e autônoma)"
+	},
+	{
+		"name" : "Pesquisa",
+		"unit" : "Leitura/escuta (compartilhada e autônoma)"
+	},
+	{
+		"name" : "Protocolos de leitura",
+		"unit" : "Leitura/escuta (compartilhada e autônoma)"
+	},
+	{
+		"name" : "Reconstrução das condições de produção e recepção de textos",
+		"unit" : "Leitura/escuta (compartilhada e autônoma)"
+	},
+	{
+		"name" : "Textos dramáticos",
+		"unit" : "Leitura/escuta (compartilhada e autônoma)"
+	},
+	{
+		"name" : "Aspectos não linguísticos (paralinguísticos) no ato da fala",
+		"unit" : "Oralidade"
+	},
+	{
+		"name" : "Características da conversação espontânea",
+		"unit" : "Oralidade"
+	},
+	{
+		"name" : "Compreensão de textos orais",
+		"unit" : "Oralidade"
+	},
+	{
+		"name" : "Contagem de histórias",
+		"unit" : "Oralidade"
+	},
+	{
+		"name" : "Conversação espontânea",
+		"unit" : "Oralidade"
+	},
+	{
+		"name" : "Declamação",
+		"unit" : "Oralidade"
+	},
+	{
+		"name" : "Discussão oral",
+		"unit" : "Oralidade"
+	},
+	{
+		"name" : "Escuta Apreender o sentido geral dos textos Apreciação e réplica Produção/Proposta",
+		"unit" : "Oralidade"
+	},
+	{
+		"name" : "Escuta atenta",
+		"unit" : "Oralidade"
+	},
+	{
+		"name" : "Escuta de textos orais",
+		"unit" : "Oralidade"
+	},
+	{
+		"name" : "Estratégias de produção",
+		"unit" : "Oralidade"
+	},
+	{
+		"name" : "Estratégias de produção: planejamento e participação em debates regrados",
+		"unit" : "Oralidade"
+	},
+	{
+		"name" : "Estratégias de produção: planejamento e produção de apresentações orais",
+		"unit" : "Oralidade"
+	},
+	{
+		"name" : "Estratégias de produção: planejamento, realização e edição de entrevistas orais",
+		"unit" : "Oralidade"
+	},
+	{
+		"name" : "Forma de composição de gêneros orais",
+		"unit" : "Oralidade"
+	},
+	{
+		"name" : "Oralidade pública/Intercâmbio conversacional em sala de aula",
+		"unit" : "Oralidade"
+	},
+	{
+		"name" : "Participação em discussões orais de temas controversos de interesse da turma e/ou de relevância social",
+		"unit" : "Oralidade"
+	},
+	{
+		"name" : "Performances orais",
+		"unit" : "Oralidade"
+	},
+	{
+		"name" : "Planejamento de texto oral Exposição oral",
+		"unit" : "Oralidade"
+	},
+	{
+		"name" : "Planejamento e produção de entrevistas orais",
+		"unit" : "Oralidade"
+	},
+	{
+		"name" : "Planejamento e produção de texto",
+		"unit" : "Oralidade"
+	},
+	{
+		"name" : "Planejamento e produção de textos jornalísticos orais",
+		"unit" : "Oralidade"
+	},
+	{
+		"name" : "Procedimentos de apoio à compreensão Tomada de nota",
+		"unit" : "Oralidade"
+	},
+	{
+		"name" : "Produção de texto",
+		"unit" : "Oralidade"
+	},
+	{
+		"name" : "Produção de texto oral",
+		"unit" : "Oralidade"
+	},
+	{
+		"name" : "Produção de textos jornalísticos orais",
+		"unit" : "Oralidade"
+	},
+	{
+		"name" : "Produção de textos orais",
+		"unit" : "Oralidade"
+	},
+	{
+		"name" : "Produção de textos orais Oralização",
+		"unit" : "Oralidade"
+	},
+	{
+		"name" : "Registro",
+		"unit" : "Oralidade"
+	},
+	{
+		"name" : "Relato oral/Registro formal e informal",
+		"unit" : "Oralidade"
+	},
+	{
+		"name" : "Variação linguística",
+		"unit" : "Oralidade"
+	},
+	{
+		"name" : "Consideração das condições de produção Estratégias de produção: planejamento, textualização e revisão/edição",
+		"unit" : "Produção de textos"
+	},
+	{
+		"name" : "Consideração das condições de produção de textos de divulgação científica Estratégias de escrita",
+		"unit" : "Produção de textos"
+	},
+	{
+		"name" : "Construção da textualidade",
+		"unit" : "Produção de textos"
+	},
+	{
+		"name" : "Construção da textualidade Relação entre textos",
+		"unit" : "Produção de textos"
+	},
+	{
+		"name" : "Estratégia de produção: planejamento de textos argumentativos e apreciativos",
+		"unit" : "Produção de textos"
+	},
+	{
+		"name" : "Estratégia de produção: planejamento de textos informativos",
+		"unit" : "Produção de textos"
+	},
+	{
+		"name" : "Estratégia de produção: planejamento de textos reivindicatórios ou propositivos",
+		"unit" : "Produção de textos"
+	},
+	{
+		"name" : "Estratégia de produção: textualização de textos informativos",
+		"unit" : "Produção de textos"
+	},
+	{
+		"name" : "Estratégias de escrita: textualização, revisão e edição",
+		"unit" : "Produção de textos"
+	},
+	{
+		"name" : "Estratégias de produção: planejamento de textos argumentativos e apreciativos",
+		"unit" : "Produção de textos"
+	},
+	{
+		"name" : "Estratégias de produção: planejamento de textos informativos",
+		"unit" : "Produção de textos"
+	},
+	{
+		"name" : "Estratégias de produção: planejamento, textualização, revisão e edição de textos publicitários",
+		"unit" : "Produção de textos"
+	},
+	{
+		"name" : "Planejamento de textos de peças publicitárias de campanhas sociais",
+		"unit" : "Produção de textos"
+	},
+	{
+		"name" : "Produção e edição de textos publicitários",
+		"unit" : "Produção de textos"
+	},
+	{
+		"name" : "Relação do texto com o contexto de produção e experimentação de papéis sociais",
+		"unit" : "Produção de textos"
+	},
+	{
+		"name" : "Revisão/edição de texto informativo e opinativo",
+		"unit" : "Produção de textos"
+	},
+	{
+		"name" : "Textualização de textos argumentativos e apreciativos",
+		"unit" : "Produção de textos"
+	},
+	{
+		"name" : "Textualização, revisão e edição",
+		"unit" : "Produção de textos"
+	},
+	{
+		"name" : "Textualização, tendo em vista suas condições de produção, as características do gênero em questão, o estabelecimento de coesão, adequação à norma-padrão e o uso adequado de ferramentas de edição",
+		"unit" : "Produção de textos"
+	},
+	{
+		"name" : "Construção do sistema alfabético/ Convenções da escrita",
+		"unit" : "Produção de textos (escrita compartilhada e autônoma)"
+	},
+	{
+		"name" : "Construção do sistema alfabético/ Estabelecimento de relações anafóricas na referenciação e construção da coesão",
+		"unit" : "Produção de textos (escrita compartilhada e autônoma)"
+	},
+	{
+		"name" : "Edição de textos",
+		"unit" : "Produção de textos (escrita compartilhada e autônoma)"
+	},
+	{
+		"name" : "Escrita autônoma",
+		"unit" : "Produção de textos (escrita compartilhada e autônoma)"
+	},
+	{
+		"name" : "Escrita autônoma e compartilhada",
+		"unit" : "Produção de textos (escrita compartilhada e autônoma)"
+	},
+	{
+		"name" : "Escrita colaborativa",
+		"unit" : "Produção de textos (escrita compartilhada e autônoma)"
+	},
+	{
+		"name" : "Planejamento de texto",
+		"unit" : "Produção de textos (escrita compartilhada e autônoma)"
+	},
+	{
+		"name" : "Planejamento de texto/Progressão temática e paragrafação",
+		"unit" : "Produção de textos (escrita compartilhada e autônoma)"
+	},
+	{
+		"name" : "Produção de textos",
+		"unit" : "Produção de textos (escrita compartilhada e autônoma)"
+	},
+	{
+		"name" : "Revisão de textos",
+		"unit" : "Produção de textos (escrita compartilhada e autônoma)"
+	},
+	{
+		"name" : "Utilização de tecnologia digital",
+		"unit" : "Produção de textos (escrita compartilhada e autônoma)"
+	},
+	{
+		"name" : "A circunferência como lugar geométrico",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Ampliação e redução de figuras poligonais em malhas quadriculadas: reconhecimento da congruência dos ângulos e da proporcionalidade dos lados correspondentes",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Congruência de figuras geométricas planas",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Congruência de triângulos e demonstrações de propriedades de quadriláteros",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Construção de figuras semelhantes: ampliação e redução de figuras planas em malhas quadriculadas",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Construção de retas paralelas e perpendiculares, fazendo uso de réguas, esquadros e softwares",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Construções geométricas: ângulos de 90°, 60°, 45° e 30° e polígonos regulares",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Demonstrações de relações entre os ângulos formados por retas paralelas intersectadas por uma transversal",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Distância entre pontos no plano cartesiano",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Esboço de roteiros e de plantas simples",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Figuras geométricas espaciais (cubo, bloco retangular, pirâmide, cone, cilindro e esfera): reconhecimento e características",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Figuras geométricas espaciais (cubo, bloco retangular, pirâmide, cone, cilindro e esfera): reconhecimento, análise de características e planificações",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Figuras geométricas espaciais (prismas e pirâmides): reconhecimento, representações, planificações e características",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Figuras geométricas espaciais: reconhecimento e relações com objetos familiares do mundo físico",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Figuras geométricas espaciais: reconhecimento, representações, planificações e características",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Figuras geométricas planas (círculo, quadrado, retângulo e triângulo): reconhecimento e características",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Figuras geométricas planas (triângulo, quadrado, retângulo, trapézio e paralelogramo): reconhecimento e análise de características",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Figuras geométricas planas: características, representações e ângulos",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Figuras geométricas planas: reconhecimento do formato das faces de figuras geométricas espaciais",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Localização de objetos e de pessoas no espaço, utilizando diversos pontos de referência e vocabulário apropriado",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Localização e movimentação de pessoas e objetos no espaço, segundo pontos de referência, e indicação de mudanças de direção e sentido",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Localização e movimentação: pontos de referência, direção e sentido Paralelismo e perpendicularismo",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Localização e movimentação: representação de objetos e pontos de referência",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Mediatriz e bissetriz como lugares geométricos: construção e problemas",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Plano cartesiano: associação dos vértices de um polígono a pares ordenados",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Plano cartesiano: coordenadas cartesianas (1º quadrante) e representação de deslocamentos no plano cartesiano",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Polígonos regulares",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Polígonos regulares: quadrado e triângulo equilátero",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Polígonos: classificações quanto ao número de vértices, às medidas de lados e ângulos e ao paralelismo e perpendicularismo dos lados",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Prismas e pirâmides: planificações e relações entre seus elementos (vértices, faces e arestas)",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Relações entre arcos e ângulos na circunferência de um círculo",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Relações entre os ângulos formados por retas paralelas intersectadas por uma transversal",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Relações métricas no triângulo retângulo Teorema de Pitágoras: verificações experimentais e demonstração Retas paralelas cortadas por transversais: teoremas de proporcionalidade e verificações experimentais",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Semelhança de triângulos",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Simetria de reflexão",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Simetrias de translação, rotação e reflexão",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Transformações geométricas de polígonos no plano cartesiano: multiplicação das coordenadas por um número inteiro e obtenção de simétricos em relação aos eixos e à origem",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Transformações geométricas: simetrias de translação, reflexão e rotação",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Triângulos: construção, condição de existência e soma das medidas dos ângulos internos",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Vistas ortogonais de figuras espaciais",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Ângulos retos e não retos: uso de dobraduras, esquadros e softwares",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Comparação de áreas por superposição",
+		"unit" : "Grandezas e medidas"
+	},
+	{
+		"name" : "Cálculo de volume de blocos retangulares, utilizando unidades de medida convencionais mais usuais",
+		"unit" : "Grandezas e medidas"
+	},
+	{
+		"name" : "Equivalência de área de figuras planas: cálculo de áreas de figuras que podem ser decompostas por outras, cujas áreas podem ser facilmente determinadas como triângulos e quadriláteros",
+		"unit" : "Grandezas e medidas"
+	},
+	{
+		"name" : "Medida de capacidade e de massa: unidades de medida não convencionais e convencionais (litro, mililitro, cm3, grama e quilograma)",
+		"unit" : "Grandezas e medidas"
+	},
+	{
+		"name" : "Medida de comprimento: unidades não padronizadas e padronizadas (metro, centímetro e milímetro)",
+		"unit" : "Grandezas e medidas"
+	},
+	{
+		"name" : "Medida do comprimento da circunferência",
+		"unit" : "Grandezas e medidas"
+	},
+	{
+		"name" : "Medidas de capacidade e de massa (unidades não convencionais e convencionais): registro, estimativas e comparações",
+		"unit" : "Grandezas e medidas"
+	},
+	{
+		"name" : "Medidas de comprimento (unidades não convencionais e convencionais): registro, instrumentos de medida, estimativas e comparações",
+		"unit" : "Grandezas e medidas"
+	},
+	{
+		"name" : "Medidas de comprimento, massa e capacidade: comparações e unidades de medida não convencionais",
+		"unit" : "Grandezas e medidas"
+	},
+	{
+		"name" : "Medidas de comprimento, massa e capacidade: estimativas, utilização de instrumentos de medida e de unidades de medida convencionais mais usuais",
+		"unit" : "Grandezas e medidas"
+	},
+	{
+		"name" : "Medidas de comprimento, área, massa, tempo, temperatura e capacidade: utilização de unidades convencionais e relações entre as unidades de medida mais usuais",
+		"unit" : "Grandezas e medidas"
+	},
+	{
+		"name" : "Medidas de temperatura em grau Celsius: construção de gráficos para indicar a variação da temperatura (mínima e máxima) medida em um dado dia ou em uma semana",
+		"unit" : "Grandezas e medidas"
+	},
+	{
+		"name" : "Medidas de tempo: intervalo de tempo, uso do calendário, leitura de horas em relógios digitais e ordenação de datas",
+		"unit" : "Grandezas e medidas"
+	},
+	{
+		"name" : "Medidas de tempo: leitura de horas em relógios digitais e analógicos, duração de eventos e reconhecimento de relações entre unidades de medida de tempo",
+		"unit" : "Grandezas e medidas"
+	},
+	{
+		"name" : "Medidas de tempo: leitura de horas em relógios digitais e analógicos, duração de eventos e relações entre unidades de medida de tempo",
+		"unit" : "Grandezas e medidas"
+	},
+	{
+		"name" : "Medidas de tempo: unidades de medida de tempo, suas relações e o uso do calendário",
+		"unit" : "Grandezas e medidas"
+	},
+	{
+		"name" : "Noção de volume",
+		"unit" : "Grandezas e medidas"
+	},
+	{
+		"name" : "Perímetro de um quadrado como grandeza proporcional à medida do lado",
+		"unit" : "Grandezas e medidas"
+	},
+	{
+		"name" : "Plantas baixas e vistas aéreas",
+		"unit" : "Grandezas e medidas"
+	},
+	{
+		"name" : "Problemas envolvendo medições",
+		"unit" : "Grandezas e medidas"
+	},
+	{
+		"name" : "Problemas sobre medidas envolvendo grandezas como comprimento, massa, tempo, temperatura, área, capacidade e volume",
+		"unit" : "Grandezas e medidas"
+	},
+	{
+		"name" : "Problemas utilizando o sistema monetário brasileiro",
+		"unit" : "Grandezas e medidas"
+	},
+	{
+		"name" : "Significado de medida e de unidade de medida",
+		"unit" : "Grandezas e medidas"
+	},
+	{
+		"name" : "Sistema monetário brasileiro: estabelecimento de equivalências de um mesmo valor na utilização de diferentes cédulas e moedas",
+		"unit" : "Grandezas e medidas"
+	},
+	{
+		"name" : "Sistema monetário brasileiro: reconhecimento de cédulas e moedas",
+		"unit" : "Grandezas e medidas"
+	},
+	{
+		"name" : "Sistema monetário brasileiro: reconhecimento de cédulas e moedas e equivalência de valores",
+		"unit" : "Grandezas e medidas"
+	},
+	{
+		"name" : "Unidades de medida para medir distâncias muito grandes e muito pequenas Unidades de medida utilizadas na informática",
+		"unit" : "Grandezas e medidas"
+	},
+	{
+		"name" : "Volume de cilindro reto Medidas de capacidade",
+		"unit" : "Grandezas e medidas"
+	},
+	{
+		"name" : "Volume de prismas e cilindros",
+		"unit" : "Grandezas e medidas"
+	},
+	{
+		"name" : "Área de figuras planas Área do círculo e comprimento de sua circunferência",
+		"unit" : "Grandezas e medidas"
+	},
+	{
+		"name" : "Áreas de figuras construídas em malhas quadriculadas",
+		"unit" : "Grandezas e medidas"
+	},
+	{
+		"name" : "Áreas e perímetros de figuras poligonais: algumas relações",
+		"unit" : "Grandezas e medidas"
+	},
+	{
+		"name" : "Ângulos: noção, usos e medida",
+		"unit" : "Grandezas e medidas"
+	},
+	{
+		"name" : "Aproximação de números para múltiplos de potências de 10",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Comparação e ordenação de números racionais na representação decimal e na fracionária utilizando a noção de equivalência",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Composição e decomposição de números naturais",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Composição e decomposição de números naturais (até 1000)",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Composição e decomposição de um número natural de até cinco ordens, por meio de adições e multiplicações por potências de 10",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Construção de fatos básicos da adição",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Construção de fatos fundamentais da adição e da subtração",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Construção de fatos fundamentais da adição, subtração e multiplicação Reta numérica",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Contagem de rotina Contagem ascendente e descendente Reconhecimento de números no contexto diário: indicação de quantidades, indicação de ordem ou indicação de código para a organização de informações",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Cálculo de porcentagens e de acréscimos e decréscimos simples",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Cálculo de porcentagens e representação fracionária",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Cálculo de porcentagens por meio de estratégias diversas, sem fazer uso da “regra de três”",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Dízimas periódicas: fração geratriz",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Fluxograma para determinar a paridade de um número natural Múltiplos e divisores de um número natural Números primos e compostos",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Fração e seus significados: como parte de inteiros, resultado da divisão, razão e operador",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Frações: significados (parte/todo, quociente), equivalência, comparação, adição e subtração; cálculo da fração de um número natural; adição e subtração de frações",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Leitura, escrita e comparação de números naturais (até 100) Reta numérica",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Leitura, escrita, comparação e ordenação de números de até três ordens pela compreensão de características do sistema de numeração decimal (valor posicional e papel do zero)",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Leitura, escrita, comparação e ordenação de números naturais de quatro ordens",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Múltiplos e divisores de um número natural",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Necessidade dos números reais para medir qualquer segmento de reta Números irracionais: reconhecimento e localização de alguns na reta numérica",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Notação científica",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Números inteiros: usos, história, ordenação, associação com pontos da reta numérica e operações",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Números racionais expressos na forma decimal e sua representação na reta numérica",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Números racionais na representação fracionária e na decimal: usos, ordenação e associação com pontos da reta numérica e operações",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Números racionais: frações unitárias mais usuais (1/2, 1/3, 1/4, 1/5, 1/10 e 1/100)",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Números racionais: representação decimal para escrever valores do sistema monetário brasileiro",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Números reais: notação científica e problemas",
+		"unit" : "Números"
+	},
+	{
+		"name" : "O princípio multiplicativo da contagem",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Operações (adição, subtração, multiplicação, divisão e potenciação) com números naturais Divisão euclidiana",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Operações (adição, subtração, multiplicação, divisão e potenciação) com números racionais",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Porcentagens",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Porcentagens: problemas que envolvem cálculo de percentuais sucessivos",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Potenciação e radiciação",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Potências com expoentes negativos e fracionários",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Problemas de contagem",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Problemas de contagem do tipo: “Se cada objeto de uma coleção A for combinado com todos os elementos de uma coleção B, quantos agrupamentos desse tipo podem ser formados?”",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Problemas envolvendo adição de parcelas iguais (multiplicação)",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Problemas envolvendo diferentes significados da adição e da subtração (juntar, acrescentar, separar, retirar)",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Problemas envolvendo diferentes significados da multiplicação e da divisão: adição de parcelas iguais, configuração retangular, proporcionalidade, repartição equitativa e medida",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Problemas envolvendo diferentes significados da multiplicação e da divisão: adição de parcelas iguais, configuração retangular, repartição em partes iguais e medida",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Problemas envolvendo significados da adição e da subtração: juntar, acrescentar, separar, retirar, comparar e completar quantidades",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Problemas envolvendo significados de dobro, metade, triplo e terça parte",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Problemas: adição e subtração de números naturais e números racionais cuja representação decimal é finita",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Problemas: multiplicação e divisão de números racionais cuja representação decimal é finita por números naturais",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Procedimentos de cálculo (mental e escrito) com números naturais: adição e subtração",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Propriedades das operações para o desenvolvimento de diferentes estratégias de cálculo com números naturais",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Quantificação de elementos de uma coleção: estimativas, contagem um a um, pareamento ou outros agrupamentos e comparação",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Representação fracionária dos números racionais: reconhecimento, significados, leitura e representação na reta numérica",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Significados de metade, terça parte, quarta parte, quinta parte e décima parte",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Sistema de numeração decimal: características, leitura, escrita e comparação de números naturais e de números racionais representados na forma decimal",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Sistema de numeração decimal: leitura, escrita e ordenação de números naturais (de até seis ordens)",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Sistema de numeração decimal: leitura, escrita, comparação e ordenação de números naturais de até cinco ordens",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Análise da ideia de acaso em situações do cotidiano: espaço amostral",
+		"unit" : "Probabilidade e estatística"
+	},
+	{
+		"name" : "Análise da ideia de aleatório em situações do cotidiano",
+		"unit" : "Probabilidade e estatística"
+	},
+	{
+		"name" : "Análise de chances de eventos aleatórios",
+		"unit" : "Probabilidade e estatística"
+	},
+	{
+		"name" : "Análise de gráficos divulgados pela mídia: elementos que podem induzir a erros de leitura ou de interpretação",
+		"unit" : "Probabilidade e estatística"
+	},
+	{
+		"name" : "Análise de probabilidade de eventos aleatórios: eventos dependentes e independentes",
+		"unit" : "Probabilidade e estatística"
+	},
+	{
+		"name" : "Coleta de dados, organização e registro Construção de diferentes tipos de gráficos para representá-los e interpretação das informações",
+		"unit" : "Probabilidade e estatística"
+	},
+	{
+		"name" : "Coleta e organização de informações Registros pessoais para comunicação de informações coletadas",
+		"unit" : "Probabilidade e estatística"
+	},
+	{
+		"name" : "Coleta, classificação e representação de dados em tabelas simples e de dupla entrada e em gráficos de colunas",
+		"unit" : "Probabilidade e estatística"
+	},
+	{
+		"name" : "Coleta, classificação e representação de dados referentes a variáveis categóricas, por meio de tabelas e gráficos",
+		"unit" : "Probabilidade e estatística"
+	},
+	{
+		"name" : "Cálculo de probabilidade como a razão entre o número de resultados favoráveis e o total de resultados possíveis em um espaço amostral equiprovável Cálculo de probabilidade por meio de muitas repetições de um experimento (frequências de ocorrências e probabilidade frequentista)",
+		"unit" : "Probabilidade e estatística"
+	},
+	{
+		"name" : "Cálculo de probabilidade de eventos equiprováveis",
+		"unit" : "Probabilidade e estatística"
+	},
+	{
+		"name" : "Diferenciação entre variáveis categóricas e variáveis numéricas Coleta, classificação e representação de dados de pesquisa realizada",
+		"unit" : "Probabilidade e estatística"
+	},
+	{
+		"name" : "Diferentes tipos de representação de informações: gráficos e fluxogramas",
+		"unit" : "Probabilidade e estatística"
+	},
+	{
+		"name" : "Espaço amostral: análise de chances de eventos aleatórios",
+		"unit" : "Probabilidade e estatística"
+	},
+	{
+		"name" : "Estatística: média e amplitude de um conjunto de dados",
+		"unit" : "Probabilidade e estatística"
+	},
+	{
+		"name" : "Experimentos aleatórios: espaço amostral e estimativa de probabilidade por meio de frequência de ocorrências",
+		"unit" : "Probabilidade e estatística"
+	},
+	{
+		"name" : "Gráficos de barras, colunas, linhas ou setores e seus elementos constitutivos e adequação para determinado conjunto de dados",
+		"unit" : "Probabilidade e estatística"
+	},
+	{
+		"name" : "Gráficos de setores: interpretação, pertinência e construção para representar conjunto de dados",
+		"unit" : "Probabilidade e estatística"
+	},
+	{
+		"name" : "Leitura de tabelas e de gráficos de colunas simples",
+		"unit" : "Probabilidade e estatística"
+	},
+	{
+		"name" : "Leitura e interpretação de tabelas e gráficos (de colunas ou barras simples ou múltiplas) referentes a variáveis categóricas e variáveis numéricas",
+		"unit" : "Probabilidade e estatística"
+	},
+	{
+		"name" : "Leitura, coleta, classificação interpretação e representação de dados em tabelas de dupla entrada, gráfico de colunas agrupadas, gráficos pictóricos e gráfico de linhas",
+		"unit" : "Probabilidade e estatística"
+	},
+	{
+		"name" : "Leitura, interpretação e representação de dados de pesquisa expressos em tabelas de dupla entrada, gráficos de colunas simples e agrupadas, gráficos de barras e de setores e gráficos pictóricos",
+		"unit" : "Probabilidade e estatística"
+	},
+	{
+		"name" : "Leitura, interpretação e representação de dados em tabelas de dupla entrada e gráficos de barras",
+		"unit" : "Probabilidade e estatística"
+	},
+	{
+		"name" : "Leitura, interpretação e representação de dados em tabelas de dupla entrada, gráficos de colunas simples e agrupadas, gráficos de barras e colunas e gráficos pictóricos",
+		"unit" : "Probabilidade e estatística"
+	},
+	{
+		"name" : "Medidas de tendência central e de dispersão",
+		"unit" : "Probabilidade e estatística"
+	},
+	{
+		"name" : "Noção de acaso",
+		"unit" : "Probabilidade e estatística"
+	},
+	{
+		"name" : "Organização dos dados de uma variável contínua em classes",
+		"unit" : "Probabilidade e estatística"
+	},
+	{
+		"name" : "Pesquisa amostral e pesquisa censitária Planejamento de pesquisa, coleta e organização dos dados, construção de tabelas e gráficos e interpretação das informações",
+		"unit" : "Probabilidade e estatística"
+	},
+	{
+		"name" : "Pesquisas censitária ou amostral Planejamento e execução de pesquisa amostral",
+		"unit" : "Probabilidade e estatística"
+	},
+	{
+		"name" : "Planejamento e execução de pesquisa amostral e apresentação de relatório",
+		"unit" : "Probabilidade e estatística"
+	},
+	{
+		"name" : "Princípio multiplicativo da contagem Soma das probabilidades de todos os elementos de um espaço amostral",
+		"unit" : "Probabilidade e estatística"
+	},
+	{
+		"name" : "Associação de uma equação linear de 1º grau a uma reta no plano cartesiano",
+		"unit" : "Álgebra"
+	},
+	{
+		"name" : "Construção de sequências repetitivas e de sequências recursivas",
+		"unit" : "Álgebra"
+	},
+	{
+		"name" : "Equação polinomial de 2º grau do tipo ax2 = b",
+		"unit" : "Álgebra"
+	},
+	{
+		"name" : "Equações polinomiais do 1º grau",
+		"unit" : "Álgebra"
+	},
+	{
+		"name" : "Equivalência de expressões algébricas: identificação da regularidade de uma sequência numérica",
+		"unit" : "Álgebra"
+	},
+	{
+		"name" : "Expressões algébricas: fatoração e produtos notáveis Resolução de equações polinomiais do 2º grau por meio de fatorações",
+		"unit" : "Álgebra"
+	},
+	{
+		"name" : "Funções: representações numérica, algébrica e gráfica",
+		"unit" : "Álgebra"
+	},
+	{
+		"name" : "Grandezas diretamente proporcionais Problemas envolvendo a partição de um todo em duas partes proporcionais",
+		"unit" : "Álgebra"
+	},
+	{
+		"name" : "Grandezas diretamente proporcionais e grandezas inversamente proporcionais",
+		"unit" : "Álgebra"
+	},
+	{
+		"name" : "Identificação de regularidade de sequências e determinação de elementos ausentes na sequência",
+		"unit" : "Álgebra"
+	},
+	{
+		"name" : "Identificação e descrição de regularidades em sequências numéricas recursivas",
+		"unit" : "Álgebra"
+	},
+	{
+		"name" : "Linguagem algébrica: variável e incógnita",
+		"unit" : "Álgebra"
+	},
+	{
+		"name" : "Padrões figurais e numéricos: investigação de regularidades ou padrões em sequências",
+		"unit" : "Álgebra"
+	},
+	{
+		"name" : "Problemas envolvendo grandezas diretamente proporcionais e grandezas inversamente proporcionais",
+		"unit" : "Álgebra"
+	},
+	{
+		"name" : "Problemas que tratam da partição de um todo em duas partes desiguais, envolvendo razões entre as partes e entre uma das partes e o todo",
+		"unit" : "Álgebra"
+	},
+	{
+		"name" : "Propriedades da igualdade",
+		"unit" : "Álgebra"
+	},
+	{
+		"name" : "Propriedades da igualdade e noção de equivalência",
+		"unit" : "Álgebra"
+	},
+	{
+		"name" : "Razão entre grandezas de espécies diferentes",
+		"unit" : "Álgebra"
+	},
+	{
+		"name" : "Relação de igualdade",
+		"unit" : "Álgebra"
+	},
+	{
+		"name" : "Relações entre adição e subtração e entre multiplicação e divisão",
+		"unit" : "Álgebra"
+	},
+	{
+		"name" : "Sequência numérica recursiva formada por múltiplos de um número natural",
+		"unit" : "Álgebra"
+	},
+	{
+		"name" : "Sequência numérica recursiva formada por números que deixam o mesmo resto ao ser divididos por um mesmo número natural diferente de zero",
+		"unit" : "Álgebra"
+	},
+	{
+		"name" : "Sequências recursivas e não recursivas",
+		"unit" : "Álgebra"
+	},
+	{
+		"name" : "Sequências recursivas: observação de regras usadas utilizadas em seriações numéricas (mais 1, mais 2, menos 1, menos 2, por exemplo)",
+		"unit" : "Álgebra"
+	},
+	{
+		"name" : "Sistema de equações polinomiais de 1º grau: resolução algébrica e representação no plano cartesiano",
+		"unit" : "Álgebra"
+	},
+	{
+		"name" : "Valor numérico de expressões algébricas",
+		"unit" : "Álgebra"
+	},
+	{
+		"name" : "Variação de grandezas: diretamente proporcionais, inversamente proporcionais ou não proporcionais",
+		"unit" : "Álgebra"
+	},
+	{
+		"name" : "O eu, o outro e o nós",
+		"unit" : "Identidades e alteridades"
+	},
+	{
+		"name" : "Imanência e transcendência",
+		"unit" : "Identidades e alteridades"
+	},
+	{
+		"name" : "O eu, a família e o ambiente de convivência",
+		"unit" : "Identidades e alteridades"
+	},
+	{
+		"name" : "Memórias e símbolos",
+		"unit" : "Identidades e alteridades"
+	},
+	{
+		"name" : "Símbolos religiosos",
+		"unit" : "Identidades e alteridades"
+	},
+	{
+		"name" : "Espaços e territórios religiosos",
+		"unit" : "Identidades e alteridades"
+	},
+	{
+		"name" : "Sentimentos, lembranças, memórias e saberes",
+		"unit" : "Manifestações religiosas"
+	},
+	{
+		"name" : "Alimentos sagrados",
+		"unit" : "Manifestações religiosas"
+	},
+	{
+		"name" : "Práticas celebrativas",
+		"unit" : "Manifestações religiosas"
+	},
+	{
+		"name" : "Indumentárias religiosas",
+		"unit" : "Manifestações religiosas"
+	},
+	{
+		"name" : "Ritos religiosos",
+		"unit" : "Manifestações religiosas"
+	},
+	{
+		"name" : "Representações religiosas na arte",
+		"unit" : "Manifestações religiosas"
+	},
+	{
+		"name" : "Místicas e espiritualidades",
+		"unit" : "Manifestações religiosas"
+	},
+	{
+		"name" : "Lideranças religiosas",
+		"unit" : "Manifestações religiosas"
+	},
+	{
+		"name" : "Ideia(s) de divindade(s)",
+		"unit" : "Crenças religiosas e filosofias de vida"
+	},
+	{
+		"name" : "Narrativas religiosas",
+		"unit" : "Crenças religiosas e filosofias de vida"
+	},
+	{
+		"name" : "Mitos nas tradições religiosas",
+		"unit" : "Crenças religiosas e filosofias de vida"
+	},
+	{
+		"name" : "Ancestralidade e tradição oral",
+		"unit" : "Crenças religiosas e filosofias de vida"
+	},
+	{
+		"name" : "Tradição escrita: registro dos ensinamentos sagrados",
+		"unit" : "Crenças religiosas e filosofias de vida"
+	},
+	{
+		"name" : "Ensinamentos da tradição escrita",
+		"unit" : "Crenças religiosas e filosofias de vida"
+	},
+	{
+		"name" : "Símbolos, ritos e mitos religiosos",
+		"unit" : "Crenças religiosas e filosofias de vida"
+	},
+	{
+		"name" : "Princípios éticos e valores religiosos",
+		"unit" : "Crenças religiosas e filosofias de vida"
+	},
+	{
+		"name" : "Liderança e direitos humanos",
+		"unit" : "Crenças religiosas e filosofias de vida"
+	},
+	{
+		"name" : "Crenças, convicções e atitudes",
+		"unit" : "Crenças religiosas e filosofias de vida"
+	},
+	{
+		"name" : "Doutrinas religiosas",
+		"unit" : "Crenças religiosas e filosofias de vida"
+	},
+	{
+		"name" : "Crenças, filosofias de vida e esfera pública",
+		"unit" : "Crenças religiosas e filosofias de vida"
+	},
+	{
+		"name" : "Tradições religiosas, mídias e tecnologias",
+		"unit" : "Crenças religiosas e filosofias de vida"
+	},
+	{
+		"name" : "Imanência e transcendência",
+		"unit" : "Crenças religiosas e filosofias de vida"
+	},
+	{
+		"name" : "Vida e morte",
+		"unit" : "Crenças religiosas e filosofias de vida"
+	},
+	{
+		"name" : "Princípios e valores éticos",
+		"unit" : "Crenças religiosas e filosofias de vida"
+	},
+	{
+		"name" : "Funções sociais dos números",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Contagem",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Comparação",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Leitura e escrita numérica",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Composição e decomposição de números naturais",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Números familiares e frequentes",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Fatos fundamentais da adição e da subtração",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Problemas que envolvem relações entre números naturais",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Problemas do campo aditivo envolvendo o significado de composição",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Recitação de números naturais",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Comparação de números",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Sistema de numeração decimal: leitura e escrita de números, regularidades",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Problemas do campo aditivo envolvendo os significados de composição e de transformação",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Problemas do campo multiplicativo envolvendo o significado de proporcionalidade",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Procedimentos de cálculo",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Uso de simbologia convencional",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Sistema de numeração decimal: leitura, escrita comparação e ordenação de números naturais",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Identificação e localização de números naturais na reta numerada",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Problemas do campo aditivo envolvendo os significados de composição, transformação e comparação",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Fatos fundamentais da multiplicação por 2, 3, 4 e 5",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Problemas envolvendo o significado de proporcionalidade e configuração retangular",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Sistema de numeração decimal: leitura, escrita, comparação, ordenação e localização na reta numerada de números naturais",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Recitação oral de números naturais",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Funções sociais dos números racionais",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Leitura, escrita e comparação de números racionais",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Problemas com números naturais envolvendo os significados dos campos aditivo e multiplicativo",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Fatos básicos da multiplicação por 6, 7, 8, 9, 10, 100 e 1.000",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Sistema de numeração decimal",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Números racionais: leitura, escrita, comparação, ordenação e representação na reta numerada; equivalência",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Porcentagens simples",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Problemas envolvendo os significados do campo aditivo com números naturais e racionais na forma decimal",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Problemas envolvendo os significados do campo multiplicativo com números naturais",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Procedimentos de cálculos",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Números naturais: leitura, escrita, comparação, ordenação e localização na reta numérica",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Significados dos números racionais",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Números racionais: leitura, escrita, comparação, ordenação e localização na reta numérica",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Problemas envolvendo o significado das operações de números naturais e racionais",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Múltiplos e divisores",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Problemas envolvendo o cálculo de porcentagem",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Potenciação",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Números naturais, racionais e inteiros: significados, reta numérica e significados das operações",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Múltiplos, divisores e divisibilidade",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Porcentagem",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Raiz quadrada e cúbica",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Princípio multiplicativo",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Juros e porcentagem",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Pertinência e inclusão entre os diferentes conjuntos numéricos",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Notação científica",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Problemas envolvendo os significados das operações",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Fração geratriz e dízima periódica",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Pertinência e inclusão entre os diferentes conjuntos numéricos: naturais, racionais, inteiros e reais",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Números reais: reconhecimento de um número irracional, operações e localização na reta numérica",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Problemas com números reais, porcentagens sucessivas, taxas percentuais e juros simples",
+		"unit" : "Números"
+	},
+	{
+		"name" : "Padrões numéricos ou figurais",
+		"unit" : "Álgebra"
+	},
+	{
+		"name" : "Regras de formação de uma sequência numérica ou figural",
+		"unit" : "Álgebra"
+	},
+	{
+		"name" : "Sequências repetitivas e sequências recursivas: construção, identificação, descrição de padrões e regularidades e determinação de elementos ausentes",
+		"unit" : "Álgebra"
+	},
+	{
+		"name" : "Identificação e descrição de regularidades em sequências numéricas recursivas",
+		"unit" : "Álgebra"
+	},
+	{
+		"name" : "Relação de igualdade em diferentes sentenças matemáticas envolvendo adições ou subtrações",
+		"unit" : "Álgebra"
+	},
+	{
+		"name" : "Sequência numérica recursiva formada por múltiplos de um número natural",
+		"unit" : "Álgebra"
+	},
+	{
+		"name" : "Propriedades da igualdade",
+		"unit" : "Álgebra"
+	},
+	{
+		"name" : "Variação de grandezas",
+		"unit" : "Álgebra"
+	},
+	{
+		"name" : "Proporcionalidade",
+		"unit" : "Álgebra"
+	},
+	{
+		"name" : "Noções de divisibilidade",
+		"unit" : "Álgebra"
+	},
+	{
+		"name" : "Sinais de associação",
+		"unit" : "Álgebra"
+	},
+	{
+		"name" : "Variação de grandezas: direta e inversamente proporcionais ou não proporcionais",
+		"unit" : "Álgebra"
+	},
+	{
+		"name" : "Linguagem algébrica: expressões, variável e incógnita",
+		"unit" : "Álgebra"
+	},
+	{
+		"name" : "Funções da álgebra",
+		"unit" : "Álgebra"
+	},
+	{
+		"name" : "Equações polinomiais do 1º grau",
+		"unit" : "Álgebra"
+	},
+	{
+		"name" : "Valor numérico de expressões algébricas",
+		"unit" : "Álgebra"
+	},
+	{
+		"name" : "Sistema de equações polinomiais de 1º grau: resolução algébrica e representação no plano cartesiano",
+		"unit" : "Álgebra"
+	},
+	{
+		"name" : "Padrões e relações algébricas",
+		"unit" : "Álgebra"
+	},
+	{
+		"name" : "Inequação de 1º grau: resolução algébrica e representação no plano cartesiano, discussão das soluções",
+		"unit" : "Álgebra"
+	},
+	{
+		"name" : "Equação de 1° Grau",
+		"unit" : "Álgebra"
+	},
+	{
+		"name" : "Expressões algébricas: fatoração e produtos notáveis",
+		"unit" : "Álgebra"
+	},
+	{
+		"name" : "Representação em sistema de coordenadas cartesianas da variação de grandezas",
+		"unit" : "Álgebra"
+	},
+	{
+		"name" : "Equação de 2º grau",
+		"unit" : "Álgebra"
+	},
+	{
+		"name" : "Frações algébricas: operações",
+		"unit" : "Álgebra"
+	},
+	{
+		"name" : "Problemas envolvendo sistemas de equação do 1° e 2° grau",
+		"unit" : "Álgebra"
+	},
+	{
+		"name" : "Localização e movimentação de pessoas ou objetos em representações planas do espaço, a partir de pontos de referência e da indicação de posição, de direção e sentido",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Leitura de croquis",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Reconhecimento de figuras geométricas espaciais e relações com objetos conhecidos do cotidiano",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Superfícies planas ou arredondadas",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Leitura e esboço de croquis",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Figuras espaciais: algumas características, comparação com objetos do cotidiano",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Figuras planas: algumas características",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Leitura e representação da localização/ movimentação de pessoas ou objetos no espaço",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Elementos de figuras espaciais e de figuras planas",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Similaridades e diferenças entre figuras planas e espaciais",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Planificação de figuras espaciais",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Localização e movimentação: pontos de referência, direção, sentidos e giros",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Comparação e classificação de polígonos em relação aos lados e aos vértices",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Figuras espaciais: diferenças e similaridades",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Planificação de figuras geométricas espaciais",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Identificação de figuras planas nas faces das figuras espaciais",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Ângulos retos ou não retos",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Localização e movimentação: representação, descrição e interpretação da localização e/ou movimentação de pontos no 1º quadrante do plano cartesiano",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Poliedros: diferenças e similaridades; planificação; exploração e classificação; relações entre os elementos de um poliedro",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Figuras planas: diferenças e similaridades entre polígonos",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Representação e nomeação de polígonos",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Composição e decomposição",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Ampliação e redução de polígonos em malha quadriculada",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Localização e movimentação de pontos no 1º quadrante do plano cartesiano utilizando coordenadas cartesianas",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Localização de polígonos no plano cartesiano – 1º quadrante",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Relações entre vértices, faces e arestas de poliedros",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Posições relativas de duas retas",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Ampliação e redução de polígonos",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Ângulos",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Posições relativas dos lados de um quadrilátero",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Rotação de figuras geométricas planas",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Posição e a movimentação de pontos, utilizando coordenadas cartesianas",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Transformações geométricas: translação e reflexão",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Relações entre arestas, vértices e faces em prismas e pirâmides",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Construção de triângulos",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Condição de existência de um triângulo",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Propriedades do triângulo",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Classificação de triângulos",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Soma dos ângulos internos de um quadrilátero",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Poliedros regulares e de Platão",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Classificação de quadriláteros com relação às medidas de seus lados, de seus ângulos e ao paralelismo e perpendicularismo de seus lados",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Mediatriz e bissetriz",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Ângulos em feixe de retas paralelas cortadas por transversais",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Transformações geométricas",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Altura e mediana de triângulos",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Diagonais de um polígono",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Figuras espaciais: representação, vistas e secções de figuras",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Arcos, ângulo central, ângulos inscritos em circunferências",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Semelhança de polígonos",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Teorema de Tales",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Teorema de Pitágoras",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Transformações geométricas: reflexão, rotação e translação em ornamentos",
+		"unit" : "Geometria"
+	},
+	{
+		"name" : "Noção de acaso",
+		"unit" : "Probabilidade e Estatística"
+	},
+	{
+		"name" : "Coleta, classificação, seleção, representação e comunicação de dados",
+		"unit" : "Probabilidade e Estatística"
+	},
+	{
+		"name" : "Leitura e comparação de dados expressos em tabelas simples",
+		"unit" : "Probabilidade e Estatística"
+	},
+	{
+		"name" : "Leitura e comparação de dados expressos em gráficos de colunas simples",
+		"unit" : "Probabilidade e Estatística"
+	},
+	{
+		"name" : "Ideias de acaso em situações do cotidiano",
+		"unit" : "Probabilidade e Estatística"
+	},
+	{
+		"name" : "Coleta, classificação, representação, leitura, descrição oral e comparação de dados apresentados em tabelas simples e em gráficos de colunas ou barras",
+		"unit" : "Probabilidade e Estatística"
+	},
+	{
+		"name" : "Identificação da ideia de aleatoriedade em situações do cotidiano",
+		"unit" : "Probabilidade e Estatística"
+	},
+	{
+		"name" : "Leitura, interpretação, representação e comparação de dados em tabelas de dupla entrada e gráficos de barras ou de colunas",
+		"unit" : "Probabilidade e Estatística"
+	},
+	{
+		"name" : "Coleta, classificação, seleção, organização e representação de dados por meio de tabelas simples ou de dupla entrada e gráficos de colunas ou barras",
+		"unit" : "Probabilidade e Estatística"
+	},
+	{
+		"name" : "Descrição de dados apresentados em tabelas ou gráficos de colunas ou barras",
+		"unit" : "Probabilidade e Estatística"
+	},
+	{
+		"name" : "Análise de chances de eventos aleatórios",
+		"unit" : "Probabilidade e Estatística"
+	},
+	{
+		"name" : "Problemas envolvendo o cálculo probabilidade de eventos equiprováveis",
+		"unit" : "Probabilidade e Estatística"
+	},
+	{
+		"name" : "Leitura, coleta, classificação, interpretação e representação de dados em tabelas de dupla entrada, gráficos de colunas e gráficos pictóricos",
+		"unit" : "Probabilidade e Estatística"
+	},
+	{
+		"name" : "Comunicação de dados de pesquisa",
+		"unit" : "Probabilidade e Estatística"
+	},
+	{
+		"name" : "Cálculo de probabilidade",
+		"unit" : "Probabilidade e Estatística"
+	},
+	{
+		"name" : "Elementos que compõem os diferentes tipos de gráfico",
+		"unit" : "Probabilidade e Estatística"
+	},
+	{
+		"name" : "Planejamento e realização de pesquisas",
+		"unit" : "Probabilidade e Estatística"
+	},
+	{
+		"name" : "Medidas de tendência central: média aritmética, moda e mediana",
+		"unit" : "Probabilidade e Estatística"
+	},
+	{
+		"name" : "Espaço amostral",
+		"unit" : "Probabilidade e Estatística"
+	},
+	{
+		"name" : "Probabilidade",
+		"unit" : "Probabilidade e Estatística"
+	},
+	{
+		"name" : "Planejamento, execução e relatório de pesquisa",
+		"unit" : "Probabilidade e Estatística"
+	},
+	{
+		"name" : "Gráficos e tabelas",
+		"unit" : "Probabilidade e Estatística"
+	},
+	{
+		"name" : "Probabilidade de eventos e construção de espaço amostral",
+		"unit" : "Probabilidade e Estatística"
+	},
+	{
+		"name" : "Princípio multiplicativo",
+		"unit" : "Probabilidade e Estatística"
+	},
+	{
+		"name" : "Significados de frequência absoluta e relativa de uma amostra",
+		"unit" : "Probabilidade e Estatística"
+	},
+	{
+		"name" : "Gráfico",
+		"unit" : "Probabilidade e Estatística"
+	},
+	{
+		"name" : "Problemas envolvendo espaço amostral e probabilidade de ocorrência de eventos",
+		"unit" : "Probabilidade e Estatística"
+	},
+	{
+		"name" : "Planejamento, execução e relatório de pesquisa amostral",
+		"unit" : "Probabilidade e Estatística"
+	},
+	{
+		"name" : "Medidas de tendência central",
+		"unit" : "Probabilidade e Estatística"
+	},
+	{
+		"name" : "Tipos de gráficos: usos e elementos constitutivos",
+		"unit" : "Probabilidade e Estatística"
+	},
+	{
+		"name" : "Chances de ocorrência em eventos aleatórios",
+		"unit" : "Probabilidade e Estatística"
+	},
+	{
+		"name" : "Tabela simples e de dupla entrada, gráficos de colunas, de linhas, barras e pictóricos",
+		"unit" : "Probabilidade e Estatística"
+	},
+	{
+		"name" : "Fases da pesquisa: coleta, classificação, organização e representação dos dados em tabelas e gráficos",
+		"unit" : "Probabilidade e Estatística"
+	},
+	{
+		"name" : "Produção de textos a partir de dados de pesquisa",
+		"unit" : "Probabilidade e Estatística"
+	},
+	{
+		"name" : "Unidades de medida (de comprimento, massa e capacidade): uso de estratégias pessoais e unidades de medidas não padronizadas",
+		"unit" : "Grandezas e Medidas"
+	},
+	{
+		"name" : "Unidades de medidas de tempo e uso do calendário",
+		"unit" : "Grandezas e Medidas"
+	},
+	{
+		"name" : "Sistema monetário brasileiro: o valor das diferentes cédulas e moedas",
+		"unit" : "Grandezas e Medidas"
+	},
+	{
+		"name" : "Medida de comprimento, capacidade e massa: estimativas, medições e comparações de medidas",
+		"unit" : "Grandezas e Medidas"
+	},
+	{
+		"name" : "Medidas de tempo: uso do calendário e leitura de horas em relógios digitais",
+		"unit" : "Grandezas e Medidas"
+	},
+	{
+		"name" : "Sistema monetário brasileiro: equivalência de valores entre cédulas e moedas",
+		"unit" : "Grandezas e Medidas"
+	},
+	{
+		"name" : "Problemas envolvendo o sistema monetário brasileiro: comparação e equivalência de valores",
+		"unit" : "Grandezas e Medidas"
+	},
+	{
+		"name" : "Medida de tempo: uso do calendário, relações entre ano, semestre, mês, semana e dia, leitura de horas em relógio digital e analógico",
+		"unit" : "Grandezas e Medidas"
+	},
+	{
+		"name" : "Medidas de comprimento, capacidade e massa: uso de unidades padronizadas, comparações e estimativas",
+		"unit" : "Grandezas e Medidas"
+	},
+	{
+		"name" : "Medidas de comprimento, massa e capacidade",
+		"unit" : "Grandezas e Medidas"
+	},
+	{
+		"name" : "Medidas de tempo",
+		"unit" : "Grandezas e Medidas"
+	},
+	{
+		"name" : "Sistema monetário brasileiro",
+		"unit" : "Grandezas e Medidas"
+	},
+	{
+		"name" : "Perímetro de figuras planas",
+		"unit" : "Grandezas e Medidas"
+	},
+	{
+		"name" : "Problemas envolvendo medidas de comprimento, massa, tempo, temperatura e capacidade, e, eventualmente, as transformações de unidade",
+		"unit" : "Grandezas e Medidas"
+	},
+	{
+		"name" : "Áreas de figuras geométricas planas: compreensão da área como a medida de uma superfície de uma figura geométrica plana; cálculo de áreas de retângulos e quadrados",
+		"unit" : "Grandezas e Medidas"
+	},
+	{
+		"name" : "Perímetro de polígonos desenhados em malhas quadriculadas ou não",
+		"unit" : "Grandezas e Medidas"
+	},
+	{
+		"name" : "Problemas envolvendo o sistema monetário brasileiro",
+		"unit" : "Grandezas e Medidas"
+	},
+	{
+		"name" : "Noção de volume",
+		"unit" : "Grandezas e Medidas"
+	},
+	{
+		"name" : "Medidas de comprimento, massa, tempo, temperatura e área",
+		"unit" : "Grandezas e Medidas"
+	},
+	{
+		"name" : "Estimativa para verificação de resultado",
+		"unit" : "Grandezas e Medidas"
+	},
+	{
+		"name" : "Seleção e uso de instrumentos de medida para realização de medições",
+		"unit" : "Grandezas e Medidas"
+	},
+	{
+		"name" : "Conversão de unidades de medidas mais usuais",
+		"unit" : "Grandezas e Medidas"
+	},
+	{
+		"name" : "Perímetro de figuras planas",
+		"unit" : "Grandezas e Medidas"
+	},
+	{
+		"name" : "Área de retângulo",
+		"unit" : "Grandezas e Medidas"
+	},
+	{
+		"name" : "Uso de transferidor ou de tecnologias digitais para medições de ângulos",
+		"unit" : "Grandezas e Medidas"
+	},
+	{
+		"name" : "Ampliação e redução de perímetros e áreas",
+		"unit" : "Grandezas e Medidas"
+	},
+	{
+		"name" : "Área de superfície",
+		"unit" : "Grandezas e Medidas"
+	},
+	{
+		"name" : "Volume de bloco retangular",
+		"unit" : "Grandezas e Medidas"
+	},
+	{
+		"name" : "Escala",
+		"unit" : "Grandezas e Medidas"
+	},
+	{
+		"name" : "Cálculo de volume de bloco retangular",
+		"unit" : "Grandezas e Medidas"
+	},
+	{
+		"name" : "Área de triângulo e quadriláteros",
+		"unit" : "Grandezas e Medidas"
+	},
+	{
+		"name" : "Relações entre medida de capacidade e volume",
+		"unit" : "Grandezas e Medidas"
+	},
+	{
+		"name" : "Volume de prismas e cilindros retos",
+		"unit" : "Grandezas e Medidas"
+	},
+	{
+		"name" : "Unidades especiais de medida, uso de notação científica",
+		"unit" : "Grandezas e Medidas"
+	},
+	{
+		"name" : "Perímetro e área de superfícies planas",
+		"unit" : "Grandezas e Medidas"
+	},
+	{
+		"name" : "Volume de cubos e bloco retangular",
+		"unit" : "Grandezas e Medidas"
+	},
+	{
+		"name" : "Volume de prismas e cilindros",
+		"unit" : "Grandezas e Medidas"
+	},
+	{
+		"name" : "Relação entre comprimento de uma circunferência e seu diâmetro",
+		"unit" : "Grandezas e Medidas"
+	},
+	{
+		"name" : "Área de círculo",
+		"unit" : "Grandezas e Medidas"
+	},
+	{
+		"name" : "Razão entre grandezas de espécies diferentes",
+		"unit" : "Grandezas e Medidas"
+	},
+	{
+		"name" : "Jogos e brincadeiras tradicionais infantis da cultura popular",
+		"unit" : "Jogos e Brincadeiras"
+	},
+	{
+		"name" : "Jogos de estratégia",
+		"unit" : "Jogos e Brincadeiras"
+	},
+	{
+		"name" : "Jogo de regras",
+		"unit" : "Jogos e Brincadeiras"
+	},
+	{
+		"name" : "Jogos de estratégias",
+		"unit" : "Jogos e Brincadeiras"
+	},
+	{
+		"name" : "Jogos probabilísticos",
+		"unit" : "Jogos e Brincadeiras"
+	},
+	{
+		"name" : "Jogos de estratégia e de conhecimento",
+		"unit" : "Jogos e Brincadeiras"
+	},
+	{
+		"name" : "Matemática e educação ambiental: vida na água",
+		"unit" : "Conexões Extramatemática"
+	},
+	{
+		"name" : "Matemática e saúde e bem-estar",
+		"unit" : "Conexões Extramatemática"
+	},
+	{
+		"name" : "Matemática e saúde: água potável e saneamento",
+		"unit" : "Conexões Extramatemática"
+	},
+	{
+		"name" : "Matemática e cultura indígena: redução de desigualdades",
+		"unit" : "Conexões Extramatemática"
+	},
+	{
+		"name" : "Fome Zero e agricultura sustentável",
+		"unit" : "Conexões Extramatemática"
+	},
+	{
+		"name" : "Matemática: consumo consciente e produção responsáve",
+		"unit" : "Conexões Extramatemática"
+	},
+	{
+		"name" : "Matemática e cultura africana: redução de desigualdades",
+		"unit" : "Conexões Extramatemática"
+	},
+	{
+		"name" : "Consumo e produção responsáveis",
+		"unit" : "Conexões Extramatemática"
+	},
+	{
+		"name" : "Matemática e trabalho: indústria, inovação e infraestrutura",
+		"unit" : "Conexões Extramatemática"
+	},
+	{
+		"name" : "Matemática e trabalho: trabalho decente e crescimento econômico",
+		"unit" : "Conexões Extramatemática"
+	},
+	{
+		"name" : "Matemática e clima: ações contra mudanças globais no clima (ODS 13)",
+		"unit" : "Conexões Extramatemática"
+	},
+	{
+		"name" : "Estratégias e procedimentos de resolução de problemas",
+		"unit" : "Processos Matemáticos"
+	},
+	{
+		"name" : "Estratégias e procedimentos de resolução de problemas e validação de resultados",
+		"unit" : "Processos Matemáticos"
+	},
+	{
+		"name" : "Elaboração de enunciados de problemas",
+		"unit" : "Processos Matemáticos"
+	},
+	{
+		"name" : "Formulação de enunciados de problemas a partir de sentenças matemáticas",
+		"unit" : "Processos Matemáticos"
+	},
+	{
+		"name" : "Pequenas investigações em contextos numéricos",
+		"unit" : "Processos Matemáticos"
+	},
+	{
+		"name" : "Investigações em contextos numéricos",
+		"unit" : "Processos Matemáticos"
+	},
+	{
+		"name" : "Resolução de problemas usando a linguagem matemática",
+		"unit" : "Processos Matemáticos"
+	},
+	{
+		"name" : "Pequenas investigações em contextos numéricos e geométricos",
+		"unit" : "Processos Matemáticos"
+	},
+	{
+		"name" : "Investigações em contextos numéricos e algébricos",
+		"unit" : "Processos Matemáticos"
+	},
+	{
+		"name" : "Investigações numéricas e algébricas",
+		"unit" : "Processos Matemáticos"
+	},
+	{
+		"name" : "Processos e método de trabalho científico",
+		"unit" : "Processos Matemáticos"
+	},
+	{
+		"name" : "Investigações em contextos numéricos e geométricos",
+		"unit" : "Processos Matemáticos"
+	},
+	{
+		"name" : "Processo e método científico",
+		"unit" : "Processos Matemáticos"
+	},
+	{
+		"name" : "Utilização de recursos tecnológicos com integração das TICs no processo de aprendizagem",
+		"unit" : "Processos Matemáticos"
+	},
+	{
+		"name" : "Processos e método científico",
+		"unit" : "Processos Matemáticos"
+	},
+	{
+		"name" : "Socioemocional",
+		"unit" : "Socioemocional"
+	}
+]

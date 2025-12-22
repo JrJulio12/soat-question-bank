@@ -1,0 +1,58 @@
+[
+    {
+      "stage": null,
+      "name": "Língua Portuguesa"
+    },
+    {
+      "stage": null,
+      "name": "Arte"
+    },
+    {
+      "stage": null,
+      "name": "Educação Física"
+    },
+    {
+      "stage": null,
+      "name": "Língua Inglesa"
+    },
+    {
+      "stage": null,
+      "name": "Matemática"
+    },
+    {
+      "stage": null,
+      "name": "Geografia"
+    },
+    {
+      "stage": null,
+      "name": "História"
+    },
+    {
+      "stage": "EF",
+      "name": "Ciências"
+    },
+    {
+      "stage": "EF",
+      "name": "Ensino Religioso"
+    },
+    {
+      "stage": "EM",
+      "name": "Biologia"
+    },
+    {
+      "stage": "EM",
+      "name": "Física"
+    },
+    {
+      "stage": "EM",
+      "name": "Química"
+    },
+    {
+      "stage": "EM",
+      "name": "Sociologia"
+    },
+    {
+      "stage": "EM",
+      "name": "Filosofia"
+    }
+]
