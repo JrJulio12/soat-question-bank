@@ -1,0 +1,1174 @@
+[
+	{
+		"name" : "Antiguidade",
+		"topic" : "História Geral da Arte"
+	},
+	{
+		"name" : "Arte Moderna",
+		"topic" : "História Geral da Arte"
+	},
+	{
+		"name" : "Arte Moderna Russa",
+		"topic" : "História Geral da Arte"
+	},
+	{
+		"name" : "Arte Norte-Americana",
+		"topic" : "História Geral da Arte"
+	},
+	{
+		"name" : "Arte na Idade Média",
+		"topic" : "História Geral da Arte"
+	},
+	{
+		"name" : "Arte na Pré-História",
+		"topic" : "História Geral da Arte"
+	},
+	{
+		"name" : "Conceitos",
+		"topic" : "História Geral da Arte"
+	},
+	{
+		"name" : "Contextos",
+		"topic" : "História Geral da Arte"
+	},
+	{
+		"name" : "Período Pré-Moderno",
+		"topic" : "História Geral da Arte"
+	},
+	{
+		"name" : "Renascimento",
+		"topic" : "História Geral da Arte"
+	},
+	{
+		"name" : "Vanguardas Modernas",
+		"topic" : "História Geral da Arte"
+	},
+	{
+		"name" : "Arte no Período Colonial",
+		"topic" : "História da Arte Brasileira"
+	},
+	{
+		"name" : "Arte no Período Monárquico",
+		"topic" : "História da Arte Brasileira"
+	},
+	{
+		"name" : "Arte no Período Republicano",
+		"topic" : "História da Arte Brasileira"
+	},
+	{
+		"name" : "Período Pré-Cabralino",
+		"topic" : "História da Arte Brasileira"
+	},
+	{
+		"name" : "Anatomia Vegetal",
+		"topic" : "Botânica"
+	},
+	{
+		"name" : "Classificação e Características dos Vegetais",
+		"topic" : "Botânica"
+	},
+	{
+		"name" : "Fisiologia Vegetal",
+		"topic" : "Botânica"
+	},
+	{
+		"name" : "Histologia Vegetal",
+		"topic" : "Botânica"
+	},
+	{
+		"name" : "Biologia Molecular",
+		"topic" : "Citologia"
+	},
+	{
+		"name" : "Bioquímica da Célula",
+		"topic" : "Citologia"
+	},
+	{
+		"name" : "Citoplasma e Organelas",
+		"topic" : "Citologia"
+	},
+	{
+		"name" : "Classificação e Caracterização",
+		"topic" : "Citologia"
+	},
+	{
+		"name" : "Embriologia",
+		"topic" : "Citologia"
+	},
+	{
+		"name" : "Histologia Animal",
+		"topic" : "Citologia"
+	},
+	{
+		"name" : "Imunologia",
+		"topic" : "Citologia"
+	},
+	{
+		"name" : "Membrana Plasmática e Transporte",
+		"topic" : "Citologia"
+	},
+	{
+		"name" : "Núcleo",
+		"topic" : "Citologia"
+	},
+	{
+		"name" : "Célula Vegetal",
+		"topic" : "Classificação dos Seres Vivos"
+	},
+	{
+		"name" : "Reinos dos Seres Vivos",
+		"topic" : "Classificação dos Seres Vivos"
+	},
+	{
+		"name" : "Biomas",
+		"topic" : "Ecologia"
+	},
+	{
+		"name" : "Componentes e Ecossistemas",
+		"topic" : "Ecologia"
+	},
+	{
+		"name" : "Desequilíbrio Ecológico",
+		"topic" : "Ecologia"
+	},
+	{
+		"name" : "Dinâmica de Populações",
+		"topic" : "Ecologia"
+	},
+	{
+		"name" : "Fluxo da Energia e da Matéria",
+		"topic" : "Ecologia"
+	},
+	{
+		"name" : "Evidências da Evolução",
+		"topic" : "Evolução"
+	},
+	{
+		"name" : "Formação de Novas Espécies",
+		"topic" : "Evolução"
+	},
+	{
+		"name" : "Origem da Vida",
+		"topic" : "Evolução"
+	},
+	{
+		"name" : "Origem dos Grupos dos Seres Vivos",
+		"topic" : "Evolução"
+	},
+	{
+		"name" : "Teorias Evolucionistas",
+		"topic" : "Evolução"
+	},
+	{
+		"name" : "Anatomia e Fisiologia dos Principais Sistemas",
+		"topic" : "Fisiologia Humana e Animal"
+	},
+	{
+		"name" : "Doenças  Parasitárias",
+		"topic" : "Fisiologia Humana e Animal"
+	},
+	{
+		"name" : "Biotecnologia",
+		"topic" : "Genética"
+	},
+	{
+		"name" : "Genética de Populações",
+		"topic" : "Genética"
+	},
+	{
+		"name" : "Grupos Sanguíneos",
+		"topic" : "Genética"
+	},
+	{
+		"name" : "Herança Citoplasmática",
+		"topic" : "Genética"
+	},
+	{
+		"name" : "Herança do Sexo",
+		"topic" : "Genética"
+	},
+	{
+		"name" : "Interação Gênica",
+		"topic" : "Genética"
+	},
+	{
+		"name" : "Mutações",
+		"topic" : "Genética"
+	},
+	{
+		"name" : "Primeira Lei de Mendel",
+		"topic" : "Genética"
+	},
+	{
+		"name" : "Segunda Lei de Mendel",
+		"topic" : "Genética"
+	},
+	{
+		"name" : "Vinculação Genética",
+		"topic" : "Genética"
+	},
+	{
+		"name" : "Anatomia e Fisiologia dos Principais Filos",
+		"topic" : "Zoologia"
+	},
+	{
+		"name" : "Classes dos Cordados",
+		"topic" : "Zoologia"
+	},
+	{
+		"name" : "Classificação Zoológica",
+		"topic" : "Zoologia"
+	},
+	{
+		"name" : "Danças",
+		"topic" : "Danças e Ginásticas"
+	},
+	{
+		"name" : "Ginástica ",
+		"topic" : "Danças e Ginásticas"
+	},
+	{
+		"name" : "Cultura Corporal e Corpo",
+		"topic" : "Elementos Articuladores"
+	},
+	{
+		"name" : "Cultura Corporal e Desportivização",
+		"topic" : "Elementos Articuladores"
+	},
+	{
+		"name" : "Cultura Corporal e Saúde",
+		"topic" : "Elementos Articuladores"
+	},
+	{
+		"name" : "Competições",
+		"topic" : "Esportes"
+	},
+	{
+		"name" : "Esportes Coletivos",
+		"topic" : "Esportes"
+	},
+	{
+		"name" : "Esportes Individuais",
+		"topic" : "Esportes"
+	},
+	{
+		"name" : "Jogos",
+		"topic" : "Lutas e Jogos"
+	},
+	{
+		"name" : "Lutas",
+		"topic" : "Lutas e Jogos"
+	},
+	{
+		"name" : "Gastos e Consumo",
+		"topic" : "Educação Financeira"
+	},
+	{
+		"name" : "Planejamento Financeiro",
+		"topic" : "Educação Financeira"
+	},
+	{
+		"name" : "Projetos e Comportamentos",
+		"topic" : "Estruturação de Projetos"
+	},
+	{
+		"name" : "Tecnologia",
+		"topic" : "Estruturação de Projetos"
+	},
+	{
+		"name" : "Filosofia Greco-Romana",
+		"topic" : "Filosofia Antiga"
+	},
+	{
+		"name" : "Filosofia Grega",
+		"topic" : "Filosofia Antiga"
+	},
+	{
+		"name" : "Estruturalismo",
+		"topic" : "Filosofia Contemporânea"
+	},
+	{
+		"name" : "Fenomenologia e Existencialismo",
+		"topic" : "Filosofia Contemporânea"
+	},
+	{
+		"name" : "Filosofia Analítica Contemporânea",
+		"topic" : "Filosofia Contemporânea"
+	},
+	{
+		"name" : "Marxismo",
+		"topic" : "Filosofia Contemporânea"
+	},
+	{
+		"name" : "Niilismo Contemporâneo",
+		"topic" : "Filosofia Contemporânea"
+	},
+	{
+		"name" : "Positivismo Contemporâneo",
+		"topic" : "Filosofia Contemporânea"
+	},
+	{
+		"name" : "Pragmatismo Contemporâneo",
+		"topic" : "Filosofia Contemporânea"
+	},
+	{
+		"name" : "Teoria Crítica/Escola de Frankfurt",
+		"topic" : "Filosofia Contemporânea"
+	},
+	{
+		"name" : "Utilitarismo Contemporâneo",
+		"topic" : "Filosofia Contemporânea"
+	},
+	{
+		"name" : "Filosofia Escolástica",
+		"topic" : "Filosofia Medieval"
+	},
+	{
+		"name" : "Filosofia Patrística",
+		"topic" : "Filosofia Medieval"
+	},
+	{
+		"name" : "Empirismo Moderno",
+		"topic" : "Filosofia Moderna"
+	},
+	{
+		"name" : "Filosofia Política",
+		"topic" : "Filosofia Moderna"
+	},
+	{
+		"name" : "Iluminismo/Esclarecimento",
+		"topic" : "Filosofia Moderna"
+	},
+	{
+		"name" : "Método Científico Moderno",
+		"topic" : "Filosofia Moderna"
+	},
+	{
+		"name" : "Racionalismo Moderno",
+		"topic" : "Filosofia Moderna"
+	},
+	{
+		"name" : "Temáticas em Filosofia",
+		"topic" : "Tópicos em Filosofia"
+	},
+	{
+		"name" : "Áreas da Filosofia",
+		"topic" : "Tópicos em Filosofia"
+	},
+	{
+		"name" : "Eletrodinâmica",
+		"topic" : "Elétrica"
+	},
+	{
+		"name" : "Eletromagnetismo",
+		"topic" : "Elétrica"
+	},
+	{
+		"name" : "Eletrostática",
+		"topic" : "Elétrica"
+	},
+	{
+		"name" : "Cinemática",
+		"topic" : "Mecânica"
+	},
+	{
+		"name" : "Dinâmica Estrutural",
+		"topic" : "Mecânica"
+	},
+	{
+		"name" : "Dinâmica Impulsiva",
+		"topic" : "Mecânica"
+	},
+	{
+		"name" : "Estática",
+		"topic" : "Mecânica"
+	},
+	{
+		"name" : "Gravitação",
+		"topic" : "Mecânica"
+	},
+	{
+		"name" : "Mecânica dos Fluidos",
+		"topic" : "Mecânica"
+	},
+	{
+		"name" : "Comportamento Ondulatório da Matéria",
+		"topic" : "Moderna"
+	},
+	{
+		"name" : "Introdução à Teoria da Relatividade",
+		"topic" : "Moderna"
+	},
+	{
+		"name" : "Noções de Física Quântica",
+		"topic" : "Moderna"
+	},
+	{
+		"name" : "Acústica",
+		"topic" : "Ondulatória"
+	},
+	{
+		"name" : "MHS",
+		"topic" : "Ondulatória"
+	},
+	{
+		"name" : "Ondas",
+		"topic" : "Ondulatória"
+	},
+	{
+		"name" : "Calorimetria",
+		"topic" : "Termologia"
+	},
+	{
+		"name" : "Propagação do Calor",
+		"topic" : "Termologia"
+	},
+	{
+		"name" : "Termodinâmica",
+		"topic" : "Termologia"
+	},
+	{
+		"name" : "Lentes",
+		"topic" : "Óptica"
+	},
+	{
+		"name" : "Reflexão",
+		"topic" : "Óptica"
+	},
+	{
+		"name" : "Refração",
+		"topic" : "Óptica"
+	},
+	{
+		"name" : "Escolas do Pensamento Geográfico",
+		"topic" : "A Ciência Geográfica"
+	},
+	{
+		"name" : "Teorias e Conceitos em Geografia",
+		"topic" : "A Ciência Geográfica"
+	},
+	{
+		"name" : "Brasil: Aspectos Econômicos",
+		"topic" : "Brasil"
+	},
+	{
+		"name" : "Brasil: Aspectos Físicos",
+		"topic" : "Brasil"
+	},
+	{
+		"name" : "Brasil: Aspectos Humanos",
+		"topic" : "Brasil"
+	},
+	{
+		"name" : "Brasil: Regionalização",
+		"topic" : "Brasil"
+	},
+	{
+		"name" : "Região Centro-Oeste",
+		"topic" : "Brasil"
+	},
+	{
+		"name" : "Região Nordeste",
+		"topic" : "Brasil"
+	},
+	{
+		"name" : "Região Norte",
+		"topic" : "Brasil"
+	},
+	{
+		"name" : "Região Sudeste",
+		"topic" : "Brasil"
+	},
+	{
+		"name" : "Região Sul",
+		"topic" : "Brasil"
+	},
+	{
+		"name" : "América: Aspectos Físicos",
+		"topic" : "Continentes"
+	},
+	{
+		"name" : "América: Aspectos Humanos",
+		"topic" : "Continentes"
+	},
+	{
+		"name" : "América: Aspectos Regionais",
+		"topic" : "Continentes"
+	},
+	{
+		"name" : "Europa: Aspectos Físicos",
+		"topic" : "Continentes"
+	},
+	{
+		"name" : "Europa: Aspectos Humanos",
+		"topic" : "Continentes"
+	},
+	{
+		"name" : "Europa: Aspectos Regionais",
+		"topic" : "Continentes"
+	},
+	{
+		"name" : "Oceania: Aspectos Físicos",
+		"topic" : "Continentes"
+	},
+	{
+		"name" : "Oceania: Aspectos Humanos",
+		"topic" : "Continentes"
+	},
+	{
+		"name" : "Regiões Polares",
+		"topic" : "Continentes"
+	},
+	{
+		"name" : "África: Aspectos Físicos",
+		"topic" : "Continentes"
+	},
+	{
+		"name" : "África: Aspectos Humanos",
+		"topic" : "Continentes"
+	},
+	{
+		"name" : "África: Aspectos Regionais",
+		"topic" : "Continentes"
+	},
+	{
+		"name" : "Ásia: Aspectos Físicos",
+		"topic" : "Continentes"
+	},
+	{
+		"name" : "Ásia: Aspectos Humanos",
+		"topic" : "Continentes"
+	},
+	{
+		"name" : "Ásia: Aspectos Regionais",
+		"topic" : "Continentes"
+	},
+	{
+		"name" : "Biogeografia",
+		"topic" : "Geografia Física Geral"
+	},
+	{
+		"name" : "Climatologia",
+		"topic" : "Geografia Física Geral"
+	},
+	{
+		"name" : "Geologia",
+		"topic" : "Geografia Física Geral"
+	},
+	{
+		"name" : "Geomorfologia",
+		"topic" : "Geografia Física Geral"
+	},
+	{
+		"name" : "Hidrografia",
+		"topic" : "Geografia Física Geral"
+	},
+	{
+		"name" : "Meio Ambiente",
+		"topic" : "Geografia Física Geral"
+	},
+	{
+		"name" : "Pedologia",
+		"topic" : "Geografia Física Geral"
+	},
+	{
+		"name" : "Demografia",
+		"topic" : "Geografia Humana Geral"
+	},
+	{
+		"name" : "Economia",
+		"topic" : "Geografia Humana Geral"
+	},
+	{
+		"name" : "Política",
+		"topic" : "Geografia Humana Geral"
+	},
+	{
+		"name" : "Sociedade e Cultura",
+		"topic" : "Geografia Humana Geral"
+	},
+	{
+		"name" : "Astronomia",
+		"topic" : "Sistemas de Orientação na Terra"
+	},
+	{
+		"name" : "Cartografia",
+		"topic" : "Sistemas de Orientação na Terra"
+	},
+	{
+		"name" : "Idade Antiga Clássica",
+		"topic" : "História Geral"
+	},
+	{
+		"name" : "Idade Antiga Oriental",
+		"topic" : "História Geral"
+	},
+	{
+		"name" : "Idade Contemporânea",
+		"topic" : "História Geral"
+	},
+	{
+		"name" : "Idade Moderna",
+		"topic" : "História Geral"
+	},
+	{
+		"name" : "Idade Média",
+		"topic" : "História Geral"
+	},
+	{
+		"name" : "Pré-História",
+		"topic" : "História Geral"
+	},
+	{
+		"name" : "América Espanhola e Latina",
+		"topic" : "História da América"
+	},
+	{
+		"name" : "América Inglesa/EUA",
+		"topic" : "História da América"
+	},
+	{
+		"name" : "Períodos",
+		"topic" : "História da África"
+	},
+	{
+		"name" : "Período Colonial",
+		"topic" : "História do Brasil"
+	},
+	{
+		"name" : "Período Monárquico",
+		"topic" : "História do Brasil"
+	},
+	{
+		"name" : "Período Pré-Colonial",
+		"topic" : "História do Brasil"
+	},
+	{
+		"name" : "Período Republicano",
+		"topic" : "História do Brasil"
+	},
+	{
+		"name" : "Cronologia",
+		"topic" : "Introdução à História"
+	},
+	{
+		"name" : "Estudo da História",
+		"topic" : "Introdução à História"
+	},
+	{
+		"name" : "Periodização",
+		"topic" : "Introdução à História"
+	},
+	{
+		"name" : "Questões Temáticas",
+		"topic" : "Temas Transversais"
+	},
+	{
+		"name" : "Acentuación",
+		"topic" : "Fonética"
+	},
+	{
+		"name" : "Pronunciación",
+		"topic" : "Fonética"
+	},
+	{
+		"name" : "Formación de las Palabras",
+		"topic" : "Gramática / Morfología"
+	},
+	{
+		"name" : "Los Adjetivos",
+		"topic" : "Gramática / Morfología"
+	},
+	{
+		"name" : "Los Artículos",
+		"topic" : "Gramática / Morfología"
+	},
+	{
+		"name" : "Los Pronombres",
+		"topic" : "Gramática / Morfología"
+	},
+	{
+		"name" : "Los Sustantivos",
+		"topic" : "Gramática / Morfología"
+	},
+	{
+		"name" : "Identificando Tipos de Texto",
+		"topic" : "Gramática / Semántica"
+	},
+	{
+		"name" : "Vocabulario",
+		"topic" : "Gramática / Semántica"
+	},
+	{
+		"name" : "Adjetivos",
+		"topic" : "Gramática / Sintaxis"
+	},
+	{
+		"name" : "Advérbios",
+		"topic" : "Gramática / Sintaxis"
+	},
+	{
+		"name" : "Artículos ",
+		"topic" : "Gramática / Sintaxis"
+	},
+	{
+		"name" : "Conjunciones",
+		"topic" : "Gramática / Sintaxis"
+	},
+	{
+		"name" : "Oraciones",
+		"topic" : "Gramática / Sintaxis"
+	},
+	{
+		"name" : "Ortografía",
+		"topic" : "Gramática / Sintaxis"
+	},
+	{
+		"name" : "Preposiciones",
+		"topic" : "Gramática / Sintaxis"
+	},
+	{
+		"name" : "Pronombres ",
+		"topic" : "Gramática / Sintaxis"
+	},
+	{
+		"name" : "Sustantivos",
+		"topic" : "Gramática / Sintaxis"
+	},
+	{
+		"name" : "Verbos",
+		"topic" : "Gramática / Sintaxis"
+	},
+	{
+		"name" : "Interpretación de Textos",
+		"topic" : "Lectura"
+	},
+	{
+		"name" : "Adjectives and Adverbs",
+		"topic" : "Grammar"
+	},
+	{
+		"name" : "Articles, Determiners and Quantifiers",
+		"topic" : "Grammar"
+	},
+	{
+		"name" : "Clauses and Conjunctions",
+		"topic" : "Grammar"
+	},
+	{
+		"name" : "Modals , Semi Modals and Phrasal Modals",
+		"topic" : "Grammar"
+	},
+	{
+		"name" : "Nouns",
+		"topic" : "Grammar"
+	},
+	{
+		"name" : "Other Topics",
+		"topic" : "Grammar"
+	},
+	{
+		"name" : "Passive Structure, Reported Speech and Questions",
+		"topic" : "Grammar"
+	},
+	{
+		"name" : "Prepositions",
+		"topic" : "Grammar"
+	},
+	{
+		"name" : "Pronouns",
+		"topic" : "Grammar"
+	},
+	{
+		"name" : "Relative Clauses and Other Types of Clauses",
+		"topic" : "Grammar"
+	},
+	{
+		"name" : "Verbs",
+		"topic" : "Grammar"
+	},
+	{
+		"name" : "Word Form and Word Choice",
+		"topic" : "Grammar"
+	},
+	{
+		"name" : "Comprehension",
+		"topic" : "Reading"
+	},
+	{
+		"name" : "Identifying Types of Text",
+		"topic" : "Reading"
+	},
+	{
+		"name" : "Pronunciation",
+		"topic" : "Speaking"
+	},
+	{
+		"name" : "Essay",
+		"topic" : "Writing"
+	},
+	{
+		"name" : "Morphology",
+		"topic" : "Writing"
+	},
+	{
+		"name" : "Register",
+		"topic" : "Writing"
+	},
+	{
+		"name" : "Vocabulary",
+		"topic" : "Writing"
+	},
+	{
+		"name" : "Fonologia",
+		"topic" : "Gramática (Estrutura e Norma Culta)"
+	},
+	{
+		"name" : "Morfologia - Classes de Palavras",
+		"topic" : "Gramática (Estrutura e Norma Culta)"
+	},
+	{
+		"name" : "Morfologia - Estrutura da Palavra",
+		"topic" : "Gramática (Estrutura e Norma Culta)"
+	},
+	{
+		"name" : "Ortografia",
+		"topic" : "Gramática (Estrutura e Norma Culta)"
+	},
+	{
+		"name" : "Sintaxe",
+		"topic" : "Gramática (Estrutura e Norma Culta)"
+	},
+	{
+		"name" : "Gêneros Textuais",
+		"topic" : "Interpretação Textual"
+	},
+	{
+		"name" : "Semântica",
+		"topic" : "Interpretação Textual"
+	},
+	{
+		"name" : "Africana",
+		"topic" : "Literatura"
+	},
+	{
+		"name" : "Brasileira",
+		"topic" : "Literatura"
+	},
+	{
+		"name" : "Portuguesa",
+		"topic" : "Literatura"
+	},
+	{
+		"name" : "Texto Descritivo",
+		"topic" : "Produção textual"
+	},
+	{
+		"name" : "Texto Dissertativo",
+		"topic" : "Produção textual"
+	},
+	{
+		"name" : "Texto Expositivo",
+		"topic" : "Produção textual"
+	},
+	{
+		"name" : "Texto Injuntivo",
+		"topic" : "Produção textual"
+	},
+	{
+		"name" : "Texto Narrativo",
+		"topic" : "Produção textual"
+	},
+	{
+		"name" : "Grandezas Dimensionais",
+		"topic" : "Aritmética"
+	},
+	{
+		"name" : "Teoria dos Números",
+		"topic" : "Aritmética"
+	},
+	{
+		"name" : "Análise Combinatória",
+		"topic" : "Estatística e Probabilidade"
+	},
+	{
+		"name" : "Espaço de Probabilidade",
+		"topic" : "Estatística e Probabilidade"
+	},
+	{
+		"name" : "Estatística Descritiva",
+		"topic" : "Estatística e Probabilidade"
+	},
+	{
+		"name" : "Analítica",
+		"topic" : "Geometria"
+	},
+	{
+		"name" : "Espacial",
+		"topic" : "Geometria"
+	},
+	{
+		"name" : "Plana",
+		"topic" : "Geometria"
+	},
+	{
+		"name" : "Trigonometria",
+		"topic" : "Geometria"
+	},
+	{
+		"name" : "Lógica",
+		"topic" : "Indução Matemática"
+	},
+	{
+		"name" : "Progressões",
+		"topic" : "Indução Matemática"
+	},
+	{
+		"name" : "Séries",
+		"topic" : "Indução Matemática"
+	},
+	{
+		"name" : "Cálculo Diferencial",
+		"topic" : "Álgebra Avançada"
+	},
+	{
+		"name" : "Equações Algébricas",
+		"topic" : "Álgebra Avançada"
+	},
+	{
+		"name" : "Números Complexos",
+		"topic" : "Álgebra Avançada"
+	},
+	{
+		"name" : "Estrutural",
+		"topic" : "Álgebra Elementar"
+	},
+	{
+		"name" : "Funcional",
+		"topic" : "Álgebra Elementar"
+	},
+	{
+		"name" : "Teoria dos Logaritmos",
+		"topic" : "Álgebra Elementar"
+	},
+	{
+		"name" : "Matrizes",
+		"topic" : "Álgebra Matricial"
+	},
+	{
+		"name" : "Sistemas Lineares",
+		"topic" : "Álgebra Matricial"
+	},
+	{
+		"name" : "Atomística",
+		"topic" : "Estrutura da Matéria"
+	},
+	{
+		"name" : "Classificação Periódica",
+		"topic" : "Estrutura da Matéria"
+	},
+	{
+		"name" : "Ligações Químicas",
+		"topic" : "Estrutura da Matéria"
+	},
+	{
+		"name" : "Polaridade e Forças Intermoleculares",
+		"topic" : "Estrutura da Matéria"
+	},
+	{
+		"name" : "Química Nuclear",
+		"topic" : "Estrutura da Matéria"
+	},
+	{
+		"name" : "Cinética Química",
+		"topic" : "Físico-Química"
+	},
+	{
+		"name" : "Eletroquímica",
+		"topic" : "Físico-Química"
+	},
+	{
+		"name" : "Equilíbrios Iônicos",
+		"topic" : "Físico-Química"
+	},
+	{
+		"name" : "Equilíbrios Químicos",
+		"topic" : "Físico-Química"
+	},
+	{
+		"name" : "Oxidorredução",
+		"topic" : "Físico-Química"
+	},
+	{
+		"name" : "Propriedades Coligativas",
+		"topic" : "Físico-Química"
+	},
+	{
+		"name" : "Soluções",
+		"topic" : "Físico-Química"
+	},
+	{
+		"name" : "Termoquímica",
+		"topic" : "Físico-Química"
+	},
+	{
+		"name" : "Conceitos de Ácidos e Bases",
+		"topic" : "Química Geral e Inorgânica"
+	},
+	{
+		"name" : "Estequiometria",
+		"topic" : "Química Geral e Inorgânica"
+	},
+	{
+		"name" : "Fracionamento de Misturas",
+		"topic" : "Química Geral e Inorgânica"
+	},
+	{
+		"name" : "Gases",
+		"topic" : "Química Geral e Inorgânica"
+	},
+	{
+		"name" : "Química Inorgânica",
+		"topic" : "Química Geral e Inorgânica"
+	},
+	{
+		"name" : "Substâncias Puras e Misturas",
+		"topic" : "Química Geral e Inorgânica"
+	},
+	{
+		"name" : "Teoria Atômico Molecular Moderna",
+		"topic" : "Química Geral e Inorgânica"
+	},
+	{
+		"name" : "Aminas",
+		"topic" : "Química Orgânica"
+	},
+	{
+		"name" : "Bioquímica",
+		"topic" : "Química Orgânica"
+	},
+	{
+		"name" : "Compostos Aromáticos",
+		"topic" : "Química Orgânica"
+	},
+	{
+		"name" : "Funções Orgânicas",
+		"topic" : "Química Orgânica"
+	},
+	{
+		"name" : "Haletos, Álcool, Éter, Fenol, Aldeído e Cetona",
+		"topic" : "Química Orgânica"
+	},
+	{
+		"name" : "Hidrocarbonetos - Reações Químicas",
+		"topic" : "Química Orgânica"
+	},
+	{
+		"name" : "Isomeria",
+		"topic" : "Química Orgânica"
+	},
+	{
+		"name" : "Polímeros",
+		"topic" : "Química Orgânica"
+	},
+	{
+		"name" : "Sínteses Orgânicas Gerais",
+		"topic" : "Química Orgânica"
+	},
+	{
+		"name" : "Ácido Carboxílico e Derivados",
+		"topic" : "Química Orgânica"
+	},
+	{
+		"name" : "Combustíveis",
+		"topic" : "Temas Interdisciplinares"
+	},
+	{
+		"name" : "Química Ambiental e Química Verde",
+		"topic" : "Temas Interdisciplinares"
+	},
+	{
+		"name" : "Química do Cotidiano e do Sistema Produtivo",
+		"topic" : "Temas Interdisciplinares"
+	},
+	{
+		"name" : "Água: Propriedades, Poluição e Tratamento",
+		"topic" : "Temas Interdisciplinares"
+	},
+	{
+		"name" : "Estratificação Social",
+		"topic" : "Sociologia Aplicada"
+	},
+	{
+		"name" : "Movimentos Sociais",
+		"topic" : "Sociologia Aplicada"
+	},
+	{
+		"name" : "Socialização",
+		"topic" : "Sociologia Aplicada"
+	},
+	{
+		"name" : "Sociologia Política",
+		"topic" : "Sociologia Aplicada"
+	},
+	{
+		"name" : "Sociologia da Cultura",
+		"topic" : "Sociologia Aplicada"
+	},
+	{
+		"name" : "Temáticas",
+		"topic" : "Sociologia Aplicada"
+	},
+	{
+		"name" : "Trabalho e Produção",
+		"topic" : "Sociologia Aplicada"
+	},
+	{
+		"name" : "Auguste Comte",
+		"topic" : "Sociologia Teórica"
+	},
+	{
+		"name" : "Emile Durkheim",
+		"topic" : "Sociologia Teórica"
+	},
+	{
+		"name" : "Karl Marx",
+		"topic" : "Sociologia Teórica"
+	},
+	{
+		"name" : "Max Weber",
+		"topic" : "Sociologia Teórica"
+	},
+	{
+		"name" : "Método Sociológico",
+		"topic" : "Sociologia Teórica"
+	},
+	{
+		"name" : "Sociologia Contemporânea",
+		"topic" : "Sociologia Teórica"
+	},
+	{
+		"name" : "Banco de Dados",
+		"topic" : "Desenvolvimento de Aplicações"
+	},
+	{
+		"name" : "Estruturas de Dados",
+		"topic" : "Desenvolvimento de Aplicações"
+	},
+	{
+		"name" : "Programação",
+		"topic" : "Desenvolvimento de Aplicações"
+	},
+	{
+		"name" : "Arquitetura e Organização de Computadores",
+		"topic" : "Infraestrutura"
+	},
+	{
+		"name" : "Redes de Computadores",
+		"topic" : "Infraestrutura"
+	},
+	{
+		"name" : "Segurança da Informação",
+		"topic" : "Infraestrutura"
+	}
+]

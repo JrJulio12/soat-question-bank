@@ -11,14 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('bncc_question', function (Blueprint $table) {
+        Schema::create('bncc_serie', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('question_id')->constrained()->onDelete('cascade');
             $table->foreignId('bncc_id')->constrained()->onDelete('cascade');
+            $table->foreignId('serie_id')->constrained()->onDelete('cascade');
 
-            $table->unique(['question_id', 'bncc_id']);
-            $table->index('question_id');
+            $table->unique(['bncc_id', 'serie_id']);
             $table->index('bncc_id');
+            $table->index('serie_id');
         });
     }
 
@@ -27,7 +27,7 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('bncc_question');
+        Schema::dropIfExists('bncc_serie');
     }
 };
 

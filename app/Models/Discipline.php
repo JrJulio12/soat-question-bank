@@ -49,4 +49,12 @@ class Discipline extends Model
     {
         return $this->hasMany(Bncc::class);
     }
+
+    /**
+     * Get the topics for the discipline.
+     */
+    public function topics(): HasMany
+    {
+        return $this->hasMany(Topic::class);
+    }
 }

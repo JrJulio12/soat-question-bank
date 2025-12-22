@@ -1,0 +1,390 @@
+[
+	{
+		"name" : "Artes integradas",
+		"discipline" : "Arte"
+	},
+	{
+		"name" : "Artes visuais",
+		"discipline" : "Arte"
+	},
+	{
+		"name" : "Dança",
+		"discipline" : "Arte"
+	},
+	{
+		"name" : "Música",
+		"discipline" : "Arte"
+	},
+	{
+		"name" : "Teatro",
+		"discipline" : "Arte"
+	},
+	{
+		"name" : "Matéria e energia",
+		"discipline" : "Ciências"
+	},
+	{
+		"name" : "Terra e Universo",
+		"discipline" : "Ciências"
+	},
+	{
+		"name" : "Vida e evolução",
+		"discipline" : "Ciências"
+	},
+	{
+		"name" : "Brincadeiras e jogos",
+		"discipline" : "Educação Física"
+	},
+	{
+		"name" : "Danças",
+		"discipline" : "Educação Física"
+	},
+	{
+		"name" : "Esportes",
+		"discipline" : "Educação Física"
+	},
+	{
+		"name" : "Ginásticas",
+		"discipline" : "Educação Física"
+	},
+	{
+		"name" : "Lutas",
+		"discipline" : "Educação Física"
+	},
+	{
+		"name" : "Práticas corporais de aventura",
+		"discipline" : "Educação Física"
+	},
+	{
+		"name" : "Identidades e alteridades",
+		"discipline" : "Ensino Religioso"
+	},
+	{
+		"name" : "Manifestações religiosas",
+		"discipline" : "Ensino Religioso"
+	},
+	{
+		"name" : "Crenças religiosas e filosofias de vida",
+		"discipline" : "Ensino Religioso"
+	},
+	{
+		"name" : "Conexões e escalas",
+		"discipline" : "Geografia"
+	},
+	{
+		"name" : "Formas de representação e pensamento espacial",
+		"discipline" : "Geografia"
+	},
+	{
+		"name" : "Mundo do trabalho",
+		"discipline" : "Geografia"
+	},
+	{
+		"name" : "Natureza, ambientes e qualidade de vida",
+		"discipline" : "Geografia"
+	},
+	{
+		"name" : "O sujeito e seu lugar no mundo",
+		"discipline" : "Geografia"
+	},
+	{
+		"name" : "A comunidade e seus registros",
+		"discipline" : "História"
+	},
+	{
+		"name" : "A história recente",
+		"discipline" : "História"
+	},
+	{
+		"name" : "A invenção do mundo clássico e o contraponto com outras sociedades",
+		"discipline" : "História"
+	},
+	{
+		"name" : "A noção de espaço público e privado",
+		"discipline" : "História"
+	},
+	{
+		"name" : "A organização do poder e as dinâmicas do mundo colonial americano",
+		"discipline" : "História"
+	},
+	{
+		"name" : "As formas de registrar as experiências da comunidade",
+		"discipline" : "História"
+	},
+	{
+		"name" : "As pessoas e os grupos que compõem a cidade e o município",
+		"discipline" : "História"
+	},
+	{
+		"name" : "As questões históricas relativas às migrações",
+		"discipline" : "História"
+	},
+	{
+		"name" : "Circulação de pessoas, produtos e culturas",
+		"discipline" : "História"
+	},
+	{
+		"name" : "Configurações do mundo no século XIX",
+		"discipline" : "História"
+	},
+	{
+		"name" : "História: tempo, espaço e formas de registros",
+		"discipline" : "História"
+	},
+	{
+		"name" : "Humanismos, Renascimentos e o Novo Mundo",
+		"discipline" : "História"
+	},
+	{
+		"name" : "Lógicas comerciais e mercantis da modernidade",
+		"discipline" : "História"
+	},
+	{
+		"name" : "Lógicas de organização política",
+		"discipline" : "História"
+	},
+	{
+		"name" : "Modernização, ditadura civil-militar e redemocratização: o Brasil após 1946",
+		"discipline" : "História"
+	},
+	{
+		"name" : "Mundo pessoal: eu, meu grupo social e meu tempo",
+		"discipline" : "História"
+	},
+	{
+		"name" : "Mundo pessoal: meu lugar no mundo",
+		"discipline" : "História"
+	},
+	{
+		"name" : "O Brasil no século XIX",
+		"discipline" : "História"
+	},
+	{
+		"name" : "O lugar em que vive",
+		"discipline" : "História"
+	},
+	{
+		"name" : "O mundo contemporâneo: o Antigo Regime em crise",
+		"discipline" : "História"
+	},
+	{
+		"name" : "O mundo moderno e a conexão entre sociedades africanas, americanas e europeias",
+		"discipline" : "História"
+	},
+	{
+		"name" : "O nascimento da República no Brasil e os processos históricos até a metade do século XX",
+		"discipline" : "História"
+	},
+	{
+		"name" : "O trabalho e a sustentabilidade na comunidade",
+		"discipline" : "História"
+	},
+	{
+		"name" : "Os processos de independência nas Américas",
+		"discipline" : "História"
+	},
+	{
+		"name" : "Povos e culturas: meu lugar no mundo e meu grupo social",
+		"discipline" : "História"
+	},
+	{
+		"name" : "Registros da história: linguagens e culturas",
+		"discipline" : "História"
+	},
+	{
+		"name" : "Totalitarismos e conflitos mundiais",
+		"discipline" : "História"
+	},
+	{
+		"name" : "Trabalho e formas de organização social e cultural",
+		"discipline" : "História"
+	},
+	{
+		"name" : "Transformações e permanências nas trajetórias dos grupos humanos",
+		"discipline" : "História"
+	},
+	{
+		"name" : "Espanhol",
+		"discipline" : "Língua Espanhola"
+	},
+	{
+		"name" : "A língua inglesa no cotidiano da sociedade brasileira/comunidade",
+		"discipline" : "Língua Inglesa"
+	},
+	{
+		"name" : "A língua inglesa no mundo",
+		"discipline" : "Língua Inglesa"
+	},
+	{
+		"name" : "Atitudes e disposições favoráveis do leitor",
+		"discipline" : "Língua Inglesa"
+	},
+	{
+		"name" : "Avaliação dos textos lidos",
+		"discipline" : "Língua Inglesa"
+	},
+	{
+		"name" : "Compreensão oral",
+		"discipline" : "Língua Inglesa"
+	},
+	{
+		"name" : "Comunicação intercultural",
+		"discipline" : "Língua Inglesa"
+	},
+	{
+		"name" : "Estratégias de escrita",
+		"discipline" : "Língua Inglesa"
+	},
+	{
+		"name" : "Estratégias de escrita: escrita e pós- escrita",
+		"discipline" : "Língua Inglesa"
+	},
+	{
+		"name" : "Estratégias de escrita: pré-escrita",
+		"discipline" : "Língua Inglesa"
+	},
+	{
+		"name" : "Estratégias de escrita: pré-escrita e escrita",
+		"discipline" : "Língua Inglesa"
+	},
+	{
+		"name" : "Estratégias de leitura",
+		"discipline" : "Língua Inglesa"
+	},
+	{
+		"name" : "Estudo do léxico",
+		"discipline" : "Língua Inglesa"
+	},
+	{
+		"name" : "Gramática",
+		"discipline" : "Língua Inglesa"
+	},
+	{
+		"name" : "Inglês EFAI",
+		"discipline" : "Língua Inglesa"
+	},
+	{
+		"name" : "Interação discursiva",
+		"discipline" : "Língua Inglesa"
+	},
+	{
+		"name" : "Manifestações culturais",
+		"discipline" : "Língua Inglesa"
+	},
+	{
+		"name" : "Produção oral",
+		"discipline" : "Língua Inglesa"
+	},
+	{
+		"name" : "Práticas de escrita",
+		"discipline" : "Língua Inglesa"
+	},
+	{
+		"name" : "Práticas de leitura e construção de repertório lexical",
+		"discipline" : "Língua Inglesa"
+	},
+	{
+		"name" : "Práticas de leitura e fruição",
+		"discipline" : "Língua Inglesa"
+	},
+	{
+		"name" : "Práticas de leitura e novas tecnologias",
+		"discipline" : "Língua Inglesa"
+	},
+	{
+		"name" : "Práticas de leitura e pesquisa",
+		"discipline" : "Língua Inglesa"
+	},
+	{
+		"name" : "Análise linguística/semiótica",
+		"discipline" : "Língua Portuguesa"
+	},
+	{
+		"name" : "Análise linguística/semiótica (Alfabetização)",
+		"discipline" : "Língua Portuguesa"
+	},
+	{
+		"name" : "Análise linguística/semiótica (Ortografização)",
+		"discipline" : "Língua Portuguesa"
+	},
+	{
+		"name" : "Escrita (compartilhada e autônoma)",
+		"discipline" : "Língua Portuguesa"
+	},
+	{
+		"name" : "Leitura",
+		"discipline" : "Língua Portuguesa"
+	},
+	{
+		"name" : "Leitura/escuta (compartilhada e autônoma)",
+		"discipline" : "Língua Portuguesa"
+	},
+	{
+		"name" : "Oralidade",
+		"discipline" : "Língua Portuguesa"
+	},
+	{
+		"name" : "Produção de textos",
+		"discipline" : "Língua Portuguesa"
+	},
+	{
+		"name" : "Produção de textos (escrita compartilhada e autônoma)",
+		"discipline" : "Língua Portuguesa"
+	},
+	{
+		"name" : "Geometria",
+		"discipline" : "Matemática"
+	},
+	{
+		"name" : "Grandezas e medidas",
+		"discipline" : "Matemática"
+	},
+	{
+		"name" : "Números",
+		"discipline" : "Matemática"
+	},
+	{
+		"name" : "Probabilidade e estatística",
+		"discipline" : "Matemática"
+	},
+	{
+		"name" : "Álgebra",
+		"discipline" : "Matemática"
+	},
+	{
+		"name" : "Números",
+		"discipline" : "Matemática (SME SP)"
+	},
+	{
+		"name" : "Álgebra",
+		"discipline" : "Matemática (SME SP)"
+	},
+	{
+		"name" : "Geometria",
+		"discipline" : "Matemática (SME SP)"
+	},
+	{
+		"name" : "Probabilidade e Estatística",
+		"discipline" : "Matemática (SME SP)"
+	},
+	{
+		"name" : "Grandezas e Medidas",
+		"discipline" : "Matemática (SME SP)"
+	},
+	{
+		"name" : "Jogos e Brincadeiras",
+		"discipline" : "Matemática (SME SP)"
+	},
+	{
+		"name" : "Conexões Extramatemática",
+		"discipline" : "Matemática (SME SP)"
+	},
+	{
+		"name" : "Processos Matemáticos",
+		"discipline" : "Matemática (SME SP)"
+	},
+	{
+		"name" : "Socioemocional",
+		"discipline" : "Socioemocional"
+	}
+]

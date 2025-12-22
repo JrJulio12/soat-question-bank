@@ -1,0 +1,274 @@
+[
+	{
+		"name" : "História Geral da Arte",
+		"discipline" : "Arte"
+	},
+	{
+		"name" : "História da Arte Brasileira",
+		"discipline" : "Arte"
+	},
+	{
+		"name" : "Danças e Ginásticas",
+		"discipline" : "Educação Física"
+	},
+	{
+		"name" : "Elementos Articuladores",
+		"discipline" : "Educação Física"
+	},
+	{
+		"name" : "Esportes",
+		"discipline" : "Educação Física"
+	},
+	{
+		"name" : "Lutas e Jogos",
+		"discipline" : "Educação Física"
+	},
+	{
+		"name" : "A Ciência Geográfica",
+		"discipline" : "Geografia"
+	},
+	{
+		"name" : "Brasil",
+		"discipline" : "Geografia"
+	},
+	{
+		"name" : "Continentes",
+		"discipline" : "Geografia"
+	},
+	{
+		"name" : "Geografia Física Geral",
+		"discipline" : "Geografia"
+	},
+	{
+		"name" : "Geografia Humana Geral",
+		"discipline" : "Geografia"
+	},
+	{
+		"name" : "Sistemas de Orientação na Terra",
+		"discipline" : "Geografia"
+	},
+	{
+		"name" : "História Geral",
+		"discipline" : "História"
+	},
+	{
+		"name" : "História da América",
+		"discipline" : "História"
+	},
+	{
+		"name" : "História da África",
+		"discipline" : "História"
+	},
+	{
+		"name" : "História do Brasil",
+		"discipline" : "História"
+	},
+	{
+		"name" : "Introdução à História",
+		"discipline" : "História"
+	},
+	{
+		"name" : "Temas Transversais",
+		"discipline" : "História"
+	},
+	{
+		"name" : "Fonética",
+		"discipline" : "Língua Espanhola"
+	},
+	{
+		"name" : "Gramática / Morfología",
+		"discipline" : "Língua Espanhola"
+	},
+	{
+		"name" : "Gramática / Semántica",
+		"discipline" : "Língua Espanhola"
+	},
+	{
+		"name" : "Gramática / Sintaxis",
+		"discipline" : "Língua Espanhola"
+	},
+	{
+		"name" : "Lectura",
+		"discipline" : "Língua Espanhola"
+	},
+	{
+		"name" : "Grammar",
+		"discipline" : "Língua Inglesa"
+	},
+	{
+		"name" : "Reading",
+		"discipline" : "Língua Inglesa"
+	},
+	{
+		"name" : "Speaking",
+		"discipline" : "Língua Inglesa"
+	},
+	{
+		"name" : "Writing",
+		"discipline" : "Língua Inglesa"
+	},
+	{
+		"name" : "Gramática (Estrutura e Norma Culta)",
+		"discipline" : "Língua Portuguesa"
+	},
+	{
+		"name" : "Interpretação Textual",
+		"discipline" : "Língua Portuguesa"
+	},
+	{
+		"name" : "Literatura",
+		"discipline" : "Língua Portuguesa"
+	},
+	{
+		"name" : "Produção textual",
+		"discipline" : "Língua Portuguesa"
+	},
+	{
+		"name" : "Aritmética",
+		"discipline" : "Matemática"
+	},
+	{
+		"name" : "Estatística e Probabilidade",
+		"discipline" : "Matemática"
+	},
+	{
+		"name" : "Geometria",
+		"discipline" : "Matemática"
+	},
+	{
+		"name" : "Indução Matemática",
+		"discipline" : "Matemática"
+	},
+	{
+		"name" : "Álgebra Avançada",
+		"discipline" : "Matemática"
+	},
+	{
+		"name" : "Álgebra Elementar",
+		"discipline" : "Matemática"
+	},
+	{
+		"name" : "Álgebra Matricial",
+		"discipline" : "Matemática"
+	},
+	{
+		"name" : "Botânica",
+		"discipline" : "Biologia"
+	},
+	{
+		"name" : "Citologia",
+		"discipline" : "Biologia"
+	},
+	{
+		"name" : "Classificação dos Seres Vivos",
+		"discipline" : "Biologia"
+	},
+	{
+		"name" : "Ecologia",
+		"discipline" : "Biologia"
+	},
+	{
+		"name" : "Evolução",
+		"discipline" : "Biologia"
+	},
+	{
+		"name" : "Fisiologia Humana e Animal",
+		"discipline" : "Biologia"
+	},
+	{
+		"name" : "Genética",
+		"discipline" : "Biologia"
+	},
+	{
+		"name" : "Zoologia",
+		"discipline" : "Biologia"
+	},
+	{
+		"name" : "Elétrica",
+		"discipline" : "Física"
+	},
+	{
+		"name" : "Mecânica",
+		"discipline" : "Física"
+	},
+	{
+		"name" : "Moderna",
+		"discipline" : "Física"
+	},
+	{
+		"name" : "Ondulatória",
+		"discipline" : "Física"
+	},
+	{
+		"name" : "Termologia",
+		"discipline" : "Física"
+	},
+	{
+		"name" : "Óptica",
+		"discipline" : "Física"
+	},
+	{
+		"name" : "Estrutura da Matéria",
+		"discipline" : "Química"
+	},
+	{
+		"name" : "Físico-Química",
+		"discipline" : "Química"
+	},
+	{
+		"name" : "Química Geral e Inorgânica",
+		"discipline" : "Química"
+	},
+	{
+		"name" : "Química Orgânica",
+		"discipline" : "Química"
+	},
+	{
+		"name" : "Temas Interdisciplinares",
+		"discipline" : "Química"
+	},
+	{
+		"name" : "Educação Financeira",
+		"discipline" : "Empreendedorismo"
+	},
+	{
+		"name" : "Estruturação de Projetos",
+		"discipline" : "Empreendedorismo"
+	},
+	{
+		"name" : "Filosofia Antiga",
+		"discipline" : "Filosofia"
+	},
+	{
+		"name" : "Filosofia Contemporânea",
+		"discipline" : "Filosofia"
+	},
+	{
+		"name" : "Filosofia Medieval",
+		"discipline" : "Filosofia"
+	},
+	{
+		"name" : "Filosofia Moderna",
+		"discipline" : "Filosofia"
+	},
+	{
+		"name" : "Tópicos em Filosofia",
+		"discipline" : "Filosofia"
+	},
+	{
+		"name" : "Sociologia Aplicada",
+		"discipline" : "Sociologia"
+	},
+	{
+		"name" : "Sociologia Teórica",
+		"discipline" : "Sociologia"
+	},
+	{
+		"name" : "Desenvolvimento de Aplicações",
+		"discipline" : "Tecnologia da Informação"
+	},
+	{
+		"name" : "Infraestrutura",
+		"discipline" : "Tecnologia da Informação"
+	}
+]

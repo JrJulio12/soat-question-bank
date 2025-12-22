@@ -7,9 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
-class Competence extends Model
+class Topic extends Model
 {
-    /** @use HasFactory<\Database\Factories\CompetenceFactory> */
+    /** @use HasFactory<\Database\Factories\TopicFactory> */
     use HasFactory;
 
     /**
@@ -18,24 +18,24 @@ class Competence extends Model
      * @var list<string>
      */
     protected $fillable = [
-        'area_id',
-        'code',
-        'description',
+        'name',
+        'discipline_id',
     ];
 
     /**
-     * Get the area that owns the competence.
+     * Get the discipline that owns the topic.
      */
-    public function area(): BelongsTo
+    public function discipline(): BelongsTo
     {
-        return $this->belongsTo(Area::class);
+        return $this->belongsTo(Discipline::class);
     }
 
     /**
-     * Get the bnccs for the competence.
+     * Get the chapters for the topic.
      */
-    public function bnccs(): HasMany
+    public function chapters(): HasMany
     {
-        return $this->hasMany(Bncc::class);
+        return $this->hasMany(Chapter::class);
     }
 }
+
