@@ -23,9 +23,75 @@
         </script>
     @endif
 
+    <!-- Tom Select CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.bootstrap5.css" rel="stylesheet">
+    
     <style>
         body {
             font-family: 'Inter', sans-serif;
+        }
+        
+        /* Tom Select Dark Mode Support */
+        .dark .ts-control {
+            background-color: #0a0a0a;
+            border-color: #374151;
+            color: #EDEDEC;
+        }
+        
+        .dark .ts-control.focus {
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
+        
+        .dark .ts-dropdown {
+            background-color: #161615;
+            border-color: #374151;
+        }
+        
+        .dark .ts-dropdown .option {
+            color: #EDEDEC;
+        }
+        
+        .dark .ts-dropdown .option.active {
+            background-color: #1f2937;
+            color: #EDEDEC;
+        }
+        
+        .dark .ts-dropdown .option.selected {
+            background-color: #3b82f6;
+            color: white;
+        }
+        
+        .dark .ts-dropdown .option input {
+            background-color: #0a0a0a;
+            color: #EDEDEC;
+        }
+        
+        .ts-control {
+            border-radius: 0.375rem;
+            padding: 0.5rem;
+            transition: all 0.2s;
+        }
+        
+        .ts-control.focus {
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
+        
+        .ts-wrapper.multi .ts-control {
+            padding: 0.375rem;
+        }
+        
+        .ts-wrapper.multi .ts-control [data-value] {
+            background-color: #3b82f6;
+            color: white;
+            border-radius: 0.25rem;
+            padding: 0.25rem 0.5rem;
+            margin: 0.125rem;
+        }
+        
+        .dark .ts-wrapper.multi .ts-control [data-value] {
+            background-color: #2563eb;
         }
     </style>
 
@@ -72,16 +138,16 @@
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
                                 </svg>
-                                <span>Dashboard</span>
+                                <span>DASHBOARD</span>
                             </a>
 
                             <!-- Resources Dropdown -->
                             <div class="relative group">
-                                <button class="px-4 py-2 rounded-lg text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors flex items-center space-x-2 {{ request()->routeIs('disciplines.*', 'units.*', 'knowledges.*', 'topics.*', 'chapters.*', 'subjects.*', 'series.*', 'bnccs.*', 'questions.*') ? 'bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400' : '' }}">
+                                <button class="px-4 py-2 rounded-lg text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors flex items-center space-x-2 {{ request()->routeIs('disciplines.*', 'units.*', 'knowledges.*', 'topics.*', 'chapters.*', 'subjects.*', 'series.*', 'bnccs.*') ? 'bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400' : '' }}">
                                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path>
                                     </svg>
-                                    <span>Resources</span>
+                                    <span>BNCC</span>
                                     <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                                     </svg>
@@ -136,15 +202,16 @@
                                             </svg>
                                             <span>BNCCs</span>
                                         </a>
-                                        <a href="{{ route('questions.index') }}" class="flex items-center space-x-3 px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
-                                            <svg class="w-5 h-5 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                            </svg>
-                                            <span>Questions</span>
-                                        </a>
                                     </div>
                                 </div>
                             </div>
+
+                            <a href="{{ route('questions.index') }}" class="px-4 py-2 rounded-lg text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors flex items-center space-x-2 {{ request()->routeIs('questions.*') ? 'bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400' : '' }}">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                <span>QUESTIONS</span>
+                            </a>
 
                             <!-- Dark Mode Toggle -->
                             <button id="theme-toggle" type="button" class="p-2 rounded-lg text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-gray-900 dark:hover:text-gray-100 transition-colors">
@@ -244,6 +311,31 @@
                 });
             }
         })();
+    </script>
+
+    <!-- Tom Select JS -->
+    <script src="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/js/tom-select.complete.min.js"></script>
+    
+    <!-- Initialize Tom Select for multiselect fields -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize all multiselect fields
+            const multiselectFields = document.querySelectorAll('.multiselect');
+            multiselectFields.forEach(function(field) {
+                new TomSelect(field, {
+                    plugins: ['remove_button'],
+                    placeholder: 'Select options...',
+                    maxItems: null,
+                    create: false,
+                    searchField: ['text', 'value'],
+                    render: {
+                        no_results: function(data, escape) {
+                            return '<div class="no-results">No results found for "' + escape(data.input) + '"</div>';
+                        }
+                    }
+                });
+            });
+        });
     </script>
 </body>
 </html>

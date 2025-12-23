@@ -22,16 +22,31 @@
         @endif
 
         <div class="mb-4">
-            <form method="GET" action="{{ route('knowledges.index') }}" class="flex gap-2">
-                <select name="unit_id" class="rounded-md border-gray-300 dark:border-gray-700 dark:bg-[#161615] dark:text-[#EDEDEC] shadow-sm focus:border-blue-500 focus:ring-blue-500">
-                    <option value="">All Units</option>
-                    @foreach($units as $unit)
-                        <option value="{{ $unit->id }}" {{ request('unit_id') == $unit->id ? 'selected' : '' }}>
-                            {{ $unit->name }} ({{ $unit->discipline->name }})
-                        </option>
-                    @endforeach
-                </select>
-                <button type="submit" class="bg-gray-600 hover:bg-gray-700 text-white font-medium py-2 px-4 rounded-lg transition-colors">Filter</button>
+            <form method="GET" action="{{ route('knowledges.index') }}" class="flex gap-3 items-end">
+                <div class="flex-1">
+                    <label for="unit_id" class="flex items-center text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
+                        <svg class="w-5 h-5 mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
+                        </svg>
+                        Unit
+                    </label>
+                    <select name="unit_id" id="unit_id" class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-700 dark:bg-[#0a0a0a] dark:text-[#EDEDEC] shadow-sm focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all">
+                        <option value="">All Units</option>
+                        @foreach($units as $unit)
+                            <option value="{{ $unit->id }}" {{ request('unit_id') == $unit->id ? 'selected' : '' }}>
+                                {{ $unit->name }} ({{ $unit->discipline->name }})
+                            </option>
+                        @endforeach
+                    </select>
+                </div>
+                <div>
+                    <button type="submit" class="px-6 py-3 rounded-lg font-medium text-white bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 transition-all shadow-md hover:shadow-lg flex items-center">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"></path>
+                        </svg>
+                        Filter
+                    </button>
+                </div>
             </form>
         </div>
 
@@ -85,4 +100,5 @@
     </div>
 </div>
 @endsection
+
 
