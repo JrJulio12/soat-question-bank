@@ -111,3 +111,4 @@ class DisciplineUnitTest extends TestCase
         $this->assertTrue($unit->knowledges->contains($knowledge2));
     }
 }
+

@@ -47,3 +47,4 @@ class ForgotPasswordController extends Controller
         ]);
     }
 }
+

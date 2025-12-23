@@ -36,3 +36,4 @@ class TopicSeeder extends Seeder
         }
     }
 }
+

@@ -36,3 +36,4 @@ class SubjectSeeder extends Seeder
         }
     }
 }
+

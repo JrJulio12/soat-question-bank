@@ -49,3 +49,4 @@ class RegisterController extends Controller
         return redirect('/home');
     }
 }
+

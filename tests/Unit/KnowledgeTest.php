@@ -91,3 +91,4 @@ class KnowledgeTest extends TestCase
         $this->assertTrue($knowledge->bnccs->contains($bncc2));
     }
 }
+

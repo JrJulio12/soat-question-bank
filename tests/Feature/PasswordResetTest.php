@@ -50,3 +50,4 @@ class PasswordResetTest extends TestCase
         $this->assertTrue(Hash::check('new-password', $user->password));
     }
 }
+

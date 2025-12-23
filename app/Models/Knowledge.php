@@ -41,3 +41,4 @@ class Knowledge extends Model
         return $this->belongsToMany(Bncc::class);
     }
 }
+

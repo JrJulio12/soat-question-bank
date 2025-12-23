@@ -81,3 +81,4 @@ class OptionTest extends TestCase
         $this->assertTrue($option->is_correct);
     }
 }
+

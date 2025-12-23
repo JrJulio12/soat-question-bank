@@ -58,3 +58,4 @@ class VerificationController extends Controller
         return back()->with('resent', true);
     }
 }
+
