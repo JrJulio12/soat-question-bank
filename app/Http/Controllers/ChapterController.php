@@ -17,7 +17,7 @@ class ChapterController extends Controller
     {
         $query = Chapter::with(['topic', 'subjects']);
 
-        if ($request->has('topic_id')) {
+        if ($request->filled('topic_id')) {
             $query->where('topic_id', $request->topic_id);
         }
 

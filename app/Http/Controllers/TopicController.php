@@ -17,7 +17,7 @@ class TopicController extends Controller
     {
         $query = Topic::with(['discipline', 'chapters']);
 
-        if ($request->has('discipline_id')) {
+        if ($request->filled('discipline_id')) {
             $query->where('discipline_id', $request->discipline_id);
         }
 

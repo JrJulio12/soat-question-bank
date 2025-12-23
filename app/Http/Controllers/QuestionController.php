@@ -18,11 +18,11 @@ class QuestionController extends Controller
     {
         $query = Question::with(['bnccs', 'subjects']);
 
-        if ($request->has('stage')) {
+        if ($request->filled('stage')) {
             $query->where('stage', $request->stage);
         }
 
-        if ($request->has('status')) {
+        if ($request->filled('status')) {
             $query->where('status', $request->status);
         }
 

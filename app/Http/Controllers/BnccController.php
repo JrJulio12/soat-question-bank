@@ -19,7 +19,7 @@ class BnccController extends Controller
     {
         $query = Bncc::with(['discipline', 'series', 'knowledges']);
 
-        if ($request->has('discipline_id')) {
+        if ($request->filled('discipline_id')) {
             $query->where('discipline_id', $request->discipline_id);
         }
 

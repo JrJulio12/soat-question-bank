@@ -50,6 +50,6 @@ Route::resource('knowledges', KnowledgeController::class)->middleware('auth');
 Route::resource('topics', TopicController::class)->middleware('auth');
 Route::resource('chapters', ChapterController::class)->middleware('auth');
 Route::resource('subjects', SubjectController::class)->middleware('auth');
-Route::resource('series', SerieController::class)->middleware('auth');
+Route::resource('series', SerieController::class)->parameters(['series' => 'serie'])->middleware('auth');
 Route::resource('bnccs', BnccController::class)->middleware('auth');
 Route::resource('questions', QuestionController::class)->middleware('auth');

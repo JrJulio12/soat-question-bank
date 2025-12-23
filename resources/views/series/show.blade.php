@@ -11,7 +11,7 @@
                 <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Serie Details</p>
             </div>
             <div class="flex gap-3">
-                <a href="{{ route('series.edit', $serie) }}" class="bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-4 rounded-lg transition-colors">
+                <a href="{{ route('series.edit', $serie->id) }}" class="bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-4 rounded-lg transition-colors">
                     Edit
                 </a>
                 <a href="{{ route('series.index') }}" class="bg-gray-600 hover:bg-gray-700 text-white font-medium py-2 px-4 rounded-lg transition-colors">

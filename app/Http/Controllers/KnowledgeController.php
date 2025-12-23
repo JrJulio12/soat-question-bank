@@ -17,7 +17,7 @@ class KnowledgeController extends Controller
     {
         $query = Knowledge::with(['unit', 'bnccs']);
 
-        if ($request->has('unit_id')) {
+        if ($request->filled('unit_id')) {
             $query->where('unit_id', $request->unit_id);
         }
 

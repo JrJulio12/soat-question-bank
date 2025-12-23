@@ -17,7 +17,7 @@ class SubjectController extends Controller
     {
         $query = Subject::with(['chapter.topic', 'questions']);
 
-        if ($request->has('chapter_id')) {
+        if ($request->filled('chapter_id')) {
             $query->where('chapter_id', $request->chapter_id);
         }
 
