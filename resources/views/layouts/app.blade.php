@@ -112,7 +112,7 @@
     </script>
 </head>
 <body class="h-full bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-200">
-    <div class="min-h-screen flex flex-col">
+    <div id="app" class="min-h-screen flex flex-col">
         <!-- Modern Navigation -->
         <nav class="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 shadow-sm sticky top-0 z-50 backdrop-blur-sm bg-white/80 dark:bg-gray-800/80">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
