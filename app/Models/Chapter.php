@@ -39,3 +39,4 @@ class Chapter extends Model
     }
 }
 
+

@@ -46,3 +46,4 @@ class EmailVerificationTest extends TestCase
         $response->assertSessionHas('resent', true);
     }
 }
+

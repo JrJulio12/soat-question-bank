@@ -49,3 +49,4 @@ class RegistrationTest extends TestCase
         $this->assertGuest();
     }
 }
+

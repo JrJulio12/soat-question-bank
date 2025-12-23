@@ -45,3 +45,4 @@ class Serie extends Model
         return $this->belongsToMany(Bncc::class);
     }
 }
+

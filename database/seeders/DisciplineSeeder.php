@@ -34,3 +34,4 @@ class DisciplineSeeder extends Seeder
     }
 }
 
+

@@ -75,3 +75,4 @@ class SerieTest extends TestCase
         $this->assertTrue($serie->bnccs->contains($bncc2));
     }
 }
+

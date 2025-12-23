@@ -83,3 +83,4 @@ class Bncc extends Model
         return $this->belongsToMany(Question::class);
     }
 }
+

@@ -58,3 +58,4 @@ class Discipline extends Model
         return $this->hasMany(Topic::class);
     }
 }
+
