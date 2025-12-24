@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Bncc;
+use App\Models\Option;
 use App\Models\Question;
 use App\Models\Subject;
 use Illuminate\Http\Request;
@@ -43,11 +44,21 @@ class QuestionController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request): RedirectResponse
+    public function store(Request $request)
     {
-        $validated = $request->validate([
+        // Parse options JSON if it's a string
+        if ($request->has('options') && is_string($request->input('options'))) {
+            $optionsJson = $request->input('options');
+            if (!empty($optionsJson)) {
+                $options = json_decode($optionsJson, true);
+                if (json_last_error() === JSON_ERROR_NONE && is_array($options)) {
+                    $request->merge(['options' => $options]);
+                }
+            }
+        }
+
+        $rules = [
             'stem' => 'required|string',
-            'answer_text' => 'nullable|string',
             'stage' => 'required|in:EF,EM',
             'type' => 'required|in:multiple_choice,multi_select,true_false,open',
             'status' => 'required|in:draft,published',
@@ -55,7 +66,44 @@ class QuestionController extends Controller
             'bnccs.*' => 'exists:bnccs,id',
             'subjects' => 'nullable|array',
             'subjects.*' => 'exists:subjects,id',
-        ]);
+        ];
+
+        // Add validation based on question type
+        if ($request->input('type') === 'open') {
+            $rules['answer_text'] = 'nullable|string';
+        } else {
+            $rules['options'] = ['required', 'array', 'min:2'];
+            $rules['options.*.text'] = 'required|string|max:255';
+            $rules['options.*.is_correct'] = 'boolean';
+            $rules['options.*.order'] = 'required|integer|min:1';
+
+            // Type-specific validation
+            if ($request->input('type') === 'true_false') {
+                $rules['options'][] = 'size:2';
+                $rules['options'][] = function ($attribute, $value, $fail) {
+                    if (count(array_filter($value, fn($option) => $option['is_correct'])) !== 1) {
+                        $fail('Exactly one option must be marked as correct for True/False questions.');
+                    }
+                    if ($value[0]['text'] !== 'True' || $value[1]['text'] !== 'False') {
+                        $fail('True/False options must be "True" and "False".');
+                    }
+                };
+            } elseif ($request->input('type') === 'multiple_choice') {
+                $rules['options'][] = function ($attribute, $value, $fail) {
+                    if (count(array_filter($value, fn($option) => $option['is_correct'])) !== 1) {
+                        $fail('Exactly one option must be marked as correct for Multiple Choice questions.');
+                    }
+                };
+            } elseif ($request->input('type') === 'multi_select') {
+                $rules['options'][] = function ($attribute, $value, $fail) {
+                    if (count(array_filter($value, fn($option) => $option['is_correct'])) === 0) {
+                        $fail('At least one option must be marked as correct for Multi Select questions.');
+                    }
+                };
+            }
+        }
+
+        $validated = $request->validate($rules);
 
         $question = Question::create($validated);
 
@@ -65,6 +113,22 @@ class QuestionController extends Controller
 
         if ($request->has('subjects')) {
             $question->subjects()->sync($request->subjects);
+        }
+
+        // Create options if type is not "open"
+        if ($request->input('type') !== 'open' && isset($validated['options'])) {
+            foreach ($validated['options'] as $optionData) {
+                $question->options()->create($optionData);
+            }
+        }
+
+        // Return JSON response for axios
+        if ($request->expectsJson() || $request->wantsJson()) {
+            return response()->json([
+                'success' => true,
+                'message' => 'Question created successfully.',
+                'question' => $question
+            ]);
         }
 
         return redirect()->route('questions.index')
