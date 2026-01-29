@@ -177,6 +177,18 @@ class QuestionControllerTest extends TestCase
             'stage' => 'EF',
             'type' => 'multiple_choice',
             'status' => 'draft',
+            'options' => [
+                [
+                    'text' => '4',
+                    'is_correct' => true,
+                    'order' => 1
+                ],
+                [
+                    'text' => '5',
+                    'is_correct' => false,
+                    'order' => 2
+                ]
+            ],
         ];
 
         $response = $this->actingAs($this->user)->post(route('questions.store'), $data);
@@ -185,7 +197,6 @@ class QuestionControllerTest extends TestCase
         $response->assertSessionHas('success', 'Question created successfully.');
         $this->assertDatabaseHas('questions', [
             'stem' => 'What is 2+2?',
-            'answer_text' => '4',
             'stage' => 'EF',
             'type' => 'multiple_choice',
             'status' => 'draft',
@@ -262,6 +273,18 @@ class QuestionControllerTest extends TestCase
             'type' => 'multiple_choice',
             'status' => 'draft',
             'bnccs' => [$bncc1->id, $bncc2->id],
+            'options' => [
+                [
+                    'text' => 'Option 1',
+                    'is_correct' => true,
+                    'order' => 1
+                ],
+                [
+                    'text' => 'Option 2',
+                    'is_correct' => false,
+                    'order' => 2
+                ]
+            ],
         ];
 
         $response = $this->actingAs($this->user)->post(route('questions.store'), $data);
@@ -287,6 +310,18 @@ class QuestionControllerTest extends TestCase
             'type' => 'multiple_choice',
             'status' => 'draft',
             'subjects' => [$subject1->id, $subject2->id],
+            'options' => [
+                [
+                    'text' => 'Option 1',
+                    'is_correct' => true,
+                    'order' => 1
+                ],
+                [
+                    'text' => 'Option 2',
+                    'is_correct' => false,
+                    'order' => 2
+                ]
+            ],
         ];
 
         $response = $this->actingAs($this->user)->post(route('questions.store'), $data);
@@ -320,6 +355,18 @@ class QuestionControllerTest extends TestCase
             'status' => 'draft',
             'bnccs' => [$bncc->id],
             'subjects' => [$subject->id],
+            'options' => [
+                [
+                    'text' => 'Option 1',
+                    'is_correct' => true,
+                    'order' => 1
+                ],
+                [
+                    'text' => 'Option 2',
+                    'is_correct' => false,
+                    'order' => 2
+                ]
+            ],
         ];
 
         $response = $this->actingAs($this->user)->post(route('questions.store'), $data);
@@ -423,10 +470,13 @@ class QuestionControllerTest extends TestCase
 
         $data = [
             'stem' => 'Updated question',
-            'answer_text' => 'Updated answer',
             'stage' => 'EM',
             'type' => 'true_false',
             'status' => 'published',
+            'options' => [
+                ['text' => 'True', 'is_correct' => true, 'order' => 1],
+                ['text' => 'False', 'is_correct' => false, 'order' => 2],
+            ],
         ];
 
         $response = $this->actingAs($this->user)->put(route('questions.update', $question), $data);
@@ -436,7 +486,6 @@ class QuestionControllerTest extends TestCase
         $this->assertDatabaseHas('questions', [
             'id' => $question->id,
             'stem' => 'Updated question',
-            'answer_text' => 'Updated answer',
             'stage' => 'EM',
             'type' => 'true_false',
             'status' => 'published',
@@ -493,6 +542,10 @@ class QuestionControllerTest extends TestCase
             'status' => 'draft',
             'bnccs' => [$bncc2->id],
             'subjects' => [$subject->id],
+            'options' => [
+                ['text' => 'Option A', 'is_correct' => true, 'order' => 1],
+                ['text' => 'Option B', 'is_correct' => false, 'order' => 2],
+            ],
         ];
 
         $response = $this->actingAs($this->user)->put(route('questions.update', $question), $data);
@@ -535,6 +588,10 @@ class QuestionControllerTest extends TestCase
             'stage' => 'EF',
             'type' => 'multiple_choice',
             'status' => 'draft',
+            'options' => [
+                ['text' => 'Option A', 'is_correct' => true, 'order' => 1],
+                ['text' => 'Option B', 'is_correct' => false, 'order' => 2],
+            ],
         ];
 
         $response = $this->actingAs($this->user)->put(route('questions.update', $question), $data);
