@@ -1,10 +1,10 @@
 import './bootstrap';
-
 import { createApp } from 'vue';
+import QuestionForm from './components/QuestionForm.vue';
 
 const app = createApp({});
 
-// import ExampleComponent from './components/ExampleComponent.vue';
-// app.component('example-component', ExampleComponent);
+// Register component globally
+app.component('question-form', QuestionForm);
 
 app.mount('#app');
