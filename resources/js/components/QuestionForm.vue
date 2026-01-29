@@ -906,6 +906,10 @@ export default {
         cancelUrl: {
             type: String,
             default: '/questions'
+        },
+        question: {
+            type: Object,
+            default: null
         }
     },
     setup(props) {
@@ -1246,10 +1250,69 @@ export default {
         }
 
         // Initialize on mount
-        onMounted(() => {
+        onMounted(async () => {
+            if (props.question) {
+                // Edit mode: pre-fill form from question
+                form.stem = props.question.stem || ''
+                form.answer_text = props.question.answer_text || ''
+                form.stage = props.question.stage || ''
+                form.type = props.question.type || ''
+                form.status = props.question.status || ''
+                form.bnccs = (props.question.bnccs || []).map(b => b.id)
+                form.subjects = (props.question.subjects || []).map(s => s.id)
+                form.options = (props.question.options || []).map(o => ({
+                    text: o.text,
+                    is_correct: !!o.is_correct,
+                    order: o.order ?? 0
+                }))
+                if (form.options.length === 0 && form.type === 'true_false') {
+                    form.options = [
+                        { text: 'True', is_correct: false, order: 1 },
+                        { text: 'False', is_correct: false, order: 2 }
+                    ]
+                }
+
+                // Derive BNCC hierarchy from question.bnccs (knowledges.unit.discipline_id)
+                const discIds = new Set()
+                const unitIds = new Set()
+                const knowledgeIds = new Set()
+                ;(props.question.bnccs || []).forEach(b => {
+                    ;(b.knowledges || []).forEach(k => {
+                        if (k.id) knowledgeIds.add(k.id)
+                        if (k.unit_id) unitIds.add(k.unit_id)
+                        if (k.unit && k.unit.discipline_id) discIds.add(k.unit.discipline_id)
+                    })
+                })
+                selectedBnccDisciplines.value = [...discIds]
+                selectedBnccUnits.value = [...unitIds]
+                selectedBnccKnowledges.value = [...knowledgeIds]
+
+                // Derive Subject hierarchy from question.subjects (chapter.topic.discipline_id)
+                const subjDiscIds = new Set()
+                const topicIds = new Set()
+                const chapterIds = new Set()
+                ;(props.question.subjects || []).forEach(s => {
+                    if (s.chapter_id) chapterIds.add(s.chapter_id)
+                    const ch = s.chapter
+                    if (ch && ch.topic_id) topicIds.add(ch.topic_id)
+                    if (ch && ch.topic && ch.topic.discipline_id) subjDiscIds.add(ch.topic.discipline_id)
+                })
+                selectedSubjectDisciplines.value = [...subjDiscIds]
+                selectedSubjectTopics.value = [...topicIds]
+                selectedSubjectChapters.value = [...chapterIds]
+
+                // Watchers clear form.bnccs/form.subjects when hierarchy refs change; restore after and load BNCC data
+                await nextTick()
+                form.bnccs = (props.question.bnccs || []).map(b => b.id)
+                form.subjects = (props.question.subjects || []).map(s => s.id)
+                await loadUnits()
+                await loadKnowledges()
+                await loadBnccs()
+            }
+
             initializeTomSelect()
             // Load BNCCs if stage is already selected (for direct selection)
-            if (form.stage) {
+            if (form.stage && !props.question) {
                 loadBnccs()
             }
         })
@@ -1469,21 +1532,23 @@ export default {
                     formData.options = form.options
                 }
 
-                const response = await window.axios.post('/questions', formData)
+                const url = props.question
+                    ? `/questions/${props.question.id}`
+                    : '/questions'
+                const method = props.question ? 'put' : 'post'
+                const response = await window.axios[method](url, formData)
 
                 if (response.data.success) {
-                    successMessage.value = response.data.message || 'Question created successfully.'
-                    // Redirect after a short delay
+                    successMessage.value = response.data.message || (props.question ? 'Question updated successfully.' : 'Question created successfully.')
                     setTimeout(() => {
                         window.location.href = props.cancelUrl
                     }, 1500)
                 }
             } catch (error) {
                 if (error.response && error.response.status === 422) {
-                    // Validation errors
                     errors.value = error.response.data.errors || {}
                 } else {
-                    errorMessage.value = error.response?.data?.message || 'An error occurred while creating the question.'
+                    errorMessage.value = error.response?.data?.message || (props.question ? 'An error occurred while updating the question.' : 'An error occurred while creating the question.')
                 }
             } finally {
                 loading.value = false

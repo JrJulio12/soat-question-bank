@@ -417,20 +417,102 @@ class QuestionController extends Controller
      */
     public function edit(Question $question): View
     {
-        $bnccs = Bncc::all();
-        $subjects = Subject::all();
-        $question->load(['bnccs', 'subjects']);
-        return view('questions.edit', compact('question', 'bnccs', 'subjects'));
+        // Load same hierarchical data as create() for the Vue form
+        $disciplines = Discipline::with(['units.knowledges', 'topics.chapters.subjects'])->get()->map(function ($discipline) {
+            $discipline->stage = $discipline->stage?->value;
+            return $discipline;
+        });
+        $units = \App\Models\Unit::with(['discipline', 'knowledges'])->get();
+        $knowledges = \App\Models\Knowledge::with(['unit.discipline', 'bnccs'])->get();
+        $bnccs = Bncc::with(['discipline', 'knowledges.unit.discipline'])->get()->map(function ($bncc) {
+            $bncc->stage = $bncc->stage?->value;
+            if ($bncc->discipline) {
+                $bncc->discipline->stage = $bncc->discipline->stage?->value;
+            }
+            return $bncc;
+        });
+        $topics = \App\Models\Topic::with(['discipline', 'chapters.subjects'])->get()->map(function ($topic) {
+            if ($topic->discipline) {
+                $topic->discipline->stage = $topic->discipline->stage?->value;
+            }
+            return $topic;
+        });
+        $chapters = \App\Models\Chapter::with(['topic.discipline', 'subjects'])->get()->map(function ($chapter) {
+            if ($chapter->topic && $chapter->topic->discipline) {
+                $chapter->topic->discipline->stage = $chapter->topic->discipline->stage?->value;
+            }
+            return $chapter;
+        });
+        $subjects = Subject::with(['chapter.topic.discipline'])->get()->map(function ($subject) {
+            if ($subject->chapter && $subject->chapter->topic && $subject->chapter->topic->discipline) {
+                $subject->chapter->topic->discipline->stage = $subject->chapter->topic->discipline->stage?->value;
+            }
+            return $subject;
+        });
+
+        $question->load(['options', 'bnccs.knowledges.unit', 'subjects.chapter.topic']);
+
+        $questionForVue = [
+            'id' => $question->id,
+            'stem' => $question->stem,
+            'answer_text' => $question->answer_text ?? '',
+            'stage' => $question->stage->value,
+            'type' => $question->type->value,
+            'status' => $question->status->value,
+            'options' => $question->options->sortBy('order')->values()->map(fn ($o) => [
+                'text' => $o->text,
+                'is_correct' => $o->is_correct,
+                'order' => $o->order,
+            ])->values()->all(),
+            'bnccs' => $question->bnccs->map(fn ($b) => [
+                'id' => $b->id,
+                'knowledges' => $b->knowledges->map(fn ($k) => [
+                    'id' => $k->id,
+                    'unit_id' => $k->unit_id,
+                    'unit' => $k->unit ? ['discipline_id' => $k->unit->discipline_id] : null,
+                ])->all(),
+            ])->all(),
+            'subjects' => $question->subjects->map(fn ($s) => [
+                'id' => $s->id,
+                'chapter_id' => $s->chapter_id,
+                'chapter' => $s->chapter ? [
+                    'topic_id' => $s->chapter->topic_id,
+                    'topic' => $s->chapter->topic ? ['discipline_id' => $s->chapter->topic->discipline_id] : null,
+                ] : null,
+            ])->all(),
+        ];
+
+        return view('questions.edit', compact(
+            'question',
+            'disciplines',
+            'units',
+            'knowledges',
+            'bnccs',
+            'topics',
+            'chapters',
+            'subjects',
+            'questionForVue'
+        ));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Question $question): RedirectResponse
+    public function update(Request $request, Question $question)
     {
-        $validated = $request->validate([
+        // Parse options JSON if it's a string (same as store)
+        if ($request->has('options') && is_string($request->input('options'))) {
+            $optionsJson = $request->input('options');
+            if (! empty($optionsJson)) {
+                $options = json_decode($optionsJson, true);
+                if (json_last_error() === JSON_ERROR_NONE && is_array($options)) {
+                    $request->merge(['options' => $options]);
+                }
+            }
+        }
+
+        $rules = [
             'stem' => 'required|string',
-            'answer_text' => 'nullable|string',
             'stage' => 'required|in:EF,EM',
             'type' => 'required|in:multiple_choice,multi_select,true_false,open',
             'status' => 'required|in:draft,published',
@@ -438,9 +520,50 @@ class QuestionController extends Controller
             'bnccs.*' => 'exists:bnccs,id',
             'subjects' => 'nullable|array',
             'subjects.*' => 'exists:subjects,id',
-        ]);
+        ];
 
-        $question->update($validated);
+        if ($request->input('type') === 'open') {
+            $rules['answer_text'] = 'nullable|string';
+        } else {
+            $rules['options'] = ['required', 'array', 'min:2'];
+            $rules['options.*.text'] = 'required|string|max:255';
+            $rules['options.*.is_correct'] = 'boolean';
+            $rules['options.*.order'] = 'required|integer|min:1';
+
+            if ($request->input('type') === 'true_false') {
+                $rules['options'][] = 'size:2';
+                $rules['options'][] = function ($attribute, $value, $fail) {
+                    if (count(array_filter($value, fn ($option) => $option['is_correct'])) !== 1) {
+                        $fail('Exactly one option must be marked as correct for True/False questions.');
+                    }
+                    if ($value[0]['text'] !== 'True' || $value[1]['text'] !== 'False') {
+                        $fail('True/False options must be "True" and "False".');
+                    }
+                };
+            } elseif ($request->input('type') === 'multiple_choice') {
+                $rules['options'][] = function ($attribute, $value, $fail) {
+                    if (count(array_filter($value, fn ($option) => $option['is_correct'])) !== 1) {
+                        $fail('Exactly one option must be marked as correct for Multiple Choice questions.');
+                    }
+                };
+            } elseif ($request->input('type') === 'multi_select') {
+                $rules['options'][] = function ($attribute, $value, $fail) {
+                    if (count(array_filter($value, fn ($option) => $option['is_correct'])) === 0) {
+                        $fail('At least one option must be marked as correct for Multi Select questions.');
+                    }
+                };
+            }
+        }
+
+        $validated = $request->validate($rules);
+
+        $question->update([
+            'stem' => $validated['stem'],
+            'stage' => $validated['stage'],
+            'type' => $validated['type'],
+            'status' => $validated['status'],
+            'answer_text' => $validated['answer_text'] ?? null,
+        ]);
 
         if ($request->has('bnccs')) {
             $question->bnccs()->sync($request->bnccs);
@@ -452,6 +575,21 @@ class QuestionController extends Controller
             $question->subjects()->sync($request->subjects);
         } else {
             $question->subjects()->sync([]);
+        }
+
+        // Replace options: delete existing and create from request when type is not open
+        $question->options()->delete();
+        if ($request->input('type') !== 'open' && isset($validated['options'])) {
+            foreach ($validated['options'] as $optionData) {
+                $question->options()->create($optionData);
+            }
+        }
+
+        if ($request->expectsJson() || $request->wantsJson()) {
+            return response()->json([
+                'success' => true,
+                'message' => 'Question updated successfully.',
+            ]);
         }
 
         return redirect()->route('questions.index')
