@@ -5,15 +5,18 @@ namespace Tests\Feature;
 use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
+use Tests\WithRoles;
 
 class NavigationTest extends TestCase
 {
-    use RefreshDatabase;
+    use RefreshDatabase, WithRoles;
 
     protected function setUp(): void
     {
         parent::setUp();
+        $this->seedRolesAndPermissions();
         $this->user = User::factory()->create();
+        $this->user->assignRole('admin');
     }
 
     public function test_dashboard_route_accessible_when_authenticated(): void

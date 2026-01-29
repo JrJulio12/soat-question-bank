@@ -11,15 +11,18 @@ use App\Models\Unit;
 use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
+use Tests\WithRoles;
 
 class BnccControllerTest extends TestCase
 {
-    use RefreshDatabase;
+    use RefreshDatabase, WithRoles;
 
     protected function setUp(): void
     {
         parent::setUp();
+        $this->seedRolesAndPermissions();
         $this->user = User::factory()->create();
+        $this->user->assignRole('admin');
     }
 
     public function test_bnccs_index_requires_authentication(): void
