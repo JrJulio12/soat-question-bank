@@ -6,10 +6,11 @@ use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Hash;
 use Tests\TestCase;
+use Tests\WithRoles;
 
 class RegistrationTest extends TestCase
 {
-    use RefreshDatabase;
+    use RefreshDatabase, WithRoles;
 
     public function test_registration_screen_can_be_rendered(): void
     {
@@ -20,6 +21,8 @@ class RegistrationTest extends TestCase
 
     public function test_new_users_can_register(): void
     {
+        $this->seedRolesAndPermissions();
+
         $response = $this->post('/register', [
             'name' => 'Test User',
             'email' => 'test@example.com',

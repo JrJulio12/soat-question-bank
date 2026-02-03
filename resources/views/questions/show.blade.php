@@ -11,9 +11,11 @@
                 <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">View question information</p>
             </div>
             <div class="flex gap-3">
+                @can('manage questions')
                 <a href="{{ route('questions.edit', $question) }}" class="bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-4 rounded-lg transition-colors">
                     Edit
                 </a>
+                @endcan
                 <a href="{{ route('questions.index') }}" class="bg-gray-600 hover:bg-gray-700 text-white font-medium py-2 px-4 rounded-lg transition-colors">
                     Back
                 </a>

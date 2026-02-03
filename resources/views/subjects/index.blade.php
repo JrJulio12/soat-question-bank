@@ -10,9 +10,11 @@
                 <h1 class="text-3xl font-bold text-[#1b1b18] dark:text-[#EDEDEC]">Subjects</h1>
                 <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Manage all subjects</p>
             </div>
+            @can('manage subjects')
             <a href="{{ route('subjects.create') }}" class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition-colors">
                 Create Subject
             </a>
+            @endcan
         </div>
 
         @if(session('success'))
@@ -79,12 +81,14 @@
                                         </td>
                                         <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                                             <a href="{{ route('subjects.show', $subject) }}" class="text-blue-600 dark:text-blue-400 hover:text-blue-900 dark:hover:text-blue-300 mr-3">View</a>
+                                            @can('manage subjects')
                                             <a href="{{ route('subjects.edit', $subject) }}" class="text-indigo-600 dark:text-indigo-400 hover:text-indigo-900 dark:hover:text-indigo-300 mr-3">Edit</a>
                                             <form action="{{ route('subjects.destroy', $subject) }}" method="POST" class="inline" onsubmit="return confirm('Are you sure you want to delete this subject?');">
                                                 @csrf
                                                 @method('DELETE')
                                                 <button type="submit" class="text-red-600 dark:text-red-400 hover:text-red-900 dark:hover:text-red-300">Delete</button>
                                             </form>
+                                            @endcan
                                         </td>
                                     </tr>
                                 @endforeach
