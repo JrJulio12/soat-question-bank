@@ -17,6 +17,7 @@ class DatabaseSeeder extends Seeder
     {
         $this->call([
             RolePermissionSeeder::class,
+            UserSeeder::class,
             DisciplineSeeder::class,
             TopicSeeder::class,
             UnitSeeder::class,
@@ -31,17 +32,10 @@ class DatabaseSeeder extends Seeder
 
     /**
      * Create test users per role and backfill existing users with no role.
+     * Full-access admin is created by UserSeeder.
      */
     private function seedUsers(): void
     {
-        $admin = User::firstOrCreate(
-            ['email' => 'admin@example.com'],
-            ['name' => 'Admin User', 'email' => 'admin@example.com', 'email_verified_at' => now(), 'password' => bcrypt('password')]
-        );
-        if (! $admin->hasRole('admin')) {
-            $admin->assignRole('admin');
-        }
-
         $teacher = User::firstOrCreate(
             ['email' => 'teacher@example.com'],
             ['name' => 'Teacher User', 'email' => 'teacher@example.com', 'email_verified_at' => now(), 'password' => bcrypt('password')]

@@ -39,19 +39,28 @@ class RolePermissionSeeder extends Seeder
         $permissions[] = Permission::firstOrCreate(['name' => 'view questions', 'guard_name' => $guard]);
         $permissions[] = Permission::firstOrCreate(['name' => 'manage questions', 'guard_name' => $guard]);
 
+        Permission::firstOrCreate(['name' => 'view users', 'guard_name' => $guard]);
+        Permission::firstOrCreate(['name' => 'manage users', 'guard_name' => $guard]);
+
         $allPermissions = Permission::where('guard_name', $guard)->pluck('name')->toArray();
 
-        $viewPermissions = array_values(array_filter($allPermissions, fn (string $name) => str_starts_with($name, 'view ')));
+        $viewPermissions = array_values(array_filter($allPermissions, function (string $name) {
+            return str_starts_with($name, 'view ') && $name !== 'view users';
+        }));
 
-        // Admin: all permissions
+        $permissionsWithoutUserManagement = array_values(array_filter($allPermissions, function (string $name) {
+            return ! in_array($name, ['view users', 'manage users'], true);
+        }));
+
+        // Admin: all permissions (including view users, manage users)
         $admin = Role::firstOrCreate(['name' => 'admin', 'guard_name' => $guard]);
         $admin->syncPermissions($allPermissions);
 
-        // Teacher: all view + manage (BNCC + questions)
+        // Teacher: all except user management
         $teacher = Role::firstOrCreate(['name' => 'teacher', 'guard_name' => $guard]);
-        $teacher->syncPermissions($allPermissions);
+        $teacher->syncPermissions($permissionsWithoutUserManagement);
 
-        // Student: only view permissions
+        // Student: only view permissions (excluding view users)
         $student = Role::firstOrCreate(['name' => 'student', 'guard_name' => $guard]);
         $student->syncPermissions($viewPermissions);
     }

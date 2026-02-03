@@ -16,6 +16,7 @@ use App\Http\Controllers\SerieController;
 use App\Http\Controllers\SubjectController;
 use App\Http\Controllers\TopicController;
 use App\Http\Controllers\UnitController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -160,4 +161,17 @@ Route::middleware(['auth', 'permission:manage questions'])->group(function () {
 Route::middleware(['auth', 'permission:view questions'])->group(function () {
     Route::get('questions', [QuestionController::class, 'index'])->name('questions.index');
     Route::get('questions/{question}', [QuestionController::class, 'show'])->name('questions.show');
+});
+
+// Users (manage group first so users/create is matched before users/{user})
+Route::middleware(['auth', 'permission:manage users'])->group(function () {
+    Route::get('users/create', [UserController::class, 'create'])->name('users.create');
+    Route::post('users', [UserController::class, 'store'])->name('users.store');
+    Route::get('users/{user}/edit', [UserController::class, 'edit'])->name('users.edit');
+    Route::put('users/{user}', [UserController::class, 'update'])->name('users.update');
+    Route::delete('users/{user}', [UserController::class, 'destroy'])->name('users.destroy');
+});
+Route::middleware(['auth', 'permission:view users'])->group(function () {
+    Route::get('users', [UserController::class, 'index'])->name('users.index');
+    Route::get('users/{user}', [UserController::class, 'show'])->name('users.show');
 });
