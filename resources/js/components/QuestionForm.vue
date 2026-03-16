@@ -256,7 +256,7 @@
                             BNCCs
                         </label>
                         <button
-                            v-if="selectedBnccDisciplines.length > 0 || selectedBnccUnits.length > 0 || selectedBnccKnowledges.length > 0"
+                            v-if="selectedBnccDisciplines.length > 0 || (form.stage !== 'EF' && (selectedBnccUnits.length > 0 || selectedBnccKnowledges.length > 0))"
                             type="button"
                             @click="selectedBnccDisciplines = []; selectedBnccUnits = []; selectedBnccKnowledges = []; form.bnccs = []"
                             class="text-xs text-gray-500 dark:text-gray-400 hover:text-red-600 dark:hover:text-red-400 transition-colors"
@@ -353,10 +353,16 @@
                                     </button>
                                 </span>
                             </div>
+                            <p v-if="errors.discipline_ids && errors.discipline_ids[0]" class="mt-2 text-sm text-red-600 dark:text-red-400 flex items-center">
+                                <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path>
+                                </svg>
+                                {{ errors.discipline_ids[0] }}
+                            </p>
                         </div>
 
-                        <!-- Unit Level - Card-based selection -->
-                        <div v-if="selectedBnccDisciplines.length > 0" class="border-t border-gray-200 dark:border-gray-700 pt-4">
+                        <!-- Unit Level - Card-based selection (hidden for EF; only Discipline + BNCC shown) -->
+                        <div v-if="form.stage !== 'EF' && selectedBnccDisciplines.length > 0" class="border-t border-gray-200 dark:border-gray-700 pt-4">
                             <div class="flex items-center justify-between mb-3">
                                 <label class="flex items-center text-sm font-semibold text-gray-700 dark:text-gray-300">
                                     <svg class="w-5 h-5 mr-2 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -450,8 +456,8 @@
                             </div>
                         </div>
 
-                        <!-- Knowledge Level - Inline list with search -->
-                        <div v-if="selectedBnccUnits.length > 0" class="border-t border-gray-200 dark:border-gray-700 pt-4">
+                        <!-- Knowledge Level - Inline list with search (hidden for EF) -->
+                        <div v-if="form.stage !== 'EF' && selectedBnccUnits.length > 0" class="border-t border-gray-200 dark:border-gray-700 pt-4">
                             <div class="flex items-center justify-between mb-3">
                                 <label class="flex items-center text-sm font-semibold text-gray-700 dark:text-gray-300">
                                     <svg class="w-5 h-5 mr-2 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -576,8 +582,8 @@
                             </div>
                         </div>
 
-                        <!-- BNCC Level - Inline list with search -->
-                        <div v-if="form.stage">
+                        <!-- BNCC Level - Inline list with search (for EF shown when discipline selected; for EM after cascade) -->
+                        <div v-if="form.stage && (form.stage !== 'EF' || selectedBnccDisciplines.length > 0)">
                             <div class="flex items-center justify-between mb-3">
                                 <label class="flex items-center text-sm font-semibold text-gray-700 dark:text-gray-300">
                                     <svg class="w-5 h-5 mr-2 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -709,11 +715,11 @@
                             </div>
                         </div>
                     </div>
-                    <p v-if="errors['bnccs.*']" class="mt-3 text-sm text-red-600 dark:text-red-400 flex items-center">
+                    <p v-if="(errors.bnccs && errors.bnccs[0]) || (errors['bnccs.*'] && errors['bnccs.*'][0])" class="mt-3 text-sm text-red-600 dark:text-red-400 flex items-center">
                         <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
                             <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path>
                         </svg>
-                        {{ errors['bnccs.*'][0] }}
+                        {{ (errors.bnccs && errors.bnccs[0]) || (errors['bnccs.*'] && errors['bnccs.*'][0]) }}
                     </p>
                 </div>
 
@@ -1028,16 +1034,19 @@ export default {
 
         // Watch for type changes to clear/initialize options
         watch(() => form.type, (newType, oldType) => {
-            // Clear options when type changes
+            // Clear options when type changes (user switched type)
             if (oldType && oldType !== newType) {
                 form.options = []
             }
-            
+            // Only set default True/False when creating or when we have no options (don't overwrite when editing)
             if (newType === 'true_false') {
-                form.options = [
-                    { text: 'True', is_correct: false, order: 1 },
-                    { text: 'False', is_correct: false, order: 2 }
-                ]
+                const isEditWithOptions = props.question && form.options && form.options.length >= 2
+                if (!isEditWithOptions) {
+                    form.options = [
+                        { text: 'True', is_correct: false, order: 1 },
+                        { text: 'False', is_correct: false, order: 2 }
+                    ]
+                }
             } else if (newType === 'open') {
                 form.options = []
             }
@@ -1113,19 +1122,30 @@ export default {
             }
         }
 
-        // Load BNCCs via AJAX when knowledges are selected or stage changes
+        // Load BNCCs via AJAX. For EF: filter by selected discipline(s). For EM: by knowledge_ids or stage.
         const loadBnccs = async () => {
             if (!form.stage) {
                 filteredBnccs.value = []
                 return
             }
 
+            // EF: only load BNCCs when at least one discipline is selected (backend filters by discipline)
+            if (form.stage === 'EF') {
+                if (selectedBnccDisciplines.value.length === 0) {
+                    filteredBnccs.value = []
+                    return
+                }
+            }
+
             loadingBnccs.value = true
             try {
-                const response = await window.axios.post('/questions/ajax/bnccs', {
-                    knowledge_ids: selectedBnccKnowledges.value.length > 0 ? selectedBnccKnowledges.value : [],
-                    stage: form.stage
-                })
+                const payload = { stage: form.stage }
+                if (form.stage === 'EF') {
+                    payload.discipline_ids = selectedBnccDisciplines.value
+                } else {
+                    payload.knowledge_ids = selectedBnccKnowledges.value.length > 0 ? selectedBnccKnowledges.value : []
+                }
+                const response = await window.axios.post('/questions/ajax/bnccs', payload)
                 filteredBnccs.value = Array.isArray(response.data) ? response.data : []
                 bnccSearch.value = '' // Reset search when new BNCCs load
             } catch (error) {
@@ -1138,30 +1158,43 @@ export default {
 
         // Watch BNCC hierarchy - clear lower levels when higher levels change and load data
         watch(() => selectedBnccDisciplines.value, () => {
-            selectedBnccUnits.value = []
-            selectedBnccKnowledges.value = []
             form.bnccs = []
-            loadUnits()
+            if (form.stage === 'EF') {
+                // EF: only discipline + BNCC; load BNCCs filtered by selected discipline(s)
+                selectedBnccUnits.value = []
+                selectedBnccKnowledges.value = []
+                loadBnccs()
+            } else {
+                selectedBnccUnits.value = []
+                selectedBnccKnowledges.value = []
+                loadUnits()
+            }
         })
         watch(() => selectedBnccUnits.value, () => {
             selectedBnccKnowledges.value = []
             form.bnccs = []
             knowledgeSearch.value = '' // Clear search when units change
-            loadKnowledges()
+            if (form.stage !== 'EF') loadKnowledges()
         })
         watch(() => selectedBnccKnowledges.value, () => {
             form.bnccs = []
-            loadBnccs()
+            if (form.stage !== 'EF') loadBnccs()
         })
         watch(() => form.stage, () => {
-            // Reload all BNCC hierarchy when stage changes
-            if (selectedBnccDisciplines.value.length > 0) {
-                loadUnits()
-            } else if (form.stage) {
-                // Load BNCCs directly when stage is selected (for direct selection)
-                loadBnccs()
+            if (form.stage === 'EF') {
+                if (selectedBnccDisciplines.value.length > 0) {
+                    loadBnccs()
+                } else {
+                    filteredBnccs.value = []
+                }
             } else {
-                filteredBnccs.value = []
+                if (selectedBnccDisciplines.value.length > 0) {
+                    loadUnits()
+                } else if (form.stage) {
+                    loadBnccs()
+                } else {
+                    filteredBnccs.value = []
+                }
             }
         })
 
@@ -1272,11 +1305,12 @@ export default {
                     ]
                 }
 
-                // Derive BNCC hierarchy from question.bnccs (knowledges.unit.discipline_id)
+                // Derive BNCC hierarchy from question.bnccs (discipline_id and knowledges.unit.discipline_id)
                 const discIds = new Set()
                 const unitIds = new Set()
                 const knowledgeIds = new Set()
                 ;(props.question.bnccs || []).forEach(b => {
+                    if (b.discipline_id) discIds.add(b.discipline_id)
                     ;(b.knowledges || []).forEach(k => {
                         if (k.id) knowledgeIds.add(k.id)
                         if (k.unit_id) unitIds.add(k.unit_id)
@@ -1510,10 +1544,28 @@ export default {
         }
 
         const submitForm = async () => {
-            loading.value = true
             errors.value = {}
             successMessage.value = ''
             errorMessage.value = ''
+
+            // Require at least one discipline and one BNCC (backend enforces this; validate here for UX)
+            if (form.stage === 'EF') {
+                if (!selectedBnccDisciplines.value || selectedBnccDisciplines.value.length === 0) {
+                    errors.value.discipline_ids = ['Please select at least one discipline.']
+                    return
+                }
+                if (!form.bnccs || form.bnccs.length === 0) {
+                    errors.value.bnccs = ['Please select at least one BNCC.']
+                    return
+                }
+            } else {
+                if (!form.bnccs || form.bnccs.length === 0) {
+                    errors.value.bnccs = ['Please select at least one BNCC.']
+                    return
+                }
+            }
+
+            loading.value = true
 
             try {
                 const formData = {
@@ -1523,6 +1575,9 @@ export default {
                     status: form.status,
                     bnccs: form.bnccs,
                     subjects: form.subjects
+                }
+                if (form.stage === 'EF') {
+                    formData.discipline_ids = selectedBnccDisciplines.value
                 }
 
                 // Add answer_text or options based on type

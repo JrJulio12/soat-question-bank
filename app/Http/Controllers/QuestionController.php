@@ -104,11 +104,16 @@ class QuestionController extends Controller
             'stage' => 'required|in:EF,EM',
             'type' => 'required|in:multiple_choice,multi_select,true_false,open',
             'status' => 'required|in:draft,published',
-            'bnccs' => 'nullable|array',
+            'bnccs' => 'required|array|min:1',
             'bnccs.*' => 'exists:bnccs,id',
             'subjects' => 'nullable|array',
             'subjects.*' => 'exists:subjects,id',
         ];
+
+        if ($request->input('stage') === 'EF') {
+            $rules['discipline_ids'] = 'required|array|min:1';
+            $rules['discipline_ids.*'] = 'exists:disciplines,id';
+        }
 
         // Add validation based on question type
         if ($request->input('type') === 'open') {
@@ -149,7 +154,7 @@ class QuestionController extends Controller
 
         $question = Question::create($validated);
 
-        if ($request->has('bnccs')) {
+        if ($request->filled('bnccs')) {
             $question->bnccs()->sync($request->bnccs);
         }
 
@@ -249,23 +254,33 @@ class QuestionController extends Controller
     }
 
     /**
-     * AJAX endpoint to fetch BNCCs by knowledge IDs or stage
+     * AJAX endpoint to fetch BNCCs by knowledge IDs, discipline IDs, or stage.
+     * For EF: pass discipline_ids to get BNCCs for that discipline.
+     * For EM: can pass knowledge_ids to filter, or just stage.
      */
     public function getBnccs(Request $request)
     {
         $request->validate([
             'knowledge_ids' => 'nullable|array',
             'knowledge_ids.*' => 'exists:knowledges,id',
+            'discipline_ids' => 'nullable|array',
+            'discipline_ids.*' => 'exists:disciplines,id',
             'stage' => 'required|in:EF,EM'
         ]);
 
         $knowledgeIds = $request->input('knowledge_ids', []);
+        $disciplineIds = $request->input('discipline_ids', []);
         $stage = $request->stage;
 
         $query = Bncc::with(['discipline', 'knowledges.unit.discipline'])
             ->where('stage', $stage);
 
-        // If knowledge IDs provided and not empty, filter by them
+        // Filter by discipline(s) when provided (e.g. for EF flow)
+        if (!empty($disciplineIds) && is_array($disciplineIds)) {
+            $query->whereIn('discipline_id', $disciplineIds);
+        }
+
+        // If knowledge IDs provided and not empty, filter by them (e.g. for EM flow)
         if (!empty($knowledgeIds) && is_array($knowledgeIds) && count($knowledgeIds) > 0) {
             $query->whereHas('knowledges', function ($q) use ($knowledgeIds) {
                 $q->whereIn('knowledges.id', $knowledgeIds);
@@ -466,6 +481,7 @@ class QuestionController extends Controller
             ])->values()->all(),
             'bnccs' => $question->bnccs->map(fn ($b) => [
                 'id' => $b->id,
+                'discipline_id' => $b->discipline_id,
                 'knowledges' => $b->knowledges->map(fn ($k) => [
                     'id' => $k->id,
                     'unit_id' => $k->unit_id,
@@ -516,11 +532,16 @@ class QuestionController extends Controller
             'stage' => 'required|in:EF,EM',
             'type' => 'required|in:multiple_choice,multi_select,true_false,open',
             'status' => 'required|in:draft,published',
-            'bnccs' => 'nullable|array',
+            'bnccs' => 'required|array|min:1',
             'bnccs.*' => 'exists:bnccs,id',
             'subjects' => 'nullable|array',
             'subjects.*' => 'exists:subjects,id',
         ];
+
+        if ($request->input('stage') === 'EF') {
+            $rules['discipline_ids'] = 'required|array|min:1';
+            $rules['discipline_ids.*'] = 'exists:disciplines,id';
+        }
 
         if ($request->input('type') === 'open') {
             $rules['answer_text'] = 'nullable|string';
