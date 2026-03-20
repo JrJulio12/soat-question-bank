@@ -8,12 +8,10 @@ use App\Enums\Stage;
 use App\Models\Bncc;
 use App\Models\Chapter;
 use App\Models\Discipline;
-use App\Models\Knowledge;
 use App\Models\Question;
 use App\Models\Serie;
 use App\Models\Subject;
 use App\Models\Topic;
-use App\Models\Unit;
 use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
@@ -29,6 +27,53 @@ class QuestionControllerTest extends TestCase
         $this->seedRolesAndPermissions();
         $this->user = User::factory()->create();
         $this->user->assignRole('admin');
+    }
+
+    /**
+     * @return array{discipline: Discipline, bncc: Bncc}
+     */
+    protected function createEfDisciplineAndBncc(string $code = 'EF01MA01'): array
+    {
+        $discipline = Discipline::create(['name' => 'Mathematics', 'stage' => Stage::EF]);
+        $serie = Serie::create(['name' => '1st Grade', 'stage' => Stage::EF, 'order' => 1]);
+        $bncc = Bncc::create([
+            'code' => $code,
+            'description' => 'BNCC '.$code,
+            'stage' => Stage::EF,
+            'discipline_id' => $discipline->id,
+        ]);
+        $bncc->series()->attach($serie->id);
+
+        return ['discipline' => $discipline, 'bncc' => $bncc];
+    }
+
+    /**
+     * @return array{discipline: Discipline, bncc: Bncc}
+     */
+    protected function createEmDisciplineAndBncc(string $code = 'EM001'): array
+    {
+        $discipline = Discipline::create(['name' => 'Mathematics EM', 'stage' => Stage::EM]);
+        $serie = Serie::create(['name' => '1st Year', 'stage' => Stage::EM, 'order' => 1]);
+        $bncc = Bncc::create([
+            'code' => $code,
+            'description' => 'BNCC '.$code,
+            'stage' => Stage::EM,
+            'discipline_id' => $discipline->id,
+        ]);
+        $bncc->series()->attach($serie->id);
+
+        return ['discipline' => $discipline, 'bncc' => $bncc];
+    }
+
+    /**
+     * @return list<array{text: string, is_correct: bool, order: int}>
+     */
+    protected function sampleMultipleChoiceOptions(): array
+    {
+        return [
+            ['text' => 'Option 1', 'is_correct' => true, 'order' => 1],
+            ['text' => 'Option 2', 'is_correct' => false, 'order' => 2],
+        ];
     }
 
     public function test_questions_index_requires_authentication(): void
@@ -174,12 +219,15 @@ class QuestionControllerTest extends TestCase
 
     public function test_authenticated_user_can_create_question(): void
     {
+        $ef = $this->createEfDisciplineAndBncc('EF01MA99');
         $data = [
             'stem' => 'What is 2+2?',
             'answer_text' => '4',
             'stage' => 'EF',
             'type' => 'multiple_choice',
             'status' => 'draft',
+            'discipline_ids' => [$ef['discipline']->id],
+            'bnccs' => [$ef['bncc']->id],
             'options' => [
                 [
                     'text' => '4',
@@ -209,16 +257,20 @@ class QuestionControllerTest extends TestCase
     public function test_question_creation_validates_required_fields(): void
     {
         $response = $this->actingAs($this->user)->post(route('questions.store'), []);
-        $response->assertSessionHasErrors(['stem', 'stage', 'type', 'status']);
+        $response->assertSessionHasErrors(['stem', 'stage', 'type', 'status', 'bnccs', 'options']);
     }
 
     public function test_question_creation_validates_stage_enum(): void
     {
+        $ef = $this->createEfDisciplineAndBncc();
         $data = [
             'stem' => 'Test question',
             'stage' => 'INVALID',
             'type' => 'multiple_choice',
             'status' => 'draft',
+            'discipline_ids' => [$ef['discipline']->id],
+            'bnccs' => [$ef['bncc']->id],
+            'options' => $this->sampleMultipleChoiceOptions(),
         ];
 
         $response = $this->actingAs($this->user)->post(route('questions.store'), $data);
@@ -227,11 +279,15 @@ class QuestionControllerTest extends TestCase
 
     public function test_question_creation_validates_type_enum(): void
     {
+        $ef = $this->createEfDisciplineAndBncc();
         $data = [
             'stem' => 'Test question',
             'stage' => 'EF',
             'type' => 'INVALID',
             'status' => 'draft',
+            'discipline_ids' => [$ef['discipline']->id],
+            'bnccs' => [$ef['bncc']->id],
+            'options' => $this->sampleMultipleChoiceOptions(),
         ];
 
         $response = $this->actingAs($this->user)->post(route('questions.store'), $data);
@@ -240,11 +296,15 @@ class QuestionControllerTest extends TestCase
 
     public function test_question_creation_validates_status_enum(): void
     {
+        $ef = $this->createEfDisciplineAndBncc();
         $data = [
             'stem' => 'Test question',
             'stage' => 'EF',
             'type' => 'multiple_choice',
             'status' => 'INVALID',
+            'discipline_ids' => [$ef['discipline']->id],
+            'bnccs' => [$ef['bncc']->id],
+            'options' => $this->sampleMultipleChoiceOptions(),
         ];
 
         $response = $this->actingAs($this->user)->post(route('questions.store'), $data);
@@ -275,6 +335,7 @@ class QuestionControllerTest extends TestCase
             'stage' => 'EF',
             'type' => 'multiple_choice',
             'status' => 'draft',
+            'discipline_ids' => [$discipline->id],
             'bnccs' => [$bncc1->id, $bncc2->id],
             'options' => [
                 [
@@ -302,6 +363,14 @@ class QuestionControllerTest extends TestCase
     public function test_questions_can_be_created_with_subjects(): void
     {
         $discipline = Discipline::create(['name' => 'Mathematics', 'stage' => Stage::EF]);
+        $serie = Serie::create(['name' => '1st Grade', 'stage' => Stage::EF, 'order' => 1]);
+        $bncc = Bncc::create([
+            'code' => 'EF01MA10',
+            'description' => 'BNCC for subjects test',
+            'stage' => Stage::EF,
+            'discipline_id' => $discipline->id,
+        ]);
+        $bncc->series()->attach($serie->id);
         $topic = Topic::create(['name' => 'Algebra', 'discipline_id' => $discipline->id]);
         $chapter = Chapter::create(['name' => 'Linear Equations', 'topic_id' => $topic->id]);
         $subject1 = Subject::create(['name' => 'Subject 1', 'chapter_id' => $chapter->id]);
@@ -312,6 +381,8 @@ class QuestionControllerTest extends TestCase
             'stage' => 'EF',
             'type' => 'multiple_choice',
             'status' => 'draft',
+            'discipline_ids' => [$discipline->id],
+            'bnccs' => [$bncc->id],
             'subjects' => [$subject1->id, $subject2->id],
             'options' => [
                 [
@@ -356,6 +427,7 @@ class QuestionControllerTest extends TestCase
             'stage' => 'EF',
             'type' => 'multiple_choice',
             'status' => 'draft',
+            'discipline_ids' => [$discipline->id],
             'bnccs' => [$bncc->id],
             'subjects' => [$subject->id],
             'options' => [
@@ -382,12 +454,15 @@ class QuestionControllerTest extends TestCase
 
     public function test_question_creation_validates_bnccs_exist(): void
     {
+        $ef = $this->createEfDisciplineAndBncc();
         $data = [
             'stem' => 'Test question',
             'stage' => 'EF',
             'type' => 'multiple_choice',
             'status' => 'draft',
+            'discipline_ids' => [$ef['discipline']->id],
             'bnccs' => [999],
+            'options' => $this->sampleMultipleChoiceOptions(),
         ];
 
         $response = $this->actingAs($this->user)->post(route('questions.store'), $data);
@@ -396,16 +471,52 @@ class QuestionControllerTest extends TestCase
 
     public function test_question_creation_validates_subjects_exist(): void
     {
+        $ef = $this->createEfDisciplineAndBncc();
         $data = [
             'stem' => 'Test question',
             'stage' => 'EF',
             'type' => 'multiple_choice',
             'status' => 'draft',
+            'discipline_ids' => [$ef['discipline']->id],
+            'bnccs' => [$ef['bncc']->id],
             'subjects' => [999],
+            'options' => $this->sampleMultipleChoiceOptions(),
         ];
 
         $response = $this->actingAs($this->user)->post(route('questions.store'), $data);
         $response->assertSessionHasErrors(['subjects.0']);
+    }
+
+    public function test_question_creation_requires_discipline_ids_for_ef(): void
+    {
+        $ef = $this->createEfDisciplineAndBncc();
+        $data = [
+            'stem' => 'Test question',
+            'stage' => 'EF',
+            'type' => 'multiple_choice',
+            'status' => 'draft',
+            'bnccs' => [$ef['bncc']->id],
+            'options' => $this->sampleMultipleChoiceOptions(),
+        ];
+
+        $response = $this->actingAs($this->user)->post(route('questions.store'), $data);
+        $response->assertSessionHasErrors(['discipline_ids']);
+    }
+
+    public function test_question_creation_requires_at_least_one_bncc(): void
+    {
+        $ef = $this->createEfDisciplineAndBncc();
+        $data = [
+            'stem' => 'Test question',
+            'stage' => 'EF',
+            'type' => 'multiple_choice',
+            'status' => 'draft',
+            'discipline_ids' => [$ef['discipline']->id],
+            'options' => $this->sampleMultipleChoiceOptions(),
+        ];
+
+        $response = $this->actingAs($this->user)->post(route('questions.store'), $data);
+        $response->assertSessionHasErrors(['bnccs']);
     }
 
     public function test_authenticated_user_can_view_question(): void
@@ -464,6 +575,7 @@ class QuestionControllerTest extends TestCase
 
     public function test_authenticated_user_can_update_question(): void
     {
+        $em = $this->createEmDisciplineAndBncc('EM99TF');
         $question = Question::create([
             'stem' => 'What is 2+2?',
             'stage' => Stage::EF,
@@ -476,6 +588,7 @@ class QuestionControllerTest extends TestCase
             'stage' => 'EM',
             'type' => 'true_false',
             'status' => 'published',
+            'bnccs' => [$em['bncc']->id],
             'options' => [
                 ['text' => 'True', 'is_correct' => true, 'order' => 1],
                 ['text' => 'False', 'is_correct' => false, 'order' => 2],
@@ -493,6 +606,9 @@ class QuestionControllerTest extends TestCase
             'type' => 'true_false',
             'status' => 'published',
         ]);
+        $question->refresh();
+        $this->assertCount(1, $question->bnccs);
+        $this->assertTrue($question->bnccs->contains($em['bncc']));
     }
 
     public function test_question_update_validates_required_fields(): void
@@ -505,7 +621,31 @@ class QuestionControllerTest extends TestCase
         ]);
 
         $response = $this->actingAs($this->user)->put(route('questions.update', $question), []);
-        $response->assertSessionHasErrors(['stem', 'stage', 'type', 'status']);
+        $response->assertSessionHasErrors(['stem', 'stage', 'type', 'status', 'bnccs', 'options']);
+    }
+
+    public function test_question_update_requires_discipline_ids_for_ef(): void
+    {
+        $ef = $this->createEfDisciplineAndBncc();
+        $question = Question::create([
+            'stem' => 'Test question',
+            'stage' => Stage::EF,
+            'type' => QuestionType::MULTIPLE_CHOICE,
+            'status' => QuestionStatus::DRAFT,
+        ]);
+        $question->bnccs()->attach($ef['bncc']->id);
+
+        $data = [
+            'stem' => 'Updated question',
+            'stage' => 'EF',
+            'type' => 'multiple_choice',
+            'status' => 'draft',
+            'bnccs' => [$ef['bncc']->id],
+            'options' => $this->sampleMultipleChoiceOptions(),
+        ];
+
+        $response = $this->actingAs($this->user)->put(route('questions.update', $question), $data);
+        $response->assertSessionHasErrors(['discipline_ids']);
     }
 
     public function test_questions_can_be_updated_with_new_relationships(): void
@@ -543,6 +683,7 @@ class QuestionControllerTest extends TestCase
             'stage' => 'EF',
             'type' => 'multiple_choice',
             'status' => 'draft',
+            'discipline_ids' => [$discipline->id],
             'bnccs' => [$bncc2->id],
             'subjects' => [$subject->id],
             'options' => [
@@ -562,7 +703,7 @@ class QuestionControllerTest extends TestCase
         $this->assertTrue($question->subjects->contains($subject));
     }
 
-    public function test_question_relationships_can_be_cleared(): void
+    public function test_question_update_can_clear_subjects_while_keeping_bnccs(): void
     {
         $discipline = Discipline::create(['name' => 'Mathematics', 'stage' => Stage::EF]);
         $serie = Serie::create(['name' => '1st Grade', 'stage' => Stage::EF, 'order' => 1]);
@@ -591,6 +732,9 @@ class QuestionControllerTest extends TestCase
             'stage' => 'EF',
             'type' => 'multiple_choice',
             'status' => 'draft',
+            'discipline_ids' => [$discipline->id],
+            'bnccs' => [$bncc->id],
+            'subjects' => [],
             'options' => [
                 ['text' => 'Option A', 'is_correct' => true, 'order' => 1],
                 ['text' => 'Option B', 'is_correct' => false, 'order' => 2],
@@ -601,7 +745,8 @@ class QuestionControllerTest extends TestCase
         
         $response->assertRedirect(route('questions.index'));
         $question->refresh();
-        $this->assertCount(0, $question->bnccs);
+        $this->assertCount(1, $question->bnccs);
+        $this->assertTrue($question->bnccs->contains($bncc));
         $this->assertCount(0, $question->subjects);
     }
 
